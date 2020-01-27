@@ -5,7 +5,13 @@ import CadastroFap from './CadastroFap';
 import App from './App';
 import SolucaoPadroes from './SolucaoPadroes.show';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+var express = require('express');
+// Import the library:
+var cors = require('cors');
+
+var app = express();
 
 ReactDOM.render(
     <BrowserRouter>
@@ -21,3 +27,8 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+
+
+// Then use it before your routes are set up:
+app.use(cors());
