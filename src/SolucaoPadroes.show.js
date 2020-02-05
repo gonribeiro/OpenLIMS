@@ -10,22 +10,23 @@ class SolucaoPadroes extends React.Component {
 
         this.state = {
             solucaopadroes: [],
-            value: '',
-            aaa: '',
-            bbb: '',
-            ccc: ''
+            unidades: [],
+            nome: '',
+            volume: '',
+            unidadeId: '',
+            validade: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-        this.test = this.test.bind(this);
+        this.criar = this.criar.bind(this);
     }
 
     componentDidMount(){
-        this.listar();
+        this.listarSolucoes();
+        this.listarUnidades();
     }
 
-    listar = () => {
+    listarSolucoes = () => {
         axios.get('https://localhost:44302/api/SolucaoPadroes')
         .then(response => {
             let solucaopadroes = response.data;
@@ -36,51 +37,74 @@ class SolucaoPadroes extends React.Component {
             console.log(error);
         });
     }
-    
-    apagar = (e, item) => {
-        // item.preventDefault();
-        axios.delete('https://localhost:44302/api/SolucaoPadroes/'+item)
+
+    listarUnidades = () => {
+        axios.get('https://localhost:44302/api/Unidade')
         .then(response => {
-            this.listar();
+            let unidades = response.data;
+            this.setState({
+                unidades: unidades
+            })
         }).catch(error => {
             console.log(error);
         });
     }
 
-    handleChange(event) {
-        this.setState({value: event.target.value});
-    }
-    
-    handleSubmit(event) {
-        const form = {
-            nome: this.state.value,
-            validade: ''
-        }
-        console.log(form);
-        alert('Um nome foi enviado: ' + this.state.value);
-        event.preventDefault();
-    }
-
-    test(event){
+    handleChange(event){
         const { target } = event
         const { name } = target
-        const { value } = target['type'] === 'checkbox' ? target.checked : target.value
         return this.setState({
             [name]: event.target.value
         })
     }
+    
+    criar(event) {
+        console.log(this.state.nome,
+            this.state.volume,
+            this.state.unidadeId,
+            this.state.validade)
+        event.preventDefault();
+        axios.post('https://localhost:44302/api/SolucaoPadroes', { 
+            nome: this.state.nome,
+            volume: parseInt(this.state.volume),
+            unidadeId: parseInt(this.state.unidadeId),
+            entrada: new Date(),
+            validade: this.state.validade
+        })
+        .then(reponse => {
+            this.listarSolucoes();
+            console.log(reponse);
+        }).catch(error => {
+            console.log(error);
+        });
+    }
+    
+    apagar = (e, item) => {
+        axios.delete('https://localhost:44302/api/SolucaoPadroes/'+item)
+        .then(response => {
+            this.listarSolucoes();
+            console.log(response);
+        }).catch(error => {
+            console.log(error);
+        });
+    }
 
-    render(){        
-        console.log(this.state);
-        const tabela = this.state.solucaopadroes.map((item) => {
+    render(){
+        const unidades = this.state.unidades.map((item) => {
+            return (
+                <option value={item.id} key={item.id}>{item.un}</option>
+            );
+        });
+        
+        const solucaopadroes = this.state.solucaopadroes.map((item) => {
             return (
                 <tr key={item.id}>
                     <th scope="row">{item.id}</th>
                     <td>{item.nome}</td>
                     <td>{item.volume}</td>
-                    <td>{item.unidade}</td>
-                    <td>{item.create_at}</td>
-                    <td>{item.validade}</td>
+                    <td>{item.unidade.un}</td>
+                    <td>{item.entrada.substr(0, 10)}</td>
+                    <td>{item.validade.substr(0, 10)}</td>
                     <td>
                         <Button onClick={e => this.apagar(e, item.id)} variant="contained" color="secondary">
                             <i class="far fa-trash-alt"></i>
@@ -95,39 +119,29 @@ class SolucaoPadroes extends React.Component {
 
         return (
             <div>
-                <input type="text" name="aaa" onChange={this.test}></input>
-                <input type="text" name="bbb" onChange={this.test}></input>
-                <input type="text" name="ccc" onChange={this.test}></input>
-                <form onSubmit={this.handleSubmit}>
-                    <label>
-                        Nome:
-                        <input type="text" value={this.state.value} onChange={this.handleChange} /> 
-                    </label>
-                    <input type="submit" value="Enviar" />
-                </form>
                 <form onSubmit={this.criar}>
                     <tr>
                         <td>
-                            #
+                            <label>Nome</label>
+                            <input type="text" name="nome" class="form-control form-control-sm" placeholder="Nome" onChange={this.handleChange}></input>
                         </td>
                         <td>
-                            <input type="text" class="form-control form-control-sm" ></input>
+                            <label>Volume</label>
+                            <input type="text" name="volume" class="form-control form-control-sm" placeholder="Volume" onChange={this.handleChange}></input>
                         </td>
                         <td>
-                            <input type="text" class="form-control form-control-sm" ></input>
+                            <label>Unidade</label>
+                            <select name="unidadeId" class="form-control form-control-sm" onChange={this.handleChange}>
+                                {unidades}
+                            </select>
                         </td>
                         <td>
-                            <input type="text" class="form-control form-control-sm" ></input>
-                        </td>
-                        <td>
-                            <input type="text" class="form-control form-control-sm" ></input>
-                        </td>
-                        <td>
-                            <input type="text" class="form-control form-control-sm" ></input>
+                            <label>Validade</label>
+                            <input type="date" name="validade" class="form-control form-control-sm" onChange={this.handleChange}></input>
                         </td>
                         <td>
                             <Button type="submit" variant="contained" color="secondary">
-                                <i class="far fa-trash-alt"></i>
+                                <i class="far fa-save"></i>
                             </Button>
                         </td>
                     </tr>
@@ -145,7 +159,7 @@ class SolucaoPadroes extends React.Component {
                         </tr>
                     </thead>
                     <tbody>
-                        { tabela }
+                        { solucaopadroes }
                     </tbody>
                 </table>
             </div>
