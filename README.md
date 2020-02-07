@@ -6,6 +6,7 @@ bootstrap - npm install add bootstrap --save
 paginacao - npm add react-bootstrap-table2-paginator --save
 filtro_pesquisa - npm add react-bootstrap-table2-filter --save
 Route - npm install react-router-dom --save
+SweetAlert2 - npm install sweetalert2-react
 
 ================================================================================
 

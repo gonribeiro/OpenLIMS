@@ -12,6 +12,7 @@ ReactDOM.render(
         <Switch>
             <Route path="/" exact={true} component={App} />
             <Route path="/SolucaoPadroes" component={SolucaoPadroes} />
+            <Route path="/CadastroFap" component={CadastroFap} />
             <Route path='*' component={App} />
         </Switch>
     </BrowserRouter>
