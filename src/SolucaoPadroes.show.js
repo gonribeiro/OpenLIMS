@@ -148,7 +148,7 @@ class SolucaoPadroes extends React.Component {
                     </Table>
                 </TableContainer>
                 <TableContainer component={Paper}>
-                    <Table className='1' size="small" aria-label="a dense table">
+                    <Table className='1' size="small" aria-label="a dense enhanced  table">
                         <TableHead>
                             <TableRow>
                                 <TableCell align="right">Id</TableCell>

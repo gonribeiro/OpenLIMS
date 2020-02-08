@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import CadastroFap from './CadastroFap';
+import demo from './demo';
 import App from './App';
 import SolucaoPadroes from './SolucaoPadroes.show';
 import * as serviceWorker from './serviceWorker';
@@ -12,6 +13,7 @@ ReactDOM.render(
         <Switch>
             <Route path="/" exact={true} component={App} />
             <Route path="/SolucaoPadroes" component={SolucaoPadroes} />
+            <Route path="/demo" component={demo} />
             <Route path="/CadastroFap" component={CadastroFap} />
             <Route path='*' component={App} />
         </Switch>
