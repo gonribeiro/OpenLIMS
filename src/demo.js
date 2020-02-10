@@ -7,21 +7,20 @@ class demo extends React.Component {
         super(props);
 
         this.state = {
+            data: [],
+            unidades: [],
             columns: [
                 { title: 'Id', field: 'id', editable: 'never' },
                 { title: 'Nome', field: 'nome' },
                 { title: 'Volume', field: 'volume' },
-                { title: 'Unidade', field: 'unidade.un' },
+                //{ title: 'Unidade', field: 'unidade.un' },
                 {
                     title: 'Unidade',
-                    field: 'unidade.un',
-                    lookup: '',
+                    field: 'unidade.un'
                 },
                 { title: 'Entrada', field: 'entrada', type: 'date' },
                 { title: 'Validade', field: 'validade', type: 'date' },
             ],
-            data: [],
-            unidades: [],
         }
     }
 
@@ -76,7 +75,6 @@ class demo extends React.Component {
         })
         .then(reponse => {
             this.listarSolucoes();
-            console.log(reponse);
         }).catch(error => {
             console.log(error);
         });
@@ -94,7 +92,6 @@ class demo extends React.Component {
         })
         .then(reponse => {
             this.listarSolucoes();
-            console.log(reponse);
         }).catch(error => {
             console.log(error);
         });
@@ -104,18 +101,23 @@ class demo extends React.Component {
         axios.delete('https://localhost:44302/api/SolucaoPadroes/'+item)
         .then(response => {
             this.listarSolucoes();
-            console.log(response);
         }).catch(error => {
             console.log(error);
         });
     }
   
     render() {
+        /*const obj = this.state.unidades.reduce(function(acc, cur, i) {
+            acc[cur.id] = cur.un;
+            return acc;
+        }, {});*/
+
         return (
         <MaterialTable
             title="Soluções e Reagentes"
             columns={this.state.columns}
             data={this.state.data}
+            unidades={this.state.unidades}
             editable={{
             onRowAdd: newData =>
                 new Promise((resolve, reject) => {
