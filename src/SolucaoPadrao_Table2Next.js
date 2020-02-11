@@ -8,7 +8,7 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import { Link } from 'react-router-dom'
 import { Button } from '@material-ui/core';
 
-class SolucaoPadroes extends React.Component {    
+class SolucaoPadrao_Table2Next extends React.Component {    
     constructor(props) {
         super(props);
 
@@ -136,4 +136,4 @@ class SolucaoPadroes extends React.Component {
     }
 }
 
-export default SolucaoPadroes;
+export default SolucaoPadrao_Table2Next;

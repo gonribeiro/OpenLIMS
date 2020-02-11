@@ -18,7 +18,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
 
-class SolucaoPadroes extends React.Component {    
+class SolucaoPadrao_GenericTableMaterialUi extends React.Component {    
     constructor(props) {
         super(props);
 
@@ -187,4 +187,4 @@ class SolucaoPadroes extends React.Component {
     }
 }
 
-export default SolucaoPadroes;
+export default SolucaoPadrao_GenericTableMaterialUi;
