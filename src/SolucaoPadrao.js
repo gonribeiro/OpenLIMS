@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import MaterialTable from 'material-table';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class SolucaoPadrao extends React.Component {
     constructor(props) {
@@ -8,29 +9,17 @@ class SolucaoPadrao extends React.Component {
 
         this.state = {
             data: [],
-            //unidades: [],
-            columns: [
-                { title: 'Id', field: 'id', editable: 'never' },
-                { title: 'Nome', field: 'nome' },
-                { title: 'Volume', field: 'volume' },
-                {
-                    title: 'Unidade',
-                    field: 'unidade.un',
-                    //lookup: { 1: 'L', 2: 'ml', 3: 'uL' },
-                },
-                { title: 'Entrada', field: 'entrada', type: 'date' },
-                { title: 'Validade', field: 'validade', type: 'date' },
-            ],
+            unidades: {},
         }
     }
 
     componentDidMount(){
         this.carregarSolucoes();
-        //this.listarUnidades();
+        this.listarUnidades();
     }
 
     carregarSolucoes = () => {
-        axios.get('https://localhost:44302/api/SolucaoPadroes')
+        axios.get('http://localhost:53048/api/padrao')
         .then(response => {
             let data = response.data;
             this.setState({
@@ -44,17 +33,26 @@ class SolucaoPadrao extends React.Component {
     /**
      * TODO: Resolver problemas com select de unidade com o data-table
      */
-    /*listarUnidades = () => {
-        axios.get('https://localhost:44302/api/Unidade')
+    listarUnidades = () => {
+        axios.get('http://localhost:53048/api/Unidade')
         .then(response => {
-            let unidades = response.data;
+            // Formata o retorno da unidade para listar adequadamente no combobox do data-table
+            // Pega somente as unidades e salva em array
+            let unidades = response.data.map((item, key) =>
+                item.un
+            );
+            // Formata array em string com indice de todas as unidades
+            let unidadeFormatadaParaComboBox = unidades.reduce(function(acc, cur, i) {
+                acc[i+1] = cur;
+                return acc;
+            }, {});
             this.setState({
-                unidades: unidades
+                unidades: unidadeFormatadaParaComboBox
             })
         }).catch(error => {
             console.log(error);
         });
-    }*/
+    }
 
     handleChange(event){
         const { target } = event
@@ -66,7 +64,7 @@ class SolucaoPadrao extends React.Component {
     
     criar = (event) => {
         event.preventDefault();
-        axios.post('https://localhost:44302/api/SolucaoPadroes', { 
+        axios.post('http://localhost:53048/api/padrao', { 
             nome: this.state.nome,
             volume: parseInt(this.state.volume),
             unidadeId: parseInt(this.state.unidadeId),
@@ -74,54 +72,76 @@ class SolucaoPadrao extends React.Component {
             validade: this.state.validade
         })
         .then(reponse => {
-            console.log(reponse);
             this.carregarSolucoes();
         }).catch(error => {
-            console.log(error);
+            alert('Erro: Não foi possível criar');
         });
     }
 
     atualizar = (event, item) => {
         //event.preventDefault();
-        axios.put('https://localhost:44302/api/SolucaoPadroes/'+event, { 
+        axios.put('http://localhost:53048/api/padrao/'+event, { 
             id: item.id,
             nome: item.nome,
             volume: parseInt(item.volume),
-            unidadeId: parseInt(item.unidadeId), //TODO: erro com unidade
+            unidadeId: parseInt(item.unidadeId),
             entrada: item.entrada,
             validade: item.validade
         })
         .then(reponse => {
             this.carregarSolucoes();
         }).catch(error => {
-            console.log(error);
+            alert('Erro: Não foi possível atualizar');
         });
     }
     
     apagar = (item) => {
-        axios.delete('https://localhost:44302/api/SolucaoPadroes/'+item)
+        axios.delete('http://localhost:53048/api/padrao/'+item)
         .then(response => {
             this.carregarSolucoes();
         }).catch(error => {
-            console.log(error);
+            alert('Erro: Não foi possível apagar');
         });
     }
+
+    
   
     render() {
         return (
             <MaterialTable
-                title="Soluções e Reagentes"
-                columns={this.state.columns}
+                title="Padrões"
+                columns={[
+                    { title: 'Id', field: 'id', editable: 'never' },
+                    { title: 'Nome', field: 'nome' },
+                    { title: 'Volume', field: 'volume' },
+                    {
+                        title: 'Unidade',
+                        field: 'unidadeId',
+                        lookup: this.state.unidades,
+                    },
+                    { title: 'Valor', field: 'valor' },
+                    { title: 'Nota Fiscal', field: 'notaFiscal' },
+                    { title: 'Entrada', field: 'create_at', type: 'date' },
+                    { title: 'Validade', field: 'validade', type: 'date' },
+                ]}
                 data={this.state.data}
                 options={{
                     filtering: true,
                     exportButton: true,
                     search: false,
-                    pageSize: 10,
-                    pageSizeOptions: [10, 20, 30, 50, 100],
+                    pageSize: 50,
+                    pageSizeOptions: [50, 500, 1000, 5000],
                     padding: 'dense',
-                    addRowPosition: 'first'
+                    addRowPosition: 'first',
+                    rowStyle: rowData => ({
+                        // backgroundColor: (rowData.tableData.id % 2 == 0) ? '#343a40' : '#3e444a',
+                        // color: '#FFF'
+                        backgroundColor: (rowData.tableData.id % 2 === 0) ? '#FFF' : '#CCC',
+                    })
                 }}
+                /*onRowClick={(event, rowData) => {
+                    //mouse hover //console.log(event, rowData);    
+                }}*/
                 localization={{
                     header: {
                         actions: 'Ações'
@@ -148,7 +168,6 @@ class SolucaoPadrao extends React.Component {
                         lastTooltip: 'último'
                     }
                 }}
-                unidades={this.state.unidades}
                 editable={{
                 onRowAdd: newData =>
                     new Promise((resolve, reject) => {

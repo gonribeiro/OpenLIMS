@@ -11,6 +11,12 @@ material icon - npm install @material-ui/icons
 
 ================================================================================
 
+TODO:
+Erro ao atualizar unidade
+Pesquisa deve iniciar após 3 caracteres escritos
+
+================================================================================
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
