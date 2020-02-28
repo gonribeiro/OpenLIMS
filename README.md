@@ -1,87 +1,28 @@
-Redux - npm i redux react-redux redux-form --save
+# Projeto LIMS - Laboratory Information Management System
+- Este repositório é o front do ProjetoLIMS_.Net
+
+# Soluções
+- Ícones no material-table
+```
+Adicionar no cabeçalho de index.html
+
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
+```
+
+# Comandos
+- Instalação dos pacotes
+```
+create-react-app app-react
 Axios - npm install axios --save
-Material-Ui - npm install @material-ui/core --save
-datatable2 - npm add react-bootstrap-table-next --save
-bootstrap - npm install add bootstrap --save
-paginacao - npm add react-bootstrap-table2-paginator --save
-filtro_pesquisa - npm add react-bootstrap-table2-filter --save
 Route - npm install react-router-dom --save
-SweetAlert2 - npm install sweetalert2-react
+Material-Ui - npm install @material-ui/core --save
 material icon - npm install @material-ui/icons
+Material-table - npm install material-table --save
+Redux - npm i redux react-redux redux-form --save
+```
 
-================================================================================
-
-TODO:
-Erro ao atualizar unidade
-Pesquisa deve iniciar após 3 caracteres escritos
-
-================================================================================
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# Estudar
+ToDo: minChar na pesquisa do material-table, campos obrigatório, formatar/customizar campos (valor), melhor desempenho do data-table com grande volume de dados

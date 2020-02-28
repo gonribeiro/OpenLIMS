@@ -3,20 +3,31 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import SolucaoPadrao from './SolucaoPadrao';
-import SolucaoPadrao_Table2Next from './SolucaoPadrao_Table2Next';
-import SolucaoPadrao_GenericTableMaterialUi from './SolucaoPadrao_GenericTableMaterialUi';
-import CadastroFap from './CadastroFap';
-import App from './App';
+
+import NavBar from "./NavBar";
+import Calibracao from './Calibracao';
+import Equipamento from './Equipamento';
+import Padrao from './Padrao';
+import TipoEquipamento from './TipoEquipamento';
+import Unidade from './Unidade';
+import Erro404 from './Erro404';
+
+const paginasComNavBar = () => (
+    <div>
+        <NavBar />
+        <Route path="/Equipamento" exact={true} component={Equipamento} />
+        <Route path="/Padrao" exact={true} component={Padrao} />
+        <Route path="/TipoEquipamento" exact={true} component={TipoEquipamento} />
+        <Route path="/Unidade" exact={true} component={Unidade} />
+        <Route path='*' component={Erro404} />
+    </div>
+)
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route path="/" exact={true} component={SolucaoPadrao} />
-            <Route path="/SolucaoPadrao_Table2Next" component={SolucaoPadrao_Table2Next} />
-            <Route path="/SolucaoPadrao_GenericTableMaterialUi" component={SolucaoPadrao_GenericTableMaterialUi} />
-            <Route path="/CadastroFap" component={CadastroFap} />
-            <Route path='*' component={App} />
+            <Route path="/Calibracao/:equipamentoId" exact={true} component={Calibracao} />
+            <Route component={paginasComNavBar} />
         </Switch>
     </BrowserRouter>
     , document.getElementById('root'));
