@@ -88,99 +88,101 @@ class Equipamento extends React.Component {
             alert('Erro: Não foi possível apagar');
         });
     }
-  
+
     render() {
         return (
-            <MaterialTable
-                title="Equipamentos"
-                columns={[
-                    { title: 'Id', field: 'id', editable: 'never', defaultSort: 'desc' },
-                    { title: 'Equipamento', field: 'nome' },
-                    {
-                        title: 'Tipo do Equipamento',
-                        field: 'tipoEquipamentoId',
-                        lookup: this.state.tiposEquipamento,
-                    },
-                    { title: 'Valor', field: 'valor' },
-                    { title: 'Nota Fiscal', field: 'notaFiscal' },
-                    { title: 'Entrada', field: 'create_at', type: 'date', editable: 'never' },
-                ]}
-                data={this.state.data}
-                options={{
-                    filtering: true,
-                    exportButton: true,
-                    search: false,
-                    pageSize: 50,
-                    pageSizeOptions: [50, 500, 1000, 5000],
-                    padding: 'dense',
-                    addRowPosition: 'first',
-                    rowStyle: rowData => ({
-                        backgroundColor: (rowData.tableData.id % 2 === 0) ? '#FFF' : '#CCC',
-                    })
-                }}
-                localization={{
-                    header: {
-                        actions: 'Ações'
-                    },
-                    body: {
-                        emptyDataSourceMessage: 'Nenhum registro encontrado',
-                        addTooltip: 'Adicionar',
-                        deleteTooltip: 'Apagar', 
-                        editTooltip: 'Editar',
-                        editRow: {
-                            deleteText: 'Tem certeza que deseja apagar?',
-                            cancelTooltip: 'Cancelar',
-                            saveTooltip: 'Salvar'
-                      },
-                    },
-                    toolbar: {
-                      exportTitle: 'Exportar'
-                    },
-                    pagination: {
-                        labelRowsSelect: 'linhas',
-                        firstTooltip: 'primeiro',
-                        previousTooltip: 'anterior',
-                        nextTooltip: 'próximo',
-                        lastTooltip: 'último'
-                    }
-                }}
-                detailPanel={rowData => {
-                    const url = "http://localhost:3000/Calibracao/"+rowData.id;
-                    return (
-                        <iframe
-                            width="100%"
-                            height="250"
-                            src={url}
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                        />
-                    )
-                }}
-                editable={{
-                onRowAdd: newData =>
-                    new Promise((resolve, reject) => {
-                        setTimeout(() => {
-                            this.criar(newData);
-                            resolve()
-                        }, 1000)
-                    }),
-                onRowUpdate: (newData, oldData) =>
-                    new Promise((resolve, reject) => {
-                        setTimeout(() => {
-                            this.atualizar(newData.id, newData);
-                            resolve()
-                        }, 1000)
-                    }),
-                onRowDelete: oldData =>
-                    new Promise((resolve, reject) => {
-                        setTimeout(() => {
-                            this.apagar(oldData.id);
-                            resolve()
-                        }, 1000)
-                    }),
-                }}
-            />
+            <div>
+                <MaterialTable
+                    title="Equipamentos"
+                    columns={[
+                        { title: 'Id', field: 'id', editable: 'never', defaultSort: 'desc' },
+                        { title: 'Equipamento', field: 'nome' },
+                        {
+                            title: 'Tipo do Equipamento',
+                            field: 'tipoEquipamentoId',
+                            lookup: this.state.tiposEquipamento,
+                        },
+                        { title: 'Valor', field: 'valor' },
+                        { title: 'Nota Fiscal', field: 'notaFiscal' },
+                        { title: 'Entrada', field: 'create_at', type: 'date', editable: 'never' },
+                    ]}
+                    data={this.state.data}
+                    options={{
+                        filtering: true,
+                        exportButton: true,
+                        search: false,
+                        pageSize: 50,
+                        pageSizeOptions: [50, 500, 1000, 5000],
+                        padding: 'dense',
+                        addRowPosition: 'first',
+                        rowStyle: rowData => ({
+                            backgroundColor: (rowData.tableData.id % 2 === 0) ? '#FFF' : '#CCC',
+                        })
+                    }}
+                    localization={{
+                        header: {
+                            actions: 'Ações'
+                        },
+                        body: {
+                            emptyDataSourceMessage: 'Nenhum registro encontrado',
+                            addTooltip: 'Adicionar',
+                            deleteTooltip: 'Apagar', 
+                            editTooltip: 'Editar',
+                            editRow: {
+                                deleteText: 'Tem certeza que deseja apagar?',
+                                cancelTooltip: 'Cancelar',
+                                saveTooltip: 'Salvar'
+                            },
+                        },
+                        toolbar: {
+                        exportTitle: 'Exportar'
+                        },
+                        pagination: {
+                            labelRowsSelect: 'linhas',
+                            firstTooltip: 'primeiro',
+                            previousTooltip: 'anterior',
+                            nextTooltip: 'próximo',
+                            lastTooltip: 'último'
+                        }
+                    }}
+                    detailPanel={rowData => {
+                        const url = "http://localhost:3000/Calibracao/"+rowData.id;
+                        return (
+                            <iframe
+                                width="100%"
+                                height="250"
+                                src={url}
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            />
+                        )
+                    }}
+                    editable={{
+                    onRowAdd: newData =>
+                        new Promise((resolve, reject) => {
+                            setTimeout(() => {
+                                this.criar(newData);
+                                resolve()
+                            }, 1000)
+                        }),
+                    onRowUpdate: (newData, oldData) =>
+                        new Promise((resolve, reject) => {
+                            setTimeout(() => {
+                                this.atualizar(newData.id, newData);
+                                resolve()
+                            }, 1000)
+                        }),
+                    onRowDelete: oldData =>
+                        new Promise((resolve, reject) => {
+                            setTimeout(() => {
+                                this.apagar(oldData.id);
+                                resolve()
+                            }, 1000)
+                        }),
+                    }}
+                />
+            </div>
         )
     }
 }

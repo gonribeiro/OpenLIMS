@@ -25,4 +25,4 @@ Redux - npm i redux react-redux redux-form --save
 ```
 
 # Estudar
-ToDo: minChar na pesquisa do material-table, campos obrigatório, formatar/customizar campos (valor), melhor desempenho do data-table com grande volume de dados
+ToDo: minChar na pesquisa do material-table, campos obrigatório, formatar/customizar campos (valor), melhor desempenho do data-table com grande volume de dados, modal material-ui
