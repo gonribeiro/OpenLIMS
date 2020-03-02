@@ -4,28 +4,25 @@ import MaterialTable from 'material-table';
 // Modal
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
-// Icon
-import WidgetsIcon from '@material-ui/icons/Widgets';
+import Fade from '@material-ui/core/Fade';
 
-class Equipamento extends React.Component {
+class Solucao extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
             data: [],
-            tiposEquipamento: {}, // tiposEquipamento tem que ser coleção para campo combobox
-            open: false,
-            url: ''
+            unidades: {}, // unidade tem que ser coleção para campo combobox
         }
     }
 
     componentDidMount(){
-        this.listarEquipamento();
-        this.listarTipoEquipamento();
+        this.listarSolucao();
+        this.listarUnidades();
     }
 
-    listarEquipamento = () => {
-        axios.get('http://localhost:53048/api/equipamento')
+    listarSolucao = () => {
+        axios.get('http://localhost:53048/api/solucao')
         .then(response => {
             let data = response.data;
             this.setState({
@@ -35,22 +32,22 @@ class Equipamento extends React.Component {
             console.log(error);
         });
     }
-
-    listarTipoEquipamento = () => {
-        axios.get('http://localhost:53048/api/tipoequipamento')
+    
+    listarUnidades = () => {
+        axios.get('http://localhost:53048/api/Unidade')
         .then(response => {
             // Formata o retorno da unidade para listar adequadamente no combobox do data-table
-            // Pega somente os tiposEquipamento e salva em array
-            let tiposEquipamento = response.data.map((item, key) =>
-                item.tipo
+            // Pega somente as unidades e salva em array
+            let unidades = response.data.map((item, key) =>
+                item.un
             );
-            // Formata array em string com indice de todas os tiposEquipamento
-            let tipoEquipamentoFormatadaParaComboBox = tiposEquipamento.reduce(function(acc, cur, i) {
+            // Formata array em string com indice de todas as unidades
+            let unidadeFormatadaParaComboBox = unidades.reduce(function(acc, cur, i) {
                 acc[i+1] = cur;
                 return acc;
             }, {});
             this.setState({
-                tiposEquipamento: tipoEquipamentoFormatadaParaComboBox
+                unidades: unidadeFormatadaParaComboBox
             })
         }).catch(error => {
             console.log(error);
@@ -58,94 +55,67 @@ class Equipamento extends React.Component {
     }
     
     criar = (item) => {
-        axios.post('http://localhost:53048/api/equipamento', {
+        axios.post('http://localhost:53048/api/solucao', {
             nome: item.nome,
-            tipoEquipamentoId: parseInt(item.tipoEquipamentoId),
+            volume: parseInt(item.volume),
+            unidadeId: parseInt(item.unidadeId),
             valor: item.valor,
             notaFiscal: item.notaFiscal,
-            create_at: new Date()
+            create_at: new Date(),
+            validade: item.validade
         })
         .then(reponse => {
-            this.listarEquipamento();
+            this.listarSolucao();
         }).catch(error => {
+            console.log(error);
             alert('Erro: Não foi possível criar');
         });
     }
 
     atualizar = (event, item) => {
-        axios.put('http://localhost:53048/api/equipamento/'+event, {
-            id: item.id,   
+        axios.put('http://localhost:53048/api/solucao/'+event, { 
+            id: item.id,
             nome: item.nome,
-            tipoEquipamentoId: parseInt(item.tipoEquipamentoId),
+            volume: parseInt(item.volume),
+            unidadeId: parseInt(item.unidadeId),            
             valor: item.valor,
-            notaFiscal: item.notaFiscal
+            notaFiscal: item.notaFiscal,
+            validade: item.validade
         })
         .then(reponse => {
-            this.listarEquipamento();
+            this.listarSolucao();
         }).catch(error => {
             alert('Erro: Não foi possível atualizar');
         });
     }
     
     apagar = (item) => {
-        axios.delete('http://localhost:53048/api/equipamento/'+item)
+        axios.delete('http://localhost:53048/api/solucao/'+item)
         .then(response => {
-            this.listarEquipamento();
+            this.listarSolucao();
         }).catch(error => {
             alert('Erro: Não foi possível apagar');
         });
     }
-
+  
     render() {
-        // Modal
-        const handleOpen = (equipamentoId) => {
-            this.setState({
-                url: "http://localhost:3000/Calibracao/"+equipamentoId, 
-                open: true
-            })
-        };
-
-        const handleClose = () => {
-            this.setState({
-                open: false
-            })
-        };
-        
         return (
             <div>
-                <Modal
-                    aria-labelledby="transition-modal-title"
-                    aria-describedby="transition-modal-description"
-                    open={this.state.open}
-                    onClose={handleClose}
-                    closeAfterTransition
-                    BackdropComponent={Backdrop}
-                    BackdropProps={{
-                        timeout: 500,
-                    }}
-                >
-                    <iframe
-                        width="720px"
-                        height="450"
-                        src={this.state.url}
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                    />
-                </Modal>
                 <MaterialTable
-                    title="Equipamentos"
+                    title="Soluções"
                     columns={[
                         { title: 'Id', field: 'id', editable: 'never', defaultSort: 'desc' },
-                        { title: 'Equipamento', field: 'nome' },
+                        { title: 'Padrão Matriz', field: 'padrao.nome' },
+                        { title: 'Solvente', field: 'solvente.nome' },
+                        { title: 'Equipamento', field: 'equipamento.nome' },
+                        { title: 'Volume', field: 'volume' },
                         {
-                            title: 'Tipo do Equipamento',
-                            field: 'tipoEquipamentoId',
-                            lookup: this.state.tiposEquipamento,
+                            title: 'Unidade',
+                            field: 'unidadeId',
+                            lookup: this.state.unidades,
                         },
-                        { title: 'Valor', field: 'valor' },
-                        { title: 'Nota Fiscal', field: 'notaFiscal' },
                         { title: 'Entrada', field: 'create_at', type: 'date', editable: 'never' },
+                        { title: 'Validade', field: 'validade', type: 'date' },
                     ]}
                     data={this.state.data}
                     options={{
@@ -157,16 +127,11 @@ class Equipamento extends React.Component {
                         padding: 'dense',
                         addRowPosition: 'first',
                         rowStyle: rowData => ({
+                            // backgroundColor: (rowData.tableData.id % 2 == 0) ? '#343a40' : '#3e444a',
+                            // color: '#FFF'
                             backgroundColor: (rowData.tableData.id % 2 === 0) ? '#FFF' : '#CCC',
                         })
                     }}
-                    actions={[
-                        {
-                            icon: WidgetsIcon,
-                            tooltip: 'Calibrações',
-                            onClick: (event, rowData) => handleOpen(rowData.id)
-                        },
-                    ]}
                     localization={{
                         header: {
                             actions: 'Ações'
@@ -180,7 +145,7 @@ class Equipamento extends React.Component {
                                 deleteText: 'Tem certeza que deseja apagar?',
                                 cancelTooltip: 'Cancelar',
                                 saveTooltip: 'Salvar'
-                            },
+                        },
                         },
                         toolbar: {
                         exportTitle: 'Exportar'
@@ -192,20 +157,6 @@ class Equipamento extends React.Component {
                             nextTooltip: 'próximo',
                             lastTooltip: 'último'
                         }
-                    }}
-                    detailPanel={rowData => {
-                        return (
-                            <div
-                                style={{
-                                    fontSize: 50,
-                                    textAlign: 'center',
-                                    color: 'white',
-                                    backgroundColor: '#43A047',
-                                }}
-                            >
-                                Exemplo de "detalhes" do material-table
-                            </div>
-                        )
                     }}
                     editable={{
                     onRowAdd: newData =>
@@ -236,4 +187,4 @@ class Equipamento extends React.Component {
     }
 }
 
-export default Equipamento;
+export default Solucao;

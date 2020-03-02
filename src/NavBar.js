@@ -130,9 +130,16 @@ export default function ElevateAppBar(props) {
                             <ListItemText primary="Padrões" />
                         </StyledMenuItem>
                     </a>
-                    <StyledMenuItem>
-                        <ListItemText primary="Soluções" />
-                    </StyledMenuItem>
+                    <a href="/Solucao">
+                        <StyledMenuItem>
+                            <ListItemText primary="Soluções" />
+                        </StyledMenuItem>
+                    </a>
+                    <a href="/Solvente">
+                        <StyledMenuItem>
+                            <ListItemText primary="Solventes" />
+                        </StyledMenuItem>
+                    </a>
                     <a href="/Unidade">
                         <StyledMenuItem>
                             <ListItemText primary="Unidades" />

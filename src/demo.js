@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
 
 const useStyles = makeStyles(theme => ({
   modal: {
@@ -12,9 +11,9 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    border: '0px solid #000',
+    boxShadow: theme.shadows[10],
+    padding: theme.spacing(20, 40, 30),
   },
 }));
 
@@ -24,6 +23,7 @@ export default function TransitionsModal() {
 
   const handleOpen = () => {
     setOpen(true);
+    console.log(open, setOpen);
   };
 
   const handleClose = () => {
@@ -47,12 +47,14 @@ export default function TransitionsModal() {
           timeout: 500,
         }}
       >
-        <Fade in={open}>
-          <div className={classes.paper}>
-            <h2 id="transition-modal-title">Transition modal</h2>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-          </div>
-        </Fade>
+        <iframe
+            width="720px"
+            height="450"
+            src="http://localhost:3000/Calibracao/2"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        />
       </Modal>
     </div>
   );

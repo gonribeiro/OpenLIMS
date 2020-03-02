@@ -2,22 +2,21 @@ import React from 'react';
 import axios from 'axios';
 import MaterialTable from 'material-table';
 
-class Calibracao extends React.Component {
+class Solvente extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            data: []
+            data: [],
         }
     }
 
     componentDidMount(){
-        // Lista calibrações de acordo com Id do equipamento recebido por get
-        this.listarCalibracao(this.props.match.params.equipamentoId);
+        this.listarSolventes();
     }
 
-    listarCalibracao = (equipamentoId) => {
-        axios.get('http://localhost:53048/api/calibracao/'+equipamentoId)
+    listarSolventes = () => {
+        axios.get('http://localhost:53048/api/solvente')
         .then(response => {
             let data = response.data;
             this.setState({
@@ -29,41 +28,32 @@ class Calibracao extends React.Component {
     }
     
     criar = (item) => {
-        axios.post('http://localhost:53048/api/calibracao', {
-            calibrado: item.calibrado,
-            validade: item.validade,
-            equipamentoId: parseInt(this.props.match.params.equipamentoId)
+        axios.post('http://localhost:53048/api/solvente', {
+            nome: item.nome
         })
         .then(reponse => {
-            this.listarCalibracao(this.props.match.params.equipamentoId);
+            this.listarSolventes();
         }).catch(error => {
-            // Post está retornando com erro no response do back, 
-            // mesmo que o registro tenha sido criado
-            // Issue aberto no back para solução e posteriormente conserto aqui
-
-            // alert('Erro: Não foi possível criar');
-            this.listarCalibracao(this.props.match.params.equipamentoId);
+            alert('Erro: Não foi possível criar');
         });
     }
 
     atualizar = (event, item) => {
-        axios.put('http://localhost:53048/api/calibracao/'+event, {
+        axios.put('http://localhost:53048/api/solvente/'+event, { 
             id: item.id,
-            calibrado: item.calibrado,
-            validade: item.validade,
-            equipamentoId: parseInt(this.props.match.params.equipamentoId)
+            nome: item.nome
         })
         .then(reponse => {
-            this.listarCalibracao(this.props.match.params.equipamentoId);
+            this.listarSolventes();
         }).catch(error => {
             alert('Erro: Não foi possível atualizar');
         });
     }
     
     apagar = (item) => {
-        axios.delete('http://localhost:53048/api/calibracao/'+item)
+        axios.delete('http://localhost:53048/api/solvente/'+item)
         .then(response => {
-            this.listarCalibracao(this.props.match.params.equipamentoId);
+            this.listarSolventes();
         }).catch(error => {
             alert('Erro: Não foi possível apagar');
         });
@@ -72,11 +62,10 @@ class Calibracao extends React.Component {
     render() {
         return (
             <MaterialTable
-                title="Calibrações"
+                title="Solventes"
                 columns={[
                     { title: 'Id', field: 'id', editable: 'never', defaultSort: 'desc' },
-                    { title: 'Calibrado', field: 'calibrado', type: 'date' },
-                    { title: 'Validade', field: 'validade', type: 'date' },
+                    { title: 'Solvente', field: 'nome' },
                 ]}
                 data={this.state.data}
                 options={{
@@ -88,6 +77,8 @@ class Calibracao extends React.Component {
                     padding: 'dense',
                     addRowPosition: 'first',
                     rowStyle: rowData => ({
+                        // backgroundColor: (rowData.tableData.id % 2 == 0) ? '#343a40' : '#3e444a',
+                        // color: '#FFF'
                         backgroundColor: (rowData.tableData.id % 2 === 0) ? '#FFF' : '#CCC',
                     })
                 }}
@@ -104,10 +95,10 @@ class Calibracao extends React.Component {
                             deleteText: 'Tem certeza que deseja apagar?',
                             cancelTooltip: 'Cancelar',
                             saveTooltip: 'Salvar'
-                    },
+                      },
                     },
                     toolbar: {
-                    exportTitle: 'Exportar'
+                      exportTitle: 'Exportar'
                     },
                     pagination: {
                         labelRowsSelect: 'linhas',
@@ -145,4 +136,4 @@ class Calibracao extends React.Component {
     }
 }
 
-export default Calibracao;
+export default Solvente;

@@ -8,18 +8,24 @@ import NavBar from "./NavBar";
 import Calibracao from './Calibracao';
 import Equipamento from './Equipamento';
 import Padrao from './Padrao';
+import Solucao from './Solucao';
+import Solvente from './Solvente';
 import TipoEquipamento from './TipoEquipamento';
 import Unidade from './Unidade';
 import Erro404 from './Erro404';
 
+import demo from './demo';
+
 const paginasComNavBar = () => (
     <div>
         <NavBar />
+        <Route path="/demo" exact={true} component={demo} />
         <Route path="/Equipamento" exact={true} component={Equipamento} />
         <Route path="/Padrao" exact={true} component={Padrao} />
+        <Route path="/Solucao" exact={true} component={Solucao} />
+        <Route path="/Solvente" exact={true} component={Solvente} />
         <Route path="/TipoEquipamento" exact={true} component={TipoEquipamento} />
         <Route path="/Unidade" exact={true} component={Unidade} />
-        <Route path='*' component={Erro404} />
     </div>
 )
 
