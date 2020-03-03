@@ -1,7 +1,7 @@
-# Projeto LIMS - Laboratory Information Management System
-- Este repositório é o front do ProjetoLIMS_.Net
+# Projeto OpenLIMS - Open Laboratory Information Management System
+- Este repositório é o front do projeto OpenLIMS_.Net (https://github.com/gonribeiro/OpenLIMS_.Net)
 
-# Soluções
+# Problemas e Soluções
 - Ícones no material-table
 ```
 Adicionar no cabeçalho de index.html
@@ -12,17 +12,17 @@ Adicionar no cabeçalho de index.html
 />
 ```
 
-# Comandos
+# Anotações rápidas
 - Instalação dos pacotes
 ```
 create-react-app app-react
 Axios - npm install axios --save
 Route - npm install react-router-dom --save
-Material-Ui - npm install @material-ui/core --save
+Material Ui - npm install @material-ui/core --save
 material icon - npm install @material-ui/icons
-Material-table - npm install material-table --save
+Material Table - npm install material-table --save
 Redux - npm i redux react-redux redux-form --save
 ```
 
 # Estudar
-ToDo: minChar na pesquisa do material-table, campos obrigatório, formatar/customizar campos (valor), melhor desempenho do data-table com grande volume de dados, modal material-ui
+ToDo: minChar na pesquisa do material-table, campos obrigatório, formatar/customizar campos (valor), melhor desempenho do data-table com grande volume de dados
