@@ -13,9 +13,9 @@ class Equipamento extends React.Component {
 
         this.state = {
             data: [],
-            tiposEquipamento: {}, // tiposEquipamento tem que ser coleção para campo combobox
             open: false,
-            url: ''
+            url: '',
+            tiposEquipamento: {},
         }
     }
 
@@ -42,11 +42,11 @@ class Equipamento extends React.Component {
             // Formata o retorno da unidade para listar adequadamente no combobox do data-table
             // Pega somente os tiposEquipamento e salva em array
             let tiposEquipamento = response.data.map((item, key) =>
-                item.tipo
+                [item.id, item.tipo]
             );
             // Formata array em string com indice de todas os tiposEquipamento
             let tipoEquipamentoFormatadaParaComboBox = tiposEquipamento.reduce(function(acc, cur, i) {
-                acc[i+1] = cur;
+                acc[cur[0]] = cur[1];
                 return acc;
             }, {});
             this.setState({
@@ -124,14 +124,17 @@ class Equipamento extends React.Component {
                         timeout: 500,
                     }}
                 >
-                    <iframe
-                        width="720px"
-                        height="450"
-                        src={this.state.url}
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                    />
+                    <div onClick={handleClose} style={{ textAlign: 'center' }} >
+                        <br/><br/><br/><br/>
+                        <iframe
+                            width="720px"
+                            height="450"
+                            src={this.state.url}
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        />
+                    </div>
                 </Modal>
                 <MaterialTable
                     title="Equipamentos"
@@ -192,20 +195,6 @@ class Equipamento extends React.Component {
                             nextTooltip: 'próximo',
                             lastTooltip: 'último'
                         }
-                    }}
-                    detailPanel={rowData => {
-                        return (
-                            <div
-                                style={{
-                                    fontSize: 50,
-                                    textAlign: 'center',
-                                    color: 'white',
-                                    backgroundColor: '#43A047',
-                                }}
-                            >
-                                Exemplo de "detalhes" do material-table
-                            </div>
-                        )
                     }}
                     editable={{
                     onRowAdd: newData =>

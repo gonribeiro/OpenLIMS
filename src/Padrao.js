@@ -35,11 +35,11 @@ class Padrao extends React.Component {
             // Formata o retorno da unidade para listar adequadamente no combobox do data-table
             // Pega somente as unidades e salva em array
             let unidades = response.data.map((item, key) =>
-                item.un
+                [item.id, item.un]
             );
             // Formata array em string com indice de todas as unidades
             let unidadeFormatadaParaComboBox = unidades.reduce(function(acc, cur, i) {
-                acc[i+1] = cur;
+                acc[cur[0]] = cur[1];
                 return acc;
             }, {});
             this.setState({

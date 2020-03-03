@@ -1,10 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import MaterialTable from 'material-table';
-// Modal
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
 
 class Solucao extends React.Component {
     constructor(props) {
@@ -12,13 +8,19 @@ class Solucao extends React.Component {
 
         this.state = {
             data: [],
-            unidades: {}, // unidade tem que ser coleção para campo combobox
+            unidades: {}, 
+            padroes: {},
+            solventes: {},
+            equipamentos: {}
         }
     }
 
     componentDidMount(){
         this.listarSolucao();
+        this.listarPadroes();
+        this.listarSolventes();
         this.listarUnidades();
+        this.listarEquipamentos();
     }
 
     listarSolucao = () => {
@@ -32,6 +34,69 @@ class Solucao extends React.Component {
             console.log(error);
         });
     }
+
+    listarPadroes = () => {
+        axios.get('http://localhost:53048/api/Padrao')
+        .then(response => {
+            // Formata o retorno da unidade para listar adequadamente no combobox do data-table
+            // Pega somente as unidades e salva em array
+            let padroes = response.data.map((item, key) =>
+                [item.id, item.nome]
+            );
+            // Formata array em string com indice de todas as unidades
+            let padraoFormatadaParaComboBox = padroes.reduce(function(acc, cur, i) {
+                acc[cur[0]] = cur[1];
+                return acc;
+            }, {});
+            this.setState({
+                padroes: padraoFormatadaParaComboBox
+            })
+        }).catch(error => {
+            console.log(error);
+        });
+    }
+
+    listarSolventes = () => {
+        axios.get('http://localhost:53048/api/Solvente')
+        .then(response => {
+            // Formata o retorno da unidade para listar adequadamente no combobox do data-table
+            // Pega somente as unidades e salva em array
+            let solventes = response.data.map((item, key) =>
+                [item.id, item.nome]
+            );
+            // Formata array em string com indice de todas as unidades
+            let solventeFormatadaParaComboBox = solventes.reduce(function(acc, cur, i) {
+                acc[cur[0]] = cur[1];
+                return acc;
+            }, {});
+            this.setState({
+                solventes: solventeFormatadaParaComboBox
+            })
+        }).catch(error => {
+            console.log(error);
+        });
+    }
+
+    listarEquipamentos = () => {
+        axios.get('http://localhost:53048/api/Equipamento')
+        .then(response => {
+            // Formata o retorno da unidade para listar adequadamente no combobox do data-table
+            // Pega somente as unidades e salva em array
+            let equipamentos = response.data.map((item, key) =>
+                [item.id, item.nome]
+            );
+            // Formata array em string com indice de todas as unidades
+            let equipamentoFormatadaParaComboBox = equipamentos.reduce(function(acc, cur, i) {
+                acc[cur[0]] = cur[1];
+                return acc;
+            }, {});
+            this.setState({
+                equipamentos: equipamentoFormatadaParaComboBox
+            })
+        }).catch(error => {
+            console.log(error);
+        });
+    }
     
     listarUnidades = () => {
         axios.get('http://localhost:53048/api/Unidade')
@@ -39,11 +104,11 @@ class Solucao extends React.Component {
             // Formata o retorno da unidade para listar adequadamente no combobox do data-table
             // Pega somente as unidades e salva em array
             let unidades = response.data.map((item, key) =>
-                item.un
+                [item.id, item.un]
             );
             // Formata array em string com indice de todas as unidades
             let unidadeFormatadaParaComboBox = unidades.reduce(function(acc, cur, i) {
-                acc[i+1] = cur;
+                acc[cur[0]] = cur[1];
                 return acc;
             }, {});
             this.setState({
@@ -56,13 +121,13 @@ class Solucao extends React.Component {
     
     criar = (item) => {
         axios.post('http://localhost:53048/api/solucao', {
-            nome: item.nome,
+            padraoId: parseInt(item.padraoId),
+            solventeId: parseInt(item.solventeId),
+            equipamentoId: parseInt(item.equipamentoId),
             volume: parseInt(item.volume),
             unidadeId: parseInt(item.unidadeId),
-            valor: item.valor,
-            notaFiscal: item.notaFiscal,
             create_at: new Date(),
-            validade: item.validade
+            validade: new Date()
         })
         .then(reponse => {
             this.listarSolucao();
@@ -105,9 +170,21 @@ class Solucao extends React.Component {
                     title="Soluções"
                     columns={[
                         { title: 'Id', field: 'id', editable: 'never', defaultSort: 'desc' },
-                        { title: 'Padrão Matriz', field: 'padrao.nome' },
-                        { title: 'Solvente', field: 'solvente.nome' },
-                        { title: 'Equipamento', field: 'equipamento.nome' },
+                        {
+                            title: 'Padrão Matriz',
+                            field: 'padraoId',
+                            lookup: this.state.padroes,
+                        },
+                        {
+                            title: 'Solvente',
+                            field: 'solventeId',
+                            lookup: this.state.solventes,
+                        },
+                        {
+                            title: 'Equipamento',
+                            field: 'equipamentoId',
+                            lookup: this.state.equipamentos,
+                        },
                         { title: 'Volume', field: 'volume' },
                         {
                             title: 'Unidade',

@@ -118,12 +118,17 @@ export default function ElevateAppBar(props) {
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                 >
-                    <StyledMenuItem>
-                        <ListItemText primary="Amostras" />
-                    </StyledMenuItem>
-                    <StyledMenuItem>
-                        <ListItemText primary="Analises" />
-                    </StyledMenuItem>
+                    
+                    <a href="/Amostra">
+                        <StyledMenuItem>
+                            <ListItemText primary="Amostras" />
+                        </StyledMenuItem>
+                    </a>                    
+                    <a href="/Analise">
+                        <StyledMenuItem>
+                            <ListItemText primary="Analises" />
+                        </StyledMenuItem>
+                    </a>
                     <Divider />
                     <a href="/Padrao">
                         <StyledMenuItem>
