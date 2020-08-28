@@ -1,0 +1,764 @@
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\tiago\Desktop\LIMS\LIMS\obj\Debug\netcoreapp3.0\LIMS.csprojAssemblyReference.cache
+C:\Users\tiago\Desktop\LIMS\LIMS\obj\Debug\netcoreapp3.0\staticwebassets\LIMS.StaticWebAssets.Manifest.cache
+C:\Users\tiago\Desktop\LIMS\LIMS\obj\Debug\netcoreapp3.0\staticwebassets\LIMS.StaticWebAssets.xml
+C:\Users\tiago\Desktop\LIMS\LIMS\obj\Debug\netcoreapp3.0\LIMS.AssemblyInfoInputs.cache
+C:\Users\tiago\Desktop\LIMS\LIMS\obj\Debug\netcoreapp3.0\LIMS.AssemblyInfo.cs
+C:\Users\tiago\Desktop\LIMS\LIMS\obj\Debug\netcoreapp3.0\LIMS.RazorTargetAssemblyInfo.cache
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\LIMS.exe
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Bcl.HashCode.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\MySqlConnector.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Pomelo.JsonObject.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\obj\Debug\netcoreapp3.0\LIMS.csproj.CopyComplete
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Data.Sqlite.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.core.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\System.Composition.AttributedModel.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Convention.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Hosting.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Runtime.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\System.Composition.TypedParts.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\LIMS.deps.json
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\LIMS.runtimeconfig.json
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\LIMS.runtimeconfig.dev.json
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\LIMS.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\bin\Debug\netcoreapp3.0\LIMS.pdb
+C:\Users\tiago\Desktop\LIMS\LIMS\obj\Debug\netcoreapp3.0\LIMS.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tiago\Desktop\LIMS\LIMS\obj\Debug\netcoreapp3.0\LIMS.dll
+C:\Users\tiago\Desktop\LIMS\LIMS\obj\Debug\netcoreapp3.0\LIMS.pdb
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.exe
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.deps.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.runtimeconfig.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.runtimeconfig.dev.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.pdb
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Data.Sqlite.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\MySqlConnector.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Pomelo.JsonObject.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.core.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.AttributedModel.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Convention.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Hosting.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Runtime.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.TypedParts.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.csprojAssemblyReference.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\staticwebassets\LIMS.StaticWebAssets.Manifest.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\staticwebassets\LIMS.StaticWebAssets.xml
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.AssemblyInfoInputs.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.AssemblyInfo.cs
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.RazorTargetAssemblyInfo.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.csproj.CopyComplete
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.pdb
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.MvcApplicationPartsAssemblyInfo.cache
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\appsettings.json
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.exe
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.deps.json
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.runtimeconfig.json
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.runtimeconfig.dev.json
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.pdb
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Bcl.HashCode.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Razor.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Data.Sqlite.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\dotnet-aspnet-codegenerator-design.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\MySqlConnector.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Pomelo.JsonObject.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.batteries_v2.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.nativelibrary.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.core.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.AttributedModel.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Convention.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Hosting.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Runtime.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.TypedParts.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.csprojAssemblyReference.cache
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\staticwebassets\LIMS.StaticWebAssets.Manifest.cache
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\staticwebassets\LIMS.StaticWebAssets.xml
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.MvcApplicationPartsAssemblyInfo.cache
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.AssemblyInfoInputs.cache
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.AssemblyInfo.cs
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.RazorTargetAssemblyInfo.cache
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.csproj.CopyComplete
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.dll
+C:\DOC\OneDrive - IQ-UFRJ\Cursos\Dev\.NET Core\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.pdb
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.exe
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.deps.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.runtimeconfig.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.runtimeconfig.dev.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\LIMS.pdb
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Data.Sqlite.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\MySqlConnector.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\Pomelo.JsonObject.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.core.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.AttributedModel.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Convention.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Hosting.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Runtime.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Composition.TypedParts.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.csprojAssemblyReference.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\staticwebassets\LIMS.StaticWebAssets.Manifest.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\staticwebassets\LIMS.StaticWebAssets.xml
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.AssemblyInfoInputs.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.AssemblyInfo.cs
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.RazorTargetAssemblyInfo.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.csproj.CopyComplete
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\LIMS\obj\Debug\netcoreapp3.0\LIMS.pdb
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\LIMS.exe
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\LIMS.deps.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\LIMS.runtimeconfig.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\LIMS.runtimeconfig.dev.json
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\LIMS.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\LIMS.pdb
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Data.Sqlite.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\MySqlConnector.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\Pomelo.JsonObject.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.core.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\System.Composition.AttributedModel.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Convention.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Hosting.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\System.Composition.Runtime.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\System.Composition.TypedParts.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\obj\Debug\netcoreapp3.0\LIMS.csprojAssemblyReference.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\obj\Debug\netcoreapp3.0\LIMS.AssemblyInfoInputs.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\obj\Debug\netcoreapp3.0\LIMS.AssemblyInfo.cs
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\obj\Debug\netcoreapp3.0\LIMS.csproj.CoreCompileInputs.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\obj\Debug\netcoreapp3.0\LIMS.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\obj\Debug\netcoreapp3.0\LIMS.RazorTargetAssemblyInfo.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\obj\Debug\netcoreapp3.0\LIMS.csproj.CopyComplete
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\obj\Debug\netcoreapp3.0\staticwebassets\LIMS.StaticWebAssets.Manifest.cache
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\obj\Debug\netcoreapp3.0\staticwebassets\LIMS.StaticWebAssets.xml
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\obj\Debug\netcoreapp3.0\LIMS.dll
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\obj\Debug\netcoreapp3.0\LIMS.pdb
+C:\Users\Tiago\Desktop\OneDrive - IQ-UFRJ\Cursos\Dev\.NET\ProjetoLIMS_.Net\dotnetcore\LIMS\obj\Debug\netcoreapp3.0\LIMS.genruntimeconfig.cache
