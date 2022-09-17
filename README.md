@@ -1,1 +1,3 @@
-Projeto temporariamente interrompido
+# Open LIMS
+
+Em construção
