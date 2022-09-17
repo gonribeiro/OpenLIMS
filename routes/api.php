@@ -1,11 +1,11 @@
 <?php
 
+use App\Http\Controllers\v1\AnalysisController;
 use App\Http\Controllers\v1\SampleController;
 use App\Http\Controllers\v1\SampleTypeController;
 use App\Http\Controllers\v1\TestController;
 use App\Http\Controllers\v1\UserController;
 use App\Models\Analysis;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,7 +23,7 @@ Route::prefix('v1')->group(function () {
     Route::resource('user', UserController::class)->except('create', 'edit');
     Route::resource('sampleType', SampleTypeController::class)->except('create', 'edit');
     Route::resource('sample', SampleController::class)->except('create', 'edit');
-    Route::resource('analyses', Analysis::class)->except('create', 'edit');
+    Route::resource('analysis', AnalysisController::class)->except('create', 'edit');
     Route::resource('test', TestController::class)->except('create', 'edit');
 });
 

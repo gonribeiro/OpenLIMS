@@ -11,6 +11,8 @@ class SampleType extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $guarded = [''];
+
     public function samples(): HasMany
     {
         return $this->hasMany(Sample::class);

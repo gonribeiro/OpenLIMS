@@ -11,6 +11,8 @@ class Analysis extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $guarded = [''];
+
     public function sampleType(): BelongsTo
     {
         return $this->belongsTo(SampleType::class);
