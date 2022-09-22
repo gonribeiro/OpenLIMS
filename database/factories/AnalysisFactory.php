@@ -2,7 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Models\SampleType;
+use App\Enums\SampleType;
+use App\Models\AnalysisType;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -20,9 +21,10 @@ class AnalysisFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'sample_type_id' => SampleType::find(rand(1, count(SampleType::all()))),
-            'result_attributes' => '{}',
+            'sample_type' => SampleType::getRandomValue(),
+            'attributes' => '{}',
             'created_by_id' => User::find(rand(1, count(User::all()))),
+            'analysis_type_id' => AnalysisType::find(rand(1, count(AnalysisType::all()))),
         ];
     }
 }

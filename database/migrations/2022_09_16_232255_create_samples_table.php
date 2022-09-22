@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\SampleType;
 use App\Enums\Status;
 use App\Enums\UnitMeasurement;
 use Illuminate\Database\Migrations\Migration;
@@ -17,7 +18,7 @@ return new class extends Migration
     {
         Schema::create('samples', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('sample_type_id');
+            $table->enum('sample_type', SampleType::getValues())->nullable();
             $table->string('internal_id')->nullable();
             $table->string('external_id')->nullable();
             $table->foreignId('customer_id');

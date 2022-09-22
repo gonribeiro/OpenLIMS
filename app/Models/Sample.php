@@ -14,7 +14,7 @@ class Sample extends Model
 
     protected $guarded = [''];
 
-    protected $with = ['tests'];
+    protected $with = ['tests', 'subsamples'];
 
     public function customer(): BelongsTo
     {
@@ -44,5 +44,10 @@ class Sample extends Model
     public function tests(): HasMany
     {
         return $this->hasMany(Test::class);
+    }
+
+    public function subsamples(): HasMany
+    {
+        return $this->hasMany(Subsample::class);
     }
 }

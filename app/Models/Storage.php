@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class SampleType extends Model
+class Storage extends Model
 {
     use HasFactory, SoftDeletes;
 
@@ -15,6 +15,11 @@ class SampleType extends Model
 
     public function samples(): HasMany
     {
-        return $this->hasMany(Sample::class);
+        return $this->hasMany(Sample::class); 
+    }
+
+    public function subsamples(): HasMany
+    {
+        return $this->hasMany(Subsample::class); 
     }
 }

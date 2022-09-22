@@ -23,7 +23,7 @@ class TestFactory extends Factory
         return [
             'sample_id' => Sample::find(rand(1, count(Sample::all()))),
             'sample_type' => 'Sample',
-            'analysis_id' => Analysis::find(rand(1, count(Analysis::all()))),
+            'analysis_type_id' => Analysis::find(rand(1, count(Analysis::all()))),
             'status' => Status::getRandomValue(),
             'created_by_id' => User::find(rand(1, count(User::all()))),
         ];

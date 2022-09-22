@@ -14,7 +14,7 @@ class Test extends Model
 
     protected $guarded = [''];
 
-    public function sample(): MorphTo
+    public function sample(): MorphTo // sample or subsample
     {
         return $this->morphTo();
     }

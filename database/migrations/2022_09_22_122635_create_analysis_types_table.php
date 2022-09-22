@@ -1,6 +1,5 @@
 <?php
 
-use App\Enums\Status;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -14,17 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tests', function (Blueprint $table) {
+        Schema::create('analysis_types', function (Blueprint $table) {
             $table->id();
-            $table->morphs('sample');
-            $table->foreignId('analysis_type_id');
-            $table->enum('status', Status::getValues())->nullable();
+            $table->string('name')->unique();
             $table->text('description')->nullable();
-            $table->foreignId('created_by_id');
+            $table->json('attributes');
             $table->timestamps();
             $table->softDeletes();
-
-            $table->foreign('created_by_id')->references('id')->on('users');
         });
     }
 
@@ -35,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tests');
+        Schema::dropIfExists('analysis_types');
     }
 };

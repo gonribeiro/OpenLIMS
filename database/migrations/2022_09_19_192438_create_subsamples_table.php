@@ -1,6 +1,7 @@
 <?php
 
 use App\Enums\Status;
+use App\Enums\UnitMeasurement;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -14,17 +15,20 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tests', function (Blueprint $table) {
+        Schema::create('subsamples', function (Blueprint $table) {
             $table->id();
-            $table->morphs('sample');
-            $table->foreignId('analysis_type_id');
+            $table->foreignId('sample_id');
+            $table->foreignId('order_id')->nullable();
+            $table->decimal('value_unit');
             $table->enum('status', Status::getValues())->nullable();
+            $table->enum('unit', UnitMeasurement::getValues());
+            $table->dateTime('received_date');
+            $table->foreignId('received_by_id');
             $table->text('description')->nullable();
-            $table->foreignId('created_by_id');
+            $table->dateTime('discarded_date')->nullable();
+            $table->foreignId('discarded_by_id')->nullable();
             $table->timestamps();
             $table->softDeletes();
-
-            $table->foreign('created_by_id')->references('id')->on('users');
         });
     }
 
@@ -35,6 +39,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tests');
+        Schema::dropIfExists('subsamples');
     }
 };
