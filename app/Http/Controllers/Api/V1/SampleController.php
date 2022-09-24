@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Sample;
-use App\Models\Test;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
@@ -24,13 +23,11 @@ class SampleController extends Controller
                     $newSample = Sample::create($sample);
 
                     if (isset($sample['tests'])) {
-                        foreach ($sample['tests'] as $test) {
-                            $newTest = new Test($test);
+                        $newSample->tests()->createMany($sample['tests']);
+                    }
 
-                            $newTest->sample()->associate($newSample);
-
-                            $newTest->save();
-                        }
+                    if (isset($sample['custody'])) {
+                        $newSample->custodies()->createMany([$sample['custody']]);
                     }
                 }
             });

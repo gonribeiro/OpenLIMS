@@ -3,12 +3,13 @@
 namespace Database\Factories;
 
 use App\Enums\Status;
+use App\Models\Test;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Incident>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Result>
  */
-class IncidentFactory extends Factory
+class ResultFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,9 +19,9 @@ class IncidentFactory extends Factory
     public function definition()
     {
         return [
-            'nc' => rand(0, 1),
-            'incident' => fake()->text(),
+            'test_id' => Test::find(rand(1, count(Test::all()))),
             'status' => Status::getRandomValue(),
+            'attributes' => '{}',
         ];
     }
 }

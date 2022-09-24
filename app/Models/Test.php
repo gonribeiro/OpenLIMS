@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -22,6 +23,11 @@ class Test extends Model
     public function analysis(): BelongsTo
     {
         return $this->belongsTo(Analysis::class);
+    }
+
+    public function results(): HasMany
+    {
+        return $this->hasMany(Result::class);
     }
 
     public function createdBy(): BelongsTo

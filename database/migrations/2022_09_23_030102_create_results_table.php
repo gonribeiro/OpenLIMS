@@ -14,12 +14,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('incidents', function (Blueprint $table) {
+        Schema::create('results', function (Blueprint $table) {
             $table->id();
-            $table->boolean('nc')->default(0);
+            $table->foreignId('test_id');
             $table->enum('status', Status::getValues())->nullable();
-            $table->text('incident');
-            $table->text('resolution')->nullable();
+            $table->json('attributes');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -32,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('incidents');
+        Schema::dropIfExists('results');
     }
 };

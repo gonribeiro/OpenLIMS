@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\CustodyType;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -13,8 +14,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('sample_incidents', function (Blueprint $table) {
+        Schema::create('custodies', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('storage_id');
+            $table->morphs('sample');
+            $table->enum('custody_type', CustodyType::getValues())->nullable();
+            $table->text('reason');
             $table->timestamps();
         });
     }
@@ -26,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sample_incidents');
+        Schema::dropIfExists('custodies');
     }
 };

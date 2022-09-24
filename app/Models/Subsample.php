@@ -5,7 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Subsample extends Model
@@ -15,6 +16,8 @@ class Subsample extends Model
     protected $guarded = [''];
 
     protected $with = ['tests'];
+
+    protected $appends = ['storage'];
 
     public function sample(): BelongsTo
     {
@@ -31,8 +34,23 @@ class Subsample extends Model
         return $this->belongsTo(Order::class);
     }
 
-    public function tests(): HasMany
+    public function tests(): MorphMany
     {
-        return $this->hasMany(Test::class, 'sample_id');
+        return $this->morphMany(Test::class, 'sample');
+    }
+
+    public function custodies(): MorphMany
+    {
+        return $this->morphMany(Custody::class, 'sample');
+    }
+
+    public function getStorageAttribute(): string | null
+    {
+        return $this->custodies->last()?->storage->name;
+    }
+
+    public function incidents(): MorphToMany
+    {
+        return $this->morphToMany(Incident::class, 'incidentable');
     }
 }

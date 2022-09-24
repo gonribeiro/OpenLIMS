@@ -1,6 +1,5 @@
 <?php
 
-use App\Enums\Status;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -14,14 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('incidents', function (Blueprint $table) {
+        Schema::create('incidentables', function (Blueprint $table) {
             $table->id();
-            $table->boolean('nc')->default(0);
-            $table->enum('status', Status::getValues())->nullable();
-            $table->text('incident');
-            $table->text('resolution')->nullable();
-            $table->timestamps();
-            $table->softDeletes();
+            $table->foreignId('incident_id');
+            $table->morphs('incidentable');
         });
     }
 
@@ -32,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('incidents');
+        Schema::dropIfExists('incidentable');
     }
 };

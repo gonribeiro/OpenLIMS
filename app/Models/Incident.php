@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Incident extends Model
@@ -13,13 +12,15 @@ class Incident extends Model
 
     protected $guarded = [''];
 
-    public function samples(): HasMany
+    protected $with = ['samples', 'subsamples'];
+
+    public function samples()
     {
-        return $this->hasMany(Sample::class); 
+        return $this->morphedByMany(Sample::class, 'incidentable');
     }
 
-    public function subsamples(): HasMany
+    public function subsamples()
     {
-        return $this->hasMany(Subsample::class); 
+        return $this->morphedByMany(Subsample::class, 'incidentable');
     }
 }

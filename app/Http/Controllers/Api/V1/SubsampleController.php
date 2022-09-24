@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Subsample;
-use App\Models\Test;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
@@ -24,13 +23,11 @@ class SubsampleController extends Controller
                     $newSubsample = Subsample::create($subsample);
 
                     if (isset($subsample['tests'])) {
-                        foreach ($subsample['tests'] as $test) {
-                            $newTest = new Test($test);
+                        $newSubsample->tests()->createMany($subsample['tests']);
+                    }
 
-                            $newTest->sample()->associate($newSubsample);
-
-                            $newTest->save();
-                        }
+                    if (isset($subsample['custody'])) {
+                        $newSubsample->custodies()->createMany([$subsample['custody']]);
                     }
                 }
             });
