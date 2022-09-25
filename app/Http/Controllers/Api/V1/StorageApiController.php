@@ -3,20 +3,21 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StorageRequest;
+use App\Http\Services\StorageService;
 use App\Models\Storage;
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class StorageController extends Controller
+class StorageApiController extends Controller
 {
     public function index(): Response
     {
         return response(Storage::all());
     }
 
-    public function store(Request $request): Response
+    public function store(StorageRequest $request): Response
     {
-        $storage = Storage::create($request->all());
+        $storage = StorageService::store($request);
 
         return response($storage, 201);
     }
@@ -26,24 +27,16 @@ class StorageController extends Controller
         return response($storage);
     }
 
-    public function update(Request $request, int $id): Response
+    public function update(StorageRequest $request, int $id): Response
     {
-        if ($request->restore) {
-            $storage = Storage::withTrashed()->where('id', $id)->first();
-
-            $storage->restore();
-        } else {
-            $storage = Storage::find($id);
-
-            $storage->update($request->all());
-        }
+        $storage = StorageService::update($request, $id);
 
         return response($storage, 204);
     }
 
     public function destroy(Storage $storage): Response
     {
-        $storage->delete();
+        StorageService::destroy($storage);
 
         return response('Successfully deleted', 204);
     }

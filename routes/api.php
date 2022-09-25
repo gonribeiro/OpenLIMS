@@ -8,10 +8,10 @@ use App\Http\Controllers\Api\V1\OrderController;
 use App\Http\Controllers\Api\V1\OrderTypeController;
 use App\Http\Controllers\Api\V1\ResultController;
 use App\Http\Controllers\Api\V1\SampleController;
-use App\Http\Controllers\Api\V1\StorageController;
+use App\Http\Controllers\Api\V1\StorageApiController;
 use App\Http\Controllers\Api\V1\SubsampleController;
 use App\Http\Controllers\Api\V1\TestController;
-use App\Http\Controllers\Api\V1\UserController;
+use App\Http\Controllers\Api\V1\UserApiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,24 +26,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('v1')->group(function () {
-    Route::resource('analysis', AnalysisController::class)->except('create', 'edit');
-    Route::resource('analysisType', AnalysisTypeController::class)->except('create', 'edit');
-    Route::prefix('custody')->group(function () {
-        Route::get('bySample/sampleType/{sample_type}/sampleId/{sample_id}', [CustodyController::class, 'custodiesBySample']);
-        Route::post('storeSample', [CustodyController::class, 'storeSample']);
-        Route::post('storeSubsample', [CustodyController::class, 'storeSubsample']);
+    Route::name('api.')->group(function () {
+        Route::apiResource('analysis', AnalysisController::class);
+        Route::apiResource('analysisType', AnalysisTypeController::class);
+        Route::prefix('custody')->group(function () {
+            Route::get('bySample/sampleType/{sample_type}/sampleId/{sample_id}', [CustodyController::class, 'custodiesBySample']);
+            Route::post('storeSample', [CustodyController::class, 'storeSample']);
+            Route::post('storeSubsample', [CustodyController::class, 'storeSubsample']);
+        });
+        Route::apiResource('incident', IncidentController::class);
+        Route::apiResource('order', OrderController::class);
+        Route::apiResource('orderType', OrderTypeController::class);
+        Route::apiResource('result', ResultController::class);
+        Route::apiResource('sample', SampleController::class)->only('index', 'store', 'destroy');
+        Route::get('sample/findByIds/{ids}', [SampleController::class, 'findByIds']);
+        Route::patch('sample/updateByIds', [SampleController::class, 'updateByIds']);
+        Route::apiResource('storage', StorageApiController::class);
+        Route::apiResource('subsample', SubsampleController::class);
+        Route::apiResource('test', TestController::class)->only('index', 'update', 'destroy');
+        Route::apiResource('user', UserApiController::class);
     });
-    Route::resource('incident', IncidentController::class)->except('create', 'edit');
-    Route::resource('order', OrderController::class)->except('create', 'edit');
-    Route::resource('orderType', OrderTypeController::class)->except('create', 'edit');
-    Route::resource('result', ResultController::class)->except('create', 'edit');
-    Route::resource('sample', SampleController::class)->only('index', 'store', 'destroy');
-    Route::get('sample/findByIds/{ids}', [SampleController::class, 'findByIds']);
-    Route::patch('sample/updateByIds', [SampleController::class, 'updateByIds']);
-    Route::resource('storage', StorageController::class)->except('create', 'edit');
-    Route::resource('subsample', SubsampleController::class)->except('create', 'edit');
-    Route::resource('test', TestController::class)->only('update', 'destroy', 'index');
-    Route::resource('user', UserController::class)->except('create', 'edit');
 });
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
