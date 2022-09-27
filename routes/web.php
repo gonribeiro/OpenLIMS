@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnalysisController;
 use App\Http\Controllers\SampleController;
 use App\Http\Controllers\StorageController;
 use App\Http\Controllers\UserController;
@@ -20,6 +21,10 @@ Route::get('/', function () {
     return view('users.index');
 });
 
-Route::resource('user', UserController::class)->except('show', 'destroy');
+Route::resource('analysis', AnalysisController::class)->except('show', 'destroy');
 Route::resource('storage', StorageController::class)->except('show', 'destroy');
-// Route::resource('sample', SampleController::class)->except('show');
+Route::resource('user', UserController::class)->except('show', 'destroy');
+Route::resource('sample', SampleController::class)->except('create', 'show', 'destroy');
+Route::get('sample/quantityCreate', [SampleController::class, 'quantityCreate'])->name('sample.quantityCreate');
+Route::post('sample/create', [SampleController::class, 'create'])->name('sample.create');
+

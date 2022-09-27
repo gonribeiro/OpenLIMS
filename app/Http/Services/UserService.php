@@ -4,9 +4,15 @@ namespace App\Http\Services;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
 
 class UserService
 {
+    public static function index(): Collection
+    {
+        return User::orderBy('id', 'desc')->get();
+    }
+
     public static function store(Request $request): User
     {
         return User::create($request->all());

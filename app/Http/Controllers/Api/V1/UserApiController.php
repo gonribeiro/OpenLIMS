@@ -6,14 +6,13 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\UserRequest;
 use App\Http\Services\UserService;
 use App\Models\User;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 
 class UserApiController extends Controller
 {
     public function index(): Response
     {
-        return response(User::orderBy('id', 'desc')->get());
+        return response(UserService::index());
     }
 
     public function store(UserRequest $request): Response

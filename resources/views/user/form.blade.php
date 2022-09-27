@@ -30,9 +30,9 @@
             <div class="col-md-10">
                 @include('components.input', ['name' => 'name', 'required' => true, 'value' => $user->name ?? old('name') ])
             </div>
-            {{-- <div class="col-md-2">
+            <div class="col-md-2">
                 @include('components.input', ['name' => 'birthdate', 'required' => true, 'type' => 'date', 'value' => $user->birthdate ?? old('birthdate') ])
-            </div> --}}
+            </div>
         </div>
         <div class="row">
             <div class="col-md-6">
@@ -42,7 +42,7 @@
                 @include('components.input', ['name' => 'password', 'required' => true, 'type' => 'password', 'value' => $user->password ?? old('password') ])
             </div>
         </div>
-        {{-- <div class="row">
+        <div class="row">
             <div class="col-md-3">
                 <label for="Country">Country</label>
                 <select class="countries" name="country" required>
@@ -56,9 +56,9 @@
                 <label for="City">City</label>
                 <select class="cities" name="city" required>
                     <option value="{{ old('city') }}">{{ old('city') }}</option>
-                    @foreach ($cities as $city)
-                        <option value="{{ $city->city }}" @if(isset($user) && $city->city == $user->city) selected @endif>{{ $city->city }}</option>
-                    @endforeach
+                    @if (isset($user) && $user->city)
+                        <option value="{{ $user->city }}" selected>{{ $user->city }}</option>
+                    @endif
                 </select>
             </div>
             <div class="col-md-3">
@@ -82,13 +82,6 @@
                 @include('components.input', ['name' => 'currency', 'value' => $user->currency ?? old('currency') ])
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <label for="Groups">Groups</label>
-                <select class="groups" name="groups" multiple="multiple" required>
-                </select>
-            </div>
-        </div> --}}
     </div>
 </div>
 
@@ -107,7 +100,7 @@
 
 <script src="/js/resourceDestroy.js"></script>
 
-{{-- <script>
+<script>
     // select2
     $(document).ready(function() {
         $('.countries').select2({
@@ -140,19 +133,44 @@
 
         $('.cities').select2({
             tags: true,
-            createTag: function (newCity) {
-                var city = $.trim(newCity.term);
+            ajax: {
+                url: 'https://restcountries.com/v3.1/all',
+                dataType: 'json',
+                delay: 250,
+                processResults: function (response, search) {
+                    return {
+                        results: $.map(response, function (option) {
+                            if (search.term != undefined) {
+                                if (option.name.common.toLowerCase().includes(search.term.toLowerCase())) {
+                                    return {
+                                        id: option.name.common,
+                                        text: option.name.common
+                                    }
+                                }
+                            } else {
+                                return {
+                                    id: option.name.common,
+                                    text: option.name.common
+                                }
+                            }
+                        })
+                    };
+                },
+                createTag: function (newCity) {
+                    var city = $.trim(newCity.term);
 
-                return {
-                    id: city,
-                    text: city,
-                    newTag: true
-                }
-            },
+                    return {
+                        id: city,
+                        text: city,
+                        newTag: true
+                    }
+                },
+                cache: true
+            }
         });
 
         $('.groups').select2({});
     });
-</script> --}}
+</script>
 
 @endsection

@@ -1,13 +1,12 @@
 <?php
 
-use App\Http\Controllers\Api\V1\AnalysisController;
-use App\Http\Controllers\Api\V1\AnalysisTypeController;
+use App\Http\Controllers\Api\V1\AnalysisApiController;
 use App\Http\Controllers\Api\V1\CustodyController;
 use App\Http\Controllers\Api\V1\IncidentController;
 use App\Http\Controllers\Api\V1\OrderController;
 use App\Http\Controllers\Api\V1\OrderTypeController;
 use App\Http\Controllers\Api\V1\ResultController;
-use App\Http\Controllers\Api\V1\SampleController;
+use App\Http\Controllers\Api\V1\SampleApiController;
 use App\Http\Controllers\Api\V1\StorageApiController;
 use App\Http\Controllers\Api\V1\SubsampleController;
 use App\Http\Controllers\Api\V1\TestController;
@@ -27,8 +26,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function () {
     Route::name('api.')->group(function () {
-        Route::apiResource('analysis', AnalysisController::class);
-        Route::apiResource('analysisType', AnalysisTypeController::class);
+        Route::apiResource('analysis', AnalysisApiController::class);
         Route::prefix('custody')->group(function () {
             Route::get('bySample/sampleType/{sample_type}/sampleId/{sample_id}', [CustodyController::class, 'custodiesBySample']);
             Route::post('storeSample', [CustodyController::class, 'storeSample']);
@@ -38,9 +36,9 @@ Route::prefix('v1')->group(function () {
         Route::apiResource('order', OrderController::class);
         Route::apiResource('orderType', OrderTypeController::class);
         Route::apiResource('result', ResultController::class);
-        Route::apiResource('sample', SampleController::class)->only('index', 'store', 'destroy');
-        Route::get('sample/findByIds/{ids}', [SampleController::class, 'findByIds']);
-        Route::patch('sample/updateByIds', [SampleController::class, 'updateByIds']);
+        Route::apiResource('sample', SampleApiController::class)->only('index', 'store', 'destroy');
+        Route::get('sample/findByIds/{ids}', [SampleApiController::class, 'findByIds']);
+        Route::patch('sample/updateByIds', [SampleApiController::class, 'updateByIds']);
         Route::apiResource('storage', StorageApiController::class);
         Route::apiResource('subsample', SubsampleController::class);
         Route::apiResource('test', TestController::class)->only('index', 'update', 'destroy');

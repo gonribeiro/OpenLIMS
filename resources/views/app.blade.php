@@ -17,10 +17,13 @@
     </head>
     <body class="font-sans antialiased">
         @include('components.navbar')
+        @include('utils.messages')
 
         <div style="max-width: 1000px; margin: auto; margin-top: 5px; padding: 5px">
-            @include('utils.messages')
             @yield('content')
+        </div>
+        <div class="container-fluid">
+            @yield('content2')
         </div>
 
         <script>

@@ -4,9 +4,15 @@ namespace App\Http\Services;
 
 use App\Models\Storage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
 
 class StorageService
 {
+    public static function index(): Collection
+    {
+        return Storage::orderBy('id', 'desc')->get();
+    }
+
     public static function store(Request $request): Storage
     {
         return Storage::create($request->all());
@@ -15,16 +21,16 @@ class StorageService
     public static function update(Request $request, int $id): Storage
     {
         if ($request->restore) {
-            $user = Storage::withTrashed()->where('id', $id)->first();
+            $storage = Storage::withTrashed()->where('id', $id)->first();
 
-            $user->restore();
+            $storage->restore();
         } else {
-            $user = Storage::find($id);
+            $storage = Storage::find($id);
 
-            $user->update($request->all());
+            $storage->update($request->all());
         }
 
-        return $user;
+        return $storage;
     }
 
     public static function destroy(Storage $storage): void

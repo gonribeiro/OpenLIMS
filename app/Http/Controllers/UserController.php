@@ -12,12 +12,12 @@ class UserController extends Controller
 {
     public function index(): View
     {
-        return view('users.index');
+        return view('user.index');
     }
 
     public function create(): View
     {
-        return view('users.form');
+        return view('user.form');
     }
 
     public function store(UserRequest $request): RedirectResponse
@@ -29,7 +29,7 @@ class UserController extends Controller
 
     public function edit(User $user): View
     {
-        return view('users.form', compact('user'));
+        return view('user.form', compact('user'));
     }
 
     public function update(UserRequest $request, int $id): RedirectResponse

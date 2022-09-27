@@ -1,9 +1,8 @@
-<label for="{{ $name }}">{{ $label ?? \Str::ucfirst($name) }}@if(isset($required))* @endif</label>
+@if(!isset($hiddenLabel)) <label for="{{ $name }}">{{ $label ?? \Str::ucfirst($name) }}@if(isset($required))* @endif</label> @endif
 <input
     class="form-control form-control-sm"
     type="{{ $type ?? 'text' }}"
-    id="{{ $name }}"
-    name="{{ $name }}"
+    @if(isset($arrayName)) name="{{ $arrayName }}[{{ $arrayIndex }}][{{ $name }}]" @else name="{{ $name }}" @endif
     value="{{ $value ?? '' }}"
 
     @if(isset($type) && $type == 'number')

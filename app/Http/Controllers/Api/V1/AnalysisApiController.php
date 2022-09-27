@@ -3,20 +3,21 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
+use App\Http\Services\AnalysisService;
 use App\Models\Analysis;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class AnalysisController extends Controller
+class AnalysisApiController extends Controller
 {
     public function index(): Response
     {
-        return response(Analysis::all());
+        return response(AnalysisService::index());
     }
 
     public function store(Request $request): Response
     {
-        $analysis = Analysis::create($request->all());
+        $analysis = AnalysisService::store($request);
 
         return response($analysis, 201);
     }
@@ -28,22 +29,14 @@ class AnalysisController extends Controller
 
     public function update(Request $request, int $id): Response
     {
-        if ($request->restore) {
-            $analysis = Analysis::withTrashed()->where('id', $id)->first();
-
-            $analysis->restore();
-        } else {
-            $analysis = Analysis::find($id);
-
-            $analysis->update($request->all());
-        }
+        $analysis = AnalysisService::update($request, $id);
 
         return response($analysis, 204);
     }
 
     public function destroy(Analysis $analysi): Response
     {
-        $analysi->delete();
+        AnalysisService::destroy($analysi);
 
         return response('Successfully deleted', 204);
     }

@@ -17,17 +17,15 @@ return new class extends Migration
     {
         Schema::create('analyses', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('analysis_type_id');
             $table->string('name')->unique();
-            $table->enum('sample_type', SampleType::getValues())->nullable();
-            $table->enum('status', Status::getValues())->nullable();
+            $table->enum('sample_type', SampleType::getValues());
             $table->text('description')->nullable();
             $table->json('attributes');
-            $table->foreignId('created_by_id');
+            // $table->foreignId('created_by_id');
             $table->timestamps();
             $table->softDeletes();
 
-            $table->foreign('created_by_id')->references('id')->on('users');
+            // $table->foreign('created_by_id')->references('id')->on('users');
         });
     }
 

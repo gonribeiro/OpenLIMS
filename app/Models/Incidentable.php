@@ -9,7 +9,7 @@ class Incidentable extends Model
 {
     use HasFactory;
 
-    public $table = 'Incidentables';
+    public $table = 'incidentables';
 
     protected $guarded = [''];
 

@@ -23,8 +23,8 @@ return new class extends Migration
             $table->string('external_id')->nullable();
             $table->foreignId('customer_id');
             $table->decimal('value_unit');
-            $table->enum('status', Status::getValues())->nullable();
             $table->enum('unit', UnitMeasurement::getValues());
+            $table->enum('status', Status::getValues())->nullable();
             $table->dateTime('collected_date');
             $table->foreignId('collected_by_id');
             $table->dateTime('received_date');

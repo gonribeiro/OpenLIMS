@@ -23,15 +23,12 @@ class UserApiControllerTest extends TestCase
 
     public function testShouldBeAbleToCreateAUser()
     {
-        $user = [
-            "name" => fake()->name(),
-            "email" => fake()->email(),
-            "password" => "123Qwe..."
-        ];
+        $user = User::factory()->make();
+        $user->password = "123Qwe...";
 
-        $response = $this->post(route('api.user.store'), $user);
+        $response = $this->post(route('api.user.store'), $user->toArray());
 
-        $this->assertDatabaseHas('users', Arr::except($user, ['password']));
+        $this->assertDatabaseHas('users', Arr::except($user->toArray(), ['password', 'email_verified_at']));
 
         $response->assertCreated();
     }

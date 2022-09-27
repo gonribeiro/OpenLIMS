@@ -12,12 +12,12 @@ class StorageController extends Controller
 {
     public function index(): View
     {
-        return view('storages.index');
+        return view('storage.index');
     }
 
     public function create(): View
     {
-        return view('storages.form');
+        return view('storage.form');
     }
 
     public function store(StorageRequest $request): RedirectResponse
@@ -29,7 +29,7 @@ class StorageController extends Controller
 
     public function edit(Storage $storage): View
     {
-        return view('storages.form', compact('storage'));
+        return view('storage.form', compact('storage'));
     }
 
     public function update(StorageRequest $request, int $id): RedirectResponse

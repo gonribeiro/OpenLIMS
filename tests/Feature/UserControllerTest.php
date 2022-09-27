@@ -16,27 +16,24 @@ class UserControllerTest extends TestCase
     {
         $response = $this->get(route('user.index'));
 
-        $response->assertViewIs('users.index');
+        $response->assertViewIs('user.index');
     }
 
     public function testShouldBeAccessTheCreateUserPage()
     {
         $response = $this->get(route('user.create'));
 
-        $response->assertViewIs('users.form');
+        $response->assertViewIs('user.form');
     }
 
     public function testShouldBeAbleToCreateAUser()
     {
-        $user = [
-            "name" => fake()->name(),
-            "email" => fake()->email(),
-            "password" => "123Qwe..."
-        ];
+        $user = User::factory()->make();
+        $user->password = "123Qwe...";
 
-        $response = $this->post(route('user.store'), $user);
+        $response = $this->post(route('user.store'), $user->toArray());
 
-        $this->assertDatabaseHas('users', Arr::except($user, ['password']));
+        $this->assertDatabaseHas('users', Arr::except($user->toArray(), ['password', 'email_verified_at']));
 
         $user = User::get()->first();
         $response->assertRedirect(route('user.edit', $user));
@@ -48,7 +45,7 @@ class UserControllerTest extends TestCase
 
         $response = $this->get(route('user.edit', $user));
 
-        $response->assertViewIs('users.form');
+        $response->assertViewIs('user.form');
     }
 
     public function testShouldBeAbleToUpdateAUser()

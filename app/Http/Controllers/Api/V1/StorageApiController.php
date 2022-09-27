@@ -12,7 +12,7 @@ class StorageApiController extends Controller
 {
     public function index(): Response
     {
-        return response(Storage::all());
+        return response(StorageService::index());
     }
 
     public function store(StorageRequest $request): Response

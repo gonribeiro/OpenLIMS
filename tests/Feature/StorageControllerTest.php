@@ -15,14 +15,14 @@ class StorageControllerTest extends TestCase
     {
         $response = $this->get(route('storage.index'));
 
-        $response->assertViewIs('storages.index');
+        $response->assertViewIs('storage.index');
     }
 
     public function testShouldBeAccessTheCreateStoragePage()
     {
         $response = $this->get(route('storage.create'));
 
-        $response->assertViewIs('storages.form');
+        $response->assertViewIs('storage.form');
     }
 
     public function testShouldBeAbleToCreateAStorage()
@@ -43,7 +43,7 @@ class StorageControllerTest extends TestCase
 
         $response = $this->get(route('storage.edit', $storage));
 
-        $response->assertViewIs('storages.form');
+        $response->assertViewIs('storage.form');
     }
 
     public function testShouldBeAbleToUpdateAStorage()
