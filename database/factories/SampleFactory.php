@@ -21,8 +21,8 @@ class SampleFactory extends Factory
     public function definition()
     {
         return [
-            'internal_id' => fake()->numerify('##-####'),
-            'external_id' => fake()->numerify('##-####'),
+            'internalId' => fake()->numerify('##-####'),
+            'externalId' => fake()->numerify('##-####'),
             'customer_id' => User::find(rand(1, count(User::all()))),
             'value_unit' => rand(1, 10),
             'sample_type' => SampleType::getRandomValue(),

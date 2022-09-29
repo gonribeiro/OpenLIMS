@@ -6,4 +6,7 @@
     @if(isset($required)) required @endif
 >
     <option value="{{ old('option') }}">{{ old('option') }}</option>
+    @if (isset($valueId))
+        <option value="{{ $valueId }}" selected="selected">{{ $valueName }}</option>
+    @endif
 </select>

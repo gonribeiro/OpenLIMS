@@ -1,8 +1,8 @@
 @extends('app')
 @section('content2')
 
-@if (isset($sample))
-    <form action="{{ route('sample.update', $sample) }}" method="post">
+@if (isset($samples))
+    <form action="{{ route('sample.update') }}" method="post">
     @method('PATCH')
 @else
     <form action="{{ route('sample.store') }}" method="post">
@@ -10,15 +10,24 @@
 @endif
 @csrf
 
+<div align="right">
+    @include('components.buttonLink', ['name' => 'Back', 'url' => route('sample.index'), 'color' => 'link'])
+</div>
 <div class="card text-black bg-dark mb-3">
-    <div class="card-header text-white">Sample {{ $sample->externalId ?? '' }}</div>
+    <div class="card-header text-white">Sample</div>
     <div class="card-body bg-light overflow-auto">
         <table class="table table-sm table-hover">
             <tr>
-                <th><label>Sample Type*</label></th>
-                <th><label>Analysis/Tests*</label></th>
-                <th><label>Customer*</label></th>
+                @if (isset($samples))
+                    <th><label>Tests</label></th>
+                    <th><label>Internal_ID</label></th>
+                @endif
                 <th><label>External_ID*</label></th>
+                <th><label>Sample Type*</label></th>
+                @if (!isset($samples))
+                    <th><label>Analysis/Tests*</label></th>
+                @endif
+                    <th><label>Customer*</label></th>
                 <th><label>Received*</label></th>
                 <th><label>Received by*</label></th>
                 <th><label>Storage*</label></th>
@@ -26,15 +35,26 @@
                 <th><label>Collected by*</label></th>
                 <th><label>Volume/Mass*</label></th>
                 <th><label>Measurement_Unit*</label></th>
-                @if (!Request::routeIs('sample.create'))
+                <th><label>Description</label></th>
+                @if (isset($samples))
                     <th><label>Discarded</label></th>
                     <th><label>Discarded by</label></th>
+                    <th><label>Cancel</label></th>
                 @endif
-                <th><label>Description</label></th>
             </tr>
-            @for ($i = 0; $i < $quantity; $i++)
-                @include('sample.components.sampleInput')
-            @endfor
+            @if (!isset($samples))
+                @for ($i = 0; $i < $quantity; $i++)
+                    @include('sample.components.sampleInput')
+                @endfor
+            @else
+                @foreach ($samples as $i => $sample)
+                <input type="hidden" name="samples[{{ $i }}][id]" value="{{ $sample->id }}">
+                    @include('sample.components.sampleInput')
+                    @foreach ($sample->tests as $test)
+                        @include('sample.components.testInput')
+                    @endforeach
+                @endforeach
+            @endif
         </table>
     </div>
 </div>
@@ -42,6 +62,8 @@
 @include('components.buttonSubmit', ['name' => 'Save'])
 
 </form>
+
+<script src="/js/resourceDestroy.js"></script>
 
 <script>
     // select2

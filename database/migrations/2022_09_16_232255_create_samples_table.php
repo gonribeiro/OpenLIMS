@@ -19,8 +19,8 @@ return new class extends Migration
         Schema::create('samples', function (Blueprint $table) {
             $table->id();
             $table->enum('sample_type', SampleType::getValues())->nullable();
-            $table->string('internal_id')->nullable();
-            $table->string('external_id')->nullable();
+            $table->string('internalId')->nullable();
+            $table->string('externalId')->nullable();
             $table->foreignId('customer_id');
             $table->decimal('value_unit');
             $table->enum('unit', UnitMeasurement::getValues());

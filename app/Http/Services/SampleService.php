@@ -4,7 +4,9 @@ namespace App\Http\Services;
 
 use App\Models\Sample;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 
 class SampleService
 {
@@ -13,24 +15,44 @@ class SampleService
         return Sample::orderBy('id', 'desc')->get();
     }
 
-    public static function store(Request $request): Sample
+    public static function store(Request $request): void
     {
-        return Sample::create($request->all());
+        DB::transaction(function () use ($request) {
+            foreach ($request->samples as $sample) {
+                $newSample = Sample::create($sample);
+
+                if (isset($sample['tests'])) {
+                    $newSample->tests()->createMany($sample['tests']);
+                }
+
+                if (isset($sample['custody'])) {
+                    $newSample->custodies()->createMany([$sample['custody']]);
+                }
+            }
+        });
     }
 
-    public static function update(Request $request, int $id): Sample
+    public static function findByIds(string $ids): Collection
     {
-        if ($request->restore) {
-            $sample = Sample::withTrashed()->where('id', $id)->first();
+        return Sample::whereIn('id', explode(',', $ids))->get();
+    }
 
-            $sample->restore();
-        } else {
-            $sample = Sample::find($id);
+    public static function updateByIds(Request $request): void
+    {
+        DB::transaction(function () use ($request) {
+            foreach ($request->samples as $sample) {
 
-            $sample->update($request->all());
-        }
+                if (isset($sample['restore'])) {
+                    $updateSample = Sample::withTrashed()->where('id', $sample['id'])->first();
 
-        return $sample;
+                    $updateSample->restore();
+                } else {
+                    $updateSample = Sample::find($sample['id']);
+
+                    $updateSample->update($sample);
+                }
+            }
+        });
     }
 
     public static function destroy(Sample $sample): void

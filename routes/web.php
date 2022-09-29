@@ -18,13 +18,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('users.index');
+    return view('user.index');
 });
 
 Route::resource('analysis', AnalysisController::class)->except('show', 'destroy');
 Route::resource('storage', StorageController::class)->except('show', 'destroy');
 Route::resource('user', UserController::class)->except('show', 'destroy');
-Route::resource('sample', SampleController::class)->except('create', 'show', 'destroy');
-Route::get('sample/quantityCreate', [SampleController::class, 'quantityCreate'])->name('sample.quantityCreate');
-Route::post('sample/create', [SampleController::class, 'create'])->name('sample.create');
+Route::resource('sample', SampleController::class)->only('index', 'store', 'update');
+Route::prefix('sample')->group(function () {
+    Route::get('sampleQuantityDialog', [SampleController::class, 'sampleQuantityDialog'])->name('sample.sampleQuantityDialog');
+    Route::post('create', [SampleController::class, 'create'])->name('sample.create');
+    Route::get('{ids}/edit', [SampleController::class, 'edit'])->name('sample.edit');
+    Route::get('update', [SampleController::class, 'update'])->name('sample.update');
+});
 

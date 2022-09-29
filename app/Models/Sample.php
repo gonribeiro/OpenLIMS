@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -16,9 +17,9 @@ class Sample extends Model
 
     protected $guarded = [''];
 
-    protected $with = ['tests', 'subsamples'];
+    protected $with = ['lastCustody', 'tests', 'subsamples'];
 
-    protected $appends = ['storage'];
+    protected $dates = ['received_date', 'collected_date', 'discarded_date'];
 
     public function customer(): BelongsTo
     {
@@ -60,9 +61,9 @@ class Sample extends Model
         return $this->morphMany(Custody::class, 'sample');
     }
 
-    public function getStorageAttribute(): string | null
+    public function lastCustody(): MorphOne
     {
-        return $this->custodies->last()?->storage->name;
+        return $this->morphOne(Custody::class, 'sample')->latestOfMany();
     }
 
     public function incidents(): MorphToMany

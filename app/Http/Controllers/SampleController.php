@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\SampleRequest;
 use App\Http\Services\SampleService;
-use App\Models\Sample;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\View\View;
+use Illuminate\Support\Arr;
 
 class SampleController extends Controller
 {
@@ -16,7 +17,7 @@ class SampleController extends Controller
         return view('sample.index');
     }
 
-    public function quantityCreate(): View
+    public function sampleQuantityDialog(): View
     {
         return view('sample.sampleQuantityDialog');
     }
@@ -28,21 +29,37 @@ class SampleController extends Controller
 
     public function store(SampleRequest $request): RedirectResponse
     {
-        dd($request->all());
-        $sample = SampleService::store($request);
+        try {
+            SampleService::store($request);
+        } catch (\Throwable $th) {
+            Log::error($th);
 
-        return redirect()->route('sample.edit', $sample)->with('message', 'Saved!');
+            abort('403', 'Error!');
+        }
+
+        return redirect()->route('sample.index')->with('message', 'Saved!');
     }
 
-    public function edit(Sample $sample): View
+    public function edit(string $ids): View
     {
-        return view('sample.form', compact('sample'));
+        $samples = SampleService::findByIds($ids);
+
+        $quantity = $samples->count();
+
+        return view('sample.form', compact('samples', 'quantity'));
     }
 
-    public function update(SampleRequest $request, int $id): RedirectResponse
+    public function update(SampleRequest $request): RedirectResponse
     {
-        $sample = SampleService::update($request, $id);
+        try {
+            SampleService::updateByIds($request);
+        } catch (\Throwable $th) {
+            Log::error($th);
 
-        return redirect()->route('sample.edit', $sample)->with('message', 'Saved!');
+            abort('403', 'Error!');
+        }
+
+        return redirect()->route('sample.edit', implode(',', Arr::pluck($request->samples, 'id')))
+            ->with('message', 'Saved!');
     }
 }

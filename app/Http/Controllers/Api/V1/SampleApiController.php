@@ -3,35 +3,26 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
+use App\Http\Services\SampleService;
 use App\Models\Sample;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class SampleApiController extends Controller
 {
     public function index(): Response
     {
-        return response(Sample::orderBy('id', 'desc')->get());
+        return response(SampleService::index());
     }
 
     public function store(Request $request): Response
     {
         try {
-            DB::transaction(function () use ($request) {
-                foreach ($request->samples as $sample) {
-                    $newSample = Sample::create($sample);
-
-                    if (isset($sample['tests'])) {
-                        $newSample->tests()->createMany($sample['tests']);
-                    }
-
-                    if (isset($sample['custody'])) {
-                        $newSample->custodies()->createMany([$sample['custody']]);
-                    }
-                }
-            });
+            SampleService::store($request);
         } catch (\Throwable $th) {
+            Log::error($th);
+
             return response($th, 409);
         }
 
@@ -40,7 +31,7 @@ class SampleApiController extends Controller
 
     public function findByIds(string $ids): Response
     {
-        $samples = Sample::whereIn('id', explode(',', $ids))->get();
+        $samples = SampleService::findByIds($ids);
 
         return response($samples);
     }
@@ -48,21 +39,10 @@ class SampleApiController extends Controller
     public function updateByIds(Request $request): Response
     {
         try {
-            DB::transaction(function () use ($request) {
-                foreach ($request->samples as $sample) {
-
-                    if (isset($sample['restore'])) {
-                        $updateSample = Sample::withTrashed()->where('id', $sample['id'])->first();
-
-                        $updateSample->restore();
-                    } else {
-                        $updateSample = Sample::find($sample['id']);
-
-                        $updateSample->update($sample);
-                    }
-                }
-            });
+            SampleService::updateByIds($request);
         } catch (\Throwable $th) {
+            Log::error($th);
+
             return response($th, 409);
         }
 
@@ -71,7 +51,7 @@ class SampleApiController extends Controller
 
     public function destroy(Sample $sample): Response
     {
-        $sample->delete();
+        SampleService::destroy($sample);
 
         return response('Successfully deleted', 204);
     }

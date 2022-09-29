@@ -40,6 +40,8 @@
 
 </form>
 
+<script src="/js/resourceDestroy.js"></script>
+
 <script>
     $('.type').select2({});
 </script>
