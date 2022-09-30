@@ -19,11 +19,6 @@ class Analysis extends Model
         return $this->belongsTo(SampleType::class);
     }
 
-    public function orders(): HasMany
-    {
-        return $this->hasMany(Order::class);
-    }
-
     public function createdBy(): BelongsTo
     {
         return $this->belongsTo(User::class);

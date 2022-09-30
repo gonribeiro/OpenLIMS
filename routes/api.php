@@ -3,8 +3,6 @@
 use App\Http\Controllers\Api\V1\AnalysisApiController;
 use App\Http\Controllers\Api\V1\CustodyController;
 use App\Http\Controllers\Api\V1\IncidentController;
-use App\Http\Controllers\Api\V1\OrderController;
-use App\Http\Controllers\Api\V1\OrderTypeController;
 use App\Http\Controllers\Api\V1\ResultController;
 use App\Http\Controllers\Api\V1\SampleApiController;
 use App\Http\Controllers\Api\V1\StorageApiController;
@@ -33,8 +31,6 @@ Route::prefix('v1')->group(function () {
             Route::post('storeSubsample', [CustodyController::class, 'storeSubsample']);
         });
         Route::apiResource('incident', IncidentController::class);
-        Route::apiResource('order', OrderController::class);
-        Route::apiResource('orderType', OrderTypeController::class);
         Route::apiResource('result', ResultController::class);
         Route::apiResource('sample', SampleApiController::class)->only('index', 'store', 'destroy');
         Route::get('sample/findByIds/{ids}', [SampleApiController::class, 'findByIds'])->name('sample.findByIds');

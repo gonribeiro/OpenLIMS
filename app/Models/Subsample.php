@@ -29,11 +29,6 @@ class Subsample extends Model
         return $this->belongsTo(User::class, 'received_by_id');
     }
 
-    public function order(): BelongsTo
-    {
-        return $this->belongsTo(Order::class);
-    }
-
     public function tests(): MorphMany
     {
         return $this->morphMany(Test::class, 'sample');

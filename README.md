@@ -21,11 +21,11 @@ Este projeto tem um desafio em especial. Fornecer uma implementação em API que
 
 - Mas, por que? E qual é a diferença?
 
-Digamos que você é um desenvolvedor experiente e possui conhecimentos em diversas linguagens ou frameworks incluindo a de frontend ou possui uma equipe capacitada a lidar com desafios. Provavelmente você deve querer oferecer a melhor experiência de usuário possível para o seu cliente disponibilizando a ele acessos ao sistema via SPA e/ou Mobile. Neste caso, a API é recomendada. (Já existe um projeto web em desenvolvimento utilizando <a href="https://github.com/Honokai/open_lims" target="_blank" rel="noopener noreferrer">Next.JS</a>).
+Digamos que você é um desenvolvedor experiente e possui conhecimentos em diversas linguagens ou frameworks incluindo a de frontend ou possui uma equipe capacitada a lidar com desafios. Provavelmente você deve querer oferecer a melhor experiência de usuário possível para o seu cliente disponibilizando a ele acessos ao sistema via SPA e/ou Mobile. Neste caso, a API é recomendada. (<a href="https://github.com/Honokai/open_lims" target="_blank" rel="noopener noreferrer">Existe um projeto web em desenvolvimento utilizando Next.JS</a>).
 
-Agora digamos que você é o único(a) TI do seu laboratório. Sabemos bem como é desafiador manter tudo funcionando e um LIMS ajudaria muito a sua instituição, mas a aquisição de um sistema é caro e lhe resta apenas desenvolver um próprio. Ter um projeto construído em uma mesma linguagem que requer uma única infraestrutura para o seu funcionamento é muito mais fácil para se manter e atualizar. Neste caso, o MVC é a sua solução.
+Agora digamos que você é o único(a) TI do seu laboratório. Sabemos bem como é desafiador manter tudo funcionando e um LIMS ajudaria muito a sua instituição. Entretanto, a aquisição de um sistema é caro e lhe resta apenas desenvolver um próprio. Ter um projeto construído em uma mesma linguagem que requer uma única infraestrutura para o seu funcionamento é muito mais fácil para se manter e atualizar. Neste caso, o MVC é a sua solução.
 
-O grande motivo desse projeto ser desenvolvido em Laravel é devido ao framework ser poderoso para atender o seu negócio e possuir uma linguagem de fácil aprendizado e uma documentação que "só falta pegar você no colo e te carregar para onde desejar, rs".
+O grande motivo desse projeto ser desenvolvido em Laravel é devido ao framework ser poderoso para atender ao seu negócio, possuir uma linguagem de fácil aprendizado e uma documentação que "só falta pegar você no colo e te carregar para onde desejar, rs".
 
 - Etapas:
     - ☑️ Métodos implementados para API
@@ -37,6 +37,7 @@ O grande motivo desse projeto ser desenvolvido em Laravel é devido ao framework
     - 🔳 Testes automatizados do frontend MVC
     - 🔳 Logs
     - 🔳 Emails
+    - 🔳 Login
     - 🔳 ...
 
 - Recursos:
@@ -83,4 +84,4 @@ php artisan serve
 ```
 
 - O projeto ficará disponível pelo endereço: http://localhost:8000/
-- Na pasta .github há o arquivo "OpenLIMS_Insomnia_2022-09-24.json". Este arquivo contém todos os parâmetros e chamadas da API. Com ele poderá conhecer o funcionamento e testar o que está implementado até o momento (em breve o Swagger será implementado disponibilizando uma documentação adequada para o projeto).
+- Na pasta .github há o arquivo "OpenLIMS_Insomnia.json". Este arquivo contém todos os parâmetros e chamadas da API. Com ele poderá conhecer o funcionamento e testar o que está implementado até o momento (em breve o Swagger será implementado disponibilizando uma documentação adequada para o projeto).
