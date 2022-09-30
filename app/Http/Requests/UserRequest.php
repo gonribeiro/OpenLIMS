@@ -34,7 +34,10 @@ class UserRequest extends FormRequest
                 Rule::requiredIf(!$this->restore),
                 'string'
             ],
-            // 'birthdate' => 'required|date',
+            'birthdate' => [
+                Rule::requiredIf(!$this->restore),
+                'date'
+            ],
             'email' => [
                 Rule::requiredIf(!$this->restore),
                 Rule::unique('users', 'email')->ignore($this->user),
@@ -43,18 +46,31 @@ class UserRequest extends FormRequest
                 Rule::requiredIf(!$this->restore),
                 Password::min(8)->mixedCase()->numbers()->symbols()
             ],
-            // 'country' => 'required|string',
-            // 'city' => 'required|string',
-            // 'address' => 'required|string',
-            // 'postcode' => 'required|string',
-            // 'phone' => [
-            //     'required',
-            //     Rule::unique('users', 'phone')->ignore($this->user),
-            // ],
-            // 'cellphone' => [
-            //     Rule::unique('users', 'cellphone')->ignore($this->user),
-            // ],
-            // 'remuneration' => 'nullable|numeric'
+            'country' => [
+                Rule::requiredIf(!$this->restore),
+                'string'
+            ],
+            'city' => [
+                Rule::requiredIf(!$this->restore),
+                'string'
+            ],
+            'address' => [
+                Rule::requiredIf(!$this->restore),
+                'string'
+            ],
+            'postcode' => [
+                Rule::requiredIf(!$this->restore),
+                'string'
+            ],
+            'cellphone' => [
+                'string'
+            ],
+            'remuneration' => [
+                'numeric'
+            ],
+            'currency' => [
+                'string'
+            ],
         ];
     }
 

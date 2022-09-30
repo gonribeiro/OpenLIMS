@@ -21,11 +21,8 @@ return new class extends Migration
             $table->enum('sample_type', SampleType::getValues());
             $table->text('description')->nullable();
             $table->json('attributes');
-            // $table->foreignId('created_by_id');
             $table->timestamps();
             $table->softDeletes();
-
-            // $table->foreign('created_by_id')->references('id')->on('users');
         });
     }
 

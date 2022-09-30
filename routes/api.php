@@ -37,8 +37,8 @@ Route::prefix('v1')->group(function () {
         Route::apiResource('orderType', OrderTypeController::class);
         Route::apiResource('result', ResultController::class);
         Route::apiResource('sample', SampleApiController::class)->only('index', 'store', 'destroy');
-        Route::get('sample/findByIds/{ids}', [SampleApiController::class, 'findByIds']);
-        Route::patch('sample/updateByIds', [SampleApiController::class, 'updateByIds']);
+        Route::get('sample/findByIds/{ids}', [SampleApiController::class, 'findByIds'])->name('sample.findByIds');
+        Route::patch('sample/updateByIds', [SampleApiController::class, 'updateByIds'])->name('sample.updateByIds');
         Route::apiResource('storage', StorageApiController::class);
         Route::apiResource('subsample', SubsampleController::class);
         Route::apiResource('test', TestController::class)->only('index', 'update', 'destroy');

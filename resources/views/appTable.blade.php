@@ -26,6 +26,7 @@
     </head>
     <body class="antialiased px-10 py-8">
         @include('components.navbar')
+        @include('utils.messages')
         <div class="container-fluid">
             <font size="2">
                 @yield('content')

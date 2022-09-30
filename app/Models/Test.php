@@ -15,6 +15,8 @@ class Test extends Model
 
     protected $guarded = [''];
 
+    protected $with = ['analysis'];
+
     public function sample(): MorphTo // sample or subsample
     {
         return $this->morphTo();
@@ -30,8 +32,8 @@ class Test extends Model
         return $this->hasMany(Result::class);
     }
 
-    public function createdBy(): BelongsTo
-    {
-        return $this->belongsTo(User::class);
-    }
+    // public function createdBy(): BelongsTo
+    // {
+    //     return $this->belongsTo(User::class);
+    // }
 }

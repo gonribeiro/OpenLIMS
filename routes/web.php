@@ -24,11 +24,11 @@ Route::get('/', function () {
 Route::resource('analysis', AnalysisController::class)->except('show', 'destroy');
 Route::resource('storage', StorageController::class)->except('show', 'destroy');
 Route::resource('user', UserController::class)->except('show', 'destroy');
-Route::resource('sample', SampleController::class)->only('index', 'store', 'update');
+Route::resource('sample', SampleController::class)->only('index', 'store');
 Route::prefix('sample')->group(function () {
-    Route::get('sampleQuantityDialog', [SampleController::class, 'sampleQuantityDialog'])->name('sample.sampleQuantityDialog');
-    Route::post('create', [SampleController::class, 'create'])->name('sample.create');
+    Route::get('quantityCreateDialog', [SampleController::class, 'quantityCreateDialog'])->name('sample.quantityCreateDialog');
+    Route::get('create', [SampleController::class, 'create'])->name('sample.create');
     Route::get('{ids}/edit', [SampleController::class, 'edit'])->name('sample.edit');
-    Route::get('update', [SampleController::class, 'update'])->name('sample.update');
+    Route::patch('updateByIds', [SampleController::class, 'updateByIds'])->name('sample.updateByIds');
 });
 

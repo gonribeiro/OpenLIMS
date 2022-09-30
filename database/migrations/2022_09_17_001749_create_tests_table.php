@@ -17,14 +17,10 @@ return new class extends Migration
         Schema::create('tests', function (Blueprint $table) {
             $table->id();
             $table->morphs('sample');
-            $table->foreignId('analysis_type_id');
+            $table->foreignId('analysis_id');
             $table->enum('status', Status::getValues())->nullable();
-            $table->text('description')->nullable();
-            $table->foreignId('created_by_id');
             $table->timestamps();
             $table->softDeletes();
-
-            $table->foreign('created_by_id')->references('id')->on('users');
         });
     }
 

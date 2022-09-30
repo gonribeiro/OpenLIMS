@@ -1,8 +1,7 @@
 @extends('app')
 @section('content')
 
-<form action="{{ route('sample.create') }}" method="post">
-@method('POST')
+<form action="{{ route('sample.create') }}" method="get">
 @csrf
 
 <div class="card text-black bg-dark mb-3">

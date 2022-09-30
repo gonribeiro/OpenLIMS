@@ -31,7 +31,7 @@ class StorageApiControllerTest extends TestCase
         $response->assertCreated();
     }
 
-    public function testShouldBeAbleShowAStorage()
+    public function testShouldBeAbleToShowAStorage()
     {
         $storage = Storage::factory()->create();
 

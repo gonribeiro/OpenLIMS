@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use App\Enums\SampleType;
+use App\Enums\UnitMeasurement;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 use Illuminate\Http\Exceptions\HttpResponseException;
@@ -30,19 +31,54 @@ class SampleRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => [
-            //     Rule::requiredIf(!$this->restore),
-            //     'string',
-            //     Rule::unique('analyses', 'name')->ignore($this->analysi),
-            // ],
-            // 'sample_type' => [
-            //     Rule::requiredIf(!$this->restore),
-            //     Rule::in(SampleType::getValues())
-            // ],
-            // 'attributes' => [
-            //     Rule::requiredIf(!$this->restore),
-            //     'json',
-            // ],
+            'samples.*.externalId' => [
+                Rule::requiredIf('samples.*.restore' == 'restore'),
+                'string',
+            ],
+            'samples.*.sample_type' => [
+                Rule::requiredIf('samples.*.restore' == 'restore'),
+                Rule::in(SampleType::getValues())
+            ],
+            'samples.*.customer_id' => [
+                Rule::requiredIf('samples.*.restore' == 'restore'),
+                'int'
+            ],
+            'samples.*.received_date' => [
+                Rule::requiredIf('samples.*.restore' == 'restore'),
+                'date'
+            ],
+            'samples.*.received_by_id' => [
+                Rule::requiredIf('samples.*.restore' == 'restore'),
+                'int'
+            ],
+            'samples.*.storage_id' => [
+                'int'
+            ],
+            'samples.*.collected_date' => [
+                Rule::requiredIf('samples.*.restore' == 'restore'),
+                'date'
+            ],
+            'samples.*.collected_by_id' => [
+                Rule::requiredIf('samples.*.restore' == 'restore'),
+                'int'
+            ],
+            'samples.*.value_unit' => [
+                Rule::requiredIf('samples.*.restore' == 'restore'),
+                'numeric'
+            ],
+            'samples.*.unit' => [
+                Rule::requiredIf('samples.*.restore' == 'restore'),
+                Rule::in(UnitMeasurement::getValues())
+            ],
+            'samples.*.discarded_date' => [
+                'date'
+            ],
+            'samples.*.discarded_by_id' => [
+                'int'
+            ],
+            'samples.*.description' => [
+                'string'
+            ],
         ];
     }
 

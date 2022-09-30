@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\SampleRequest;
 use App\Http\Services\SampleService;
 use App\Models\Sample;
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Log;
 
@@ -16,7 +16,7 @@ class SampleApiController extends Controller
         return response(SampleService::index());
     }
 
-    public function store(Request $request): Response
+    public function store(SampleRequest $request): Response
     {
         try {
             SampleService::store($request);
@@ -26,7 +26,7 @@ class SampleApiController extends Controller
             return response($th, 409);
         }
 
-        return response(201);
+        return response('Created!', 201);
     }
 
     public function findByIds(string $ids): Response
@@ -36,7 +36,7 @@ class SampleApiController extends Controller
         return response($samples);
     }
 
-    public function updateByIds(Request $request): Response
+    public function updateByIds(SampleRequest $request): Response
     {
         try {
             SampleService::updateByIds($request);

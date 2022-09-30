@@ -52,15 +52,11 @@ class UserControllerTest extends TestCase
     {
         $user = User::factory()->create();
 
-        $userUpdate = [
-            "name" => fake()->name(),
-            "email" => fake()->email(),
-            "password" => "123Qwe..."
-        ];
+        $userUpdate = User::factory(['password' => '123Qwe...'])->make()->toArray();
 
         $response = $this->patch(route('user.update', $user), $userUpdate);
 
-        $this->assertDatabaseHas('users', Arr::except($userUpdate, ['password']));
+        $this->assertDatabaseHas('users', Arr::except($userUpdate, ['password', 'email_verified_at']));
 
         $response->assertRedirect(route('user.edit', $user));
     }

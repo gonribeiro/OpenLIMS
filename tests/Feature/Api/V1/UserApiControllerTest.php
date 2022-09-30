@@ -33,7 +33,7 @@ class UserApiControllerTest extends TestCase
         $response->assertCreated();
     }
 
-    public function testShouldBeAbleShowAUser()
+    public function testShouldBeAbleToShowAUser()
     {
         $user = User::factory()->create();
 
@@ -48,15 +48,11 @@ class UserApiControllerTest extends TestCase
     {
         $user = User::factory()->create();
 
-        $userUpdate = [
-            "name" => fake()->name(),
-            "email" => fake()->email(),
-            "password" => "123Qwe..."
-        ];
+        $userUpdate = User::factory(['password' => '123Qwe...'])->make()->toArray();
 
         $response = $this->patch(route('api.user.update', $user), $userUpdate);
 
-        $this->assertDatabaseHas('users', Arr::except($userUpdate, ['password']));
+        $this->assertDatabaseHas('users', Arr::except($userUpdate, ['password', 'email_verified_at']));
 
         $response->assertNoContent();
     }

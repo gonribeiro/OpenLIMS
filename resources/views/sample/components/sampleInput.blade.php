@@ -1,4 +1,7 @@
 <tr>
+    <td>
+        {{ $i }}
+    </td>
     @if (isset($sample))
         <td class="text-center">
             <button
@@ -21,7 +24,7 @@
                 'name' => 'internalId',
                 'disabled' => true,
                 'hiddenLabel' => true,
-                'value' => $sample->internalId
+                'value' => $sample->internalId ?? old('samples.internalId')
             ])
         </td>
     @endif
@@ -32,7 +35,7 @@
             'arrayName' => 'samples',
             'arrayIndex' => $i,
             'hiddenLabel' => true,
-            'value' => $sample->externalId ?? old('externalId')
+            'value' => $sample->externalId ?? old('samples.externalId')
         ])
     </td>
     <td>
@@ -51,8 +54,8 @@
         <td>
             @include('components.selectAjax', [
                 'label' => 'analyses',
+                'arrayName' => 'tests',
                 'name' => 'tests',
-                'required' => true,
                 'hiddenLabel' => true,
                 'multiple' => true,
                 'arrayName' => 'samples',
@@ -99,12 +102,13 @@
     <td>
         @include('components.selectAjax', [
             'label' => 'storage',
+            'arrayName' => 'custody',
             'name' => 'storage_id',
             'required' => true,
             'arrayName' => 'samples',
             'arrayIndex' => $i,
             'hiddenLabel' => true,
-            'valueId' => $sample->lastCustody->id ?? old('storage_id'),
+            'valueId' => $sample->lastCustody->storage->id ?? old('storage_id'),
             'valueName' => $sample->lastCustody->storage->name ?? old('storage_id')
         ])
     </td>
@@ -133,7 +137,7 @@
     </td>
     <td>
         @include('components.input', [
-            'name' => 'volume',
+            'name' => 'value_unit',
             'type' => 'number',
             'required' => true,
             'arrayName' => 'samples',

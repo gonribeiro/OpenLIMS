@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignId('storage_id');
             $table->morphs('sample');
             $table->enum('custody_type', CustodyType::getValues())->nullable();
-            $table->text('reason');
+            $table->text('reason')->nullable();
             $table->timestamps();
         });
     }

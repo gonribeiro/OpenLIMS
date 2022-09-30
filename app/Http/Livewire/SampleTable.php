@@ -39,7 +39,7 @@ final class SampleTable extends PowerGridComponent
                 leading-tight focus:outline-none focus:bg-white focus:border-gray-600 dark:border-gray-500
                 dark:bg-gray-500 2xl:dark:placeholder-gray-300 dark:text-gray-200 dark:text-gray-300 mt-2')
                 ->target('_self')
-                ->route('sample.sampleQuantityDialog', ['']),
+                ->route('sample.quantityCreateDialog', ['']),
 
             Button::add('edit')
                 ->tooltip('Edit Samples')
@@ -80,17 +80,29 @@ final class SampleTable extends PowerGridComponent
 
     public function relationSearch(): array
     {
-        return [];
+        return [
+            'customer' => [
+                'name'
+            ]
+        ];
     }
 
     public function addColumns(): PowerGridEloquent
     {
-        return PowerGrid::eloquent();
+        return PowerGrid::eloquent()
+            ->addColumn('customer.name', function (Sample $sample) {
+                return $sample->customer->name;
+            })
+            ->addColumn('storage', function (Sample $sample) {
+                return $sample->lastCustody?->storage->name;
+            });
     }
 
     public function columns(): array
     {
         return [
+            Column::make('ID', 'id'),
+
             Column::make('SAMPLE TYPE', 'sample_type')
                 ->searchable()
                 ->makeInputText(),
@@ -103,7 +115,7 @@ final class SampleTable extends PowerGridComponent
                 ->searchable()
                 ->makeInputText(),
 
-            Column::make('CUSTOMER', 'customer_id')
+            Column::make('CUSTOMER', 'customer.name')
                 ->searchable()
                 ->makeInputText(),
 
@@ -116,6 +128,10 @@ final class SampleTable extends PowerGridComponent
                 ->makeInputText(),
                 
             Column::make('STATUS', 'status')
+                ->searchable()
+                ->makeInputText(),
+
+            Column::make('STORAGE AT', 'storage')
                 ->searchable()
                 ->makeInputText(),
 

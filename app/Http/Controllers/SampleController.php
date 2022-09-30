@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SampleQuantityCreateDialogRequest;
 use App\Http\Requests\SampleRequest;
 use App\Http\Services\SampleService;
 use Illuminate\Http\RedirectResponse;
@@ -17,12 +18,12 @@ class SampleController extends Controller
         return view('sample.index');
     }
 
-    public function sampleQuantityDialog(): View
+    public function quantityCreateDialog(): View
     {
-        return view('sample.sampleQuantityDialog');
+        return view('sample.quantityCreateDialog');
     }
 
-    public function create(Request $request): View
+    public function create(SampleQuantityCreateDialogRequest $request): View
     {
         return view('sample.form')->with('quantity', $request->quantity);
     }
@@ -49,7 +50,7 @@ class SampleController extends Controller
         return view('sample.form', compact('samples', 'quantity'));
     }
 
-    public function update(SampleRequest $request): RedirectResponse
+    public function updateByIds(SampleRequest $request): RedirectResponse
     {
         try {
             SampleService::updateByIds($request);

@@ -4,7 +4,6 @@ namespace App\Http\Services;
 
 use App\Models\Sample;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 
@@ -25,8 +24,8 @@ class SampleService
                     $newSample->tests()->createMany($sample['tests']);
                 }
 
-                if (isset($sample['custody'])) {
-                    $newSample->custodies()->createMany([$sample['custody']]);
+                if (isset($sample['storage_id'])) {
+                    $newSample->custodies()->create(['storage_id' => $sample['storage_id']]);
                 }
             }
         });
@@ -41,7 +40,6 @@ class SampleService
     {
         DB::transaction(function () use ($request) {
             foreach ($request->samples as $sample) {
-
                 if (isset($sample['restore'])) {
                     $updateSample = Sample::withTrashed()->where('id', $sample['id'])->first();
 
@@ -50,6 +48,10 @@ class SampleService
                     $updateSample = Sample::find($sample['id']);
 
                     $updateSample->update($sample);
+
+                    if (isset($sample['storage_id']) && $sample['storage_id'] != $updateSample->lastCustody->storage->id) {
+                        $updateSample->custodies()->create(['storage_id' => $sample['storage_id']]);
+                    }
                 }
             }
         });
