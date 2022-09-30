@@ -31,7 +31,7 @@
                 <th><label>Customer*</label></th>
                 <th><label>Received*</label></th>
                 <th><label>Received by*</label></th>
-                <th><label>Storage*</label></th>
+                <th><label>Storage</label></th>
                 <th><label>Collected*</label></th>
                 <th><label>Collected by*</label></th>
                 <th><label>Volume/Mass*</label></th>
@@ -51,8 +51,23 @@
                 @foreach ($samples as $i => $sample)
                 <input type="hidden" name="samples[{{ $i }}][id]" value="{{ $sample->id }}">
                     @include('sample.components.sampleInput')
+                    <tr class="collapse" id="collapseTest{{ $i }}">
+                        <td colspan="4">
+                            @include('components.selectAjax', [
+                                'label' => 'analyses',
+                                'hiddenLabel' => true,
+                                'multiple' => true,
+                                'arrayName' => 'samples',
+                                'arrayIndex' => $i,
+                                'name' => 'tests',
+                            ])
+                        </td>
+                        <td colspan="13"></td>
+                    </tr>
                     @foreach ($sample->tests as $test)
-                        @include('sample.components.testInput')
+                        <tr class="collapse" id="collapseTest{{ $i }}">
+                            @include('sample.components.testInput')
+                        </tr>
                     @endforeach
                 @endforeach
             @endif

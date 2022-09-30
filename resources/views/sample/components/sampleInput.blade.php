@@ -54,12 +54,11 @@
         <td>
             @include('components.selectAjax', [
                 'label' => 'analyses',
-                'arrayName' => 'tests',
-                'name' => 'tests',
                 'hiddenLabel' => true,
                 'multiple' => true,
                 'arrayName' => 'samples',
                 'arrayIndex' => $i,
+                'name' => 'tests',
             ])
         </td>
     @endif
@@ -104,7 +103,6 @@
             'label' => 'storage',
             'arrayName' => 'custody',
             'name' => 'storage_id',
-            'required' => true,
             'arrayName' => 'samples',
             'arrayIndex' => $i,
             'hiddenLabel' => true,

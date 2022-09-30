@@ -39,6 +39,10 @@ class SampleRequest extends FormRequest
                 Rule::requiredIf('samples.*.restore' == 'restore'),
                 Rule::in(SampleType::getValues())
             ],
+            'samples.*.tests' => [
+                Rule::requiredIf('samples.*.restore' == 'restore'),
+                'array'
+            ],
             'samples.*.customer_id' => [
                 Rule::requiredIf('samples.*.restore' == 'restore'),
                 'int'
@@ -51,9 +55,7 @@ class SampleRequest extends FormRequest
                 Rule::requiredIf('samples.*.restore' == 'restore'),
                 'int'
             ],
-            'samples.*.storage_id' => [
-                'int'
-            ],
+            'samples.*.storage_id' => 'nullable|int',
             'samples.*.collected_date' => [
                 Rule::requiredIf('samples.*.restore' == 'restore'),
                 'date'
@@ -70,15 +72,9 @@ class SampleRequest extends FormRequest
                 Rule::requiredIf('samples.*.restore' == 'restore'),
                 Rule::in(UnitMeasurement::getValues())
             ],
-            'samples.*.discarded_date' => [
-                'date'
-            ],
-            'samples.*.discarded_by_id' => [
-                'int'
-            ],
-            'samples.*.description' => [
-                'string'
-            ],
+            'samples.*.discarded_date' => 'date|nullable',
+            'samples.*.discarded_by_id' => 'int|nullable',
+            'samples.*.description' => 'string|nullable'
         ];
     }
 

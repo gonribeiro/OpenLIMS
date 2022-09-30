@@ -46,8 +46,12 @@ class SampleService
                     $updateSample->restore();
                 } else {
                     $updateSample = Sample::find($sample['id']);
-
+                    
                     $updateSample->update($sample);
+
+                    if (isset($sample['tests'])) {
+                        $updateSample->tests()->createMany($sample['tests']);
+                    }
 
                     if (isset($sample['storage_id']) && $sample['storage_id'] != $updateSample->lastCustody->storage->id) {
                         $updateSample->custodies()->create(['storage_id' => $sample['storage_id']]);
