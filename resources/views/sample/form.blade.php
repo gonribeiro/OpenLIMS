@@ -31,7 +31,9 @@
                 <th><label>Customer*</label></th>
                 <th><label>Received*</label></th>
                 <th><label>Received by*</label></th>
-                <th><label>Storage</label></th>
+                @if (!isset($samples))
+                    <th><label>Storage</label></th>
+                @endif
                 <th><label>Collected*</label></th>
                 <th><label>Collected by*</label></th>
                 <th><label>Volume/Mass*</label></th>
@@ -54,8 +56,7 @@
                     <tr class="collapse" id="collapseTest{{ $i }}">
                         <td colspan="4">
                             @include('components.selectAjax', [
-                                'label' => 'analyses',
-                                'hiddenLabel' => true,
+                                'label' => 'Add analysis/tests',
                                 'multiple' => true,
                                 'arrayName' => 'samples',
                                 'arrayIndex' => $i,

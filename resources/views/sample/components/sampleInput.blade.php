@@ -98,18 +98,20 @@
             'valueName' => $sample->receivedBy->name ?? old('received_by_id')
         ])
     </td>
-    <td>
-        @include('components.selectAjax', [
-            'label' => 'storage',
-            'arrayName' => 'custody',
-            'name' => 'storage_id',
-            'arrayName' => 'samples',
-            'arrayIndex' => $i,
-            'hiddenLabel' => true,
-            'valueId' => $sample->lastCustody->storage->id ?? old('storage_id'),
-            'valueName' => $sample->lastCustody->storage->name ?? old('storage_id')
-        ])
-    </td>
+    @if (!isset($sample))
+        <td>
+            @include('components.selectAjax', [
+                'label' => 'storage',
+                'arrayName' => 'custody',
+                'name' => 'storage_id',
+                'arrayName' => 'samples',
+                'arrayIndex' => $i,
+                'hiddenLabel' => true,
+                'valueId' => $sample->lastCustody->storage->id ?? old('storage_id'),
+                'valueName' => $sample->lastCustody->storage->name ?? old('storage_id')
+            ])
+        </td>
+    @endif
     <td>
         @include('components.input', [
             'name' => 'collected_date',

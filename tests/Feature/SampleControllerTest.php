@@ -60,18 +60,10 @@ class SampleControllerTest extends TestCase
 
         $response = $this->post(route('sample.store'), $samples);
 
-        $this->assertDatabaseHas('samples', Arr::except($samples['samples'][0], [
-            'collected_date', 'received_date', 'storage_id', 'tests'
-        ]));
-        $this->assertDatabaseHas('samples', Arr::except($samples['samples'][1], [
-            'collected_date', 'received_date', 'storage_id'
-        ]));
-        $this->assertDatabaseHas('custodies', [
-            'storage_id' => $storage->id, 'sample_type' => 'Sample', 'sample_id' => 1
-        ]);
-        $this->assertDatabaseHas('custodies', [
-            'storage_id' => $storage->id, 'sample_type' => 'Sample', 'sample_id' => 2
-        ]);
+        $this->assertDatabaseHas('samples', Arr::except($samples['samples'][0], ['collected_date', 'received_date', 'storage_id', 'tests']));
+        $this->assertDatabaseHas('samples', Arr::except($samples['samples'][1], ['collected_date', 'received_date', 'storage_id']));
+        $this->assertDatabaseHas('custodies', ['storage_id' => $storage->id, 'sample_type' => 'Sample', 'sample_id' => 1]);
+        $this->assertDatabaseHas('custodies', ['storage_id' => $storage->id, 'sample_type' => 'Sample', 'sample_id' => 2]);
         $this->assertDatabaseHas('tests', Arr::except($samples['samples'][0]['tests'][0], ['created_at', 'updated_at']));
         $this->assertDatabaseHas('tests', Arr::except($samples['samples'][0]['tests'][1], ['created_at', 'updated_at']));
 
@@ -107,15 +99,35 @@ class SampleControllerTest extends TestCase
 
         $this->assertDatabaseHas('samples', Arr::except($samplesUpdate['samples'][0], ['collected_date', 'received_date']));
         $this->assertDatabaseHas('samples', Arr::except($samplesUpdate['samples'][1], ['collected_date', 'received_date', 'storage_id']));
-        $this->assertDatabaseHas('custodies', [
-            'storage_id' => 1, 'sample_type' => 'Sample', 'sample_id' => 1
-        ]);
-        $this->assertDatabaseHas('custodies', [
-            'storage_id' => 2, 'sample_type' => 'Sample', 'sample_id' => 2
-        ]);
+        $this->assertDatabaseHas('custodies', ['storage_id' => 1, 'sample_type' => 'Sample', 'sample_id' => 1]);
+        $this->assertDatabaseHas('custodies', ['storage_id' => 2, 'sample_type' => 'Sample', 'sample_id' => 2]);
 
         $this->assertDatabaseCount('samples', 2);
         $this->assertDatabaseCount('custodies', 3);
+
+        $response->assertRedirect(route('sample.edit', ['ids' => '1,2']));
+    }
+
+    public function testShouldBeAbleToUpdateASamplesAndStorageLocationWhenSampleDoesntHaveStorageLocation()
+    {
+        Sample::factory()->forCustomer()->forCollectedBy()->forReceivedBy()->count(2)->create();
+
+        $samplesUpdate['samples'] = Sample::factory()
+            ->count(2)
+            ->state(new Sequence(
+                ['id' => '1'],
+                ['id' => '2', 'storage_id' => '2'],
+            ))->make()
+            ->toArray();
+
+        $response = $this->patch(route('sample.updateByIds', $samplesUpdate));
+
+        $this->assertDatabaseHas('samples', Arr::except($samplesUpdate['samples'][0], ['collected_date', 'received_date']));
+        $this->assertDatabaseHas('samples', Arr::except($samplesUpdate['samples'][1], ['collected_date', 'received_date', 'storage_id']));
+        $this->assertDatabaseHas('custodies', ['storage_id' => 2, 'sample_type' => 'Sample', 'sample_id' => 2]);
+
+        $this->assertDatabaseCount('samples', 2);
+        $this->assertDatabaseCount('custodies', 1);
 
         $response->assertRedirect(route('sample.edit', ['ids' => '1,2']));
     }

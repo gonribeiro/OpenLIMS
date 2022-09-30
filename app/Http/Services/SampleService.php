@@ -53,7 +53,7 @@ class SampleService
                         $updateSample->tests()->createMany($sample['tests']);
                     }
 
-                    if (isset($sample['storage_id']) && $sample['storage_id'] != $updateSample->lastCustody->storage->id) {
+                    if (isset($sample['storage_id']) && $sample['storage_id'] != $updateSample->lastCustody?->storage->id) {
                         $updateSample->custodies()->create(['storage_id' => $sample['storage_id']]);
                     }
                 }
