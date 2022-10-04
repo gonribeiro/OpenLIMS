@@ -4,20 +4,34 @@
     </td>
     @if (isset($sample))
         <td class="text-center">
-            <button
-                type="button"
-                class="btn btn-dark btn-sm"
-                data-bs-toggle="collapse"
-                href="#collapseTest{{ $i }}"
-                role="button"
-                aria-expanded="false"
-                aria-controls="collapseTest{{ $i }}"
-                @if ($sample->tests->isEmpty())
-                    disabled
-                @endif
-            >
-                <i class="fa-solid fa-caret-down"></i>
-            </button>
+            <div class="input-group">
+                <button
+                    type="button"
+                    class="btn btn-dark btn-sm"
+                    data-bs-toggle="collapse"
+                    href="#collapseTest{{ $i }}"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseTest{{ $i }}"
+                >
+                    <span
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="Add or cancel tests"
+                    >
+                        <i class="fa-solid fa-pen-to-square"></i> {{ $sample->tests?->count() }}
+                    </span>
+                </button>
+                <span
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Results available"
+                >
+                    <span class="input-group-text btn-sm" id="basic-addon2"><i class="fa-solid fa-microscope">
+                        </i>&nbsp;{{ $sample->results?->count() }}
+                    </span>
+                </span>
+            </div>
         </td>
         <td>
             @include('components.input', [
@@ -58,7 +72,8 @@
                 'multiple' => true,
                 'arrayName' => 'samples',
                 'arrayIndex' => $i,
-                'name' => 'tests',
+                'subArrayName' => 'tests',
+                'name' => 'analysis_id',
             ])
         </td>
     @endif
@@ -98,8 +113,8 @@
             'valueName' => $sample->receivedBy->name ?? old('received_by_id')
         ])
     </td>
-    @if (!isset($sample))
-        <td>
+    <td>
+        @if (!isset($sample))
             @include('components.selectAjax', [
                 'label' => 'storage',
                 'arrayName' => 'custody',
@@ -110,8 +125,17 @@
                 'valueId' => $sample->lastCustody->storage->id ?? old('storage_id'),
                 'valueName' => $sample->lastCustody->storage->name ?? old('storage_id')
             ])
-        </td>
-    @endif
+        @else
+            <button
+                type="link"
+                class="input-group-text btn-sm"
+                id="basic-addon2"
+                onclick="loadModal(`{{ route('custody.edit', $sample) }}`)"
+            >
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp;{{ $sample->lastCustody?->storage?->name ?? 'Not storage' }}
+            </button>
+        @endif
+    </td>
     <td>
         @include('components.input', [
             'name' => 'collected_date',

@@ -31,9 +31,4 @@ class Test extends Model
     {
         return $this->hasMany(Result::class);
     }
-
-    // public function createdBy(): BelongsTo
-    // {
-    //     return $this->belongsTo(User::class);
-    // }
 }

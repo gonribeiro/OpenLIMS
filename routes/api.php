@@ -1,9 +1,9 @@
 <?php
 
 use App\Http\Controllers\Api\V1\AnalysisApiController;
-use App\Http\Controllers\Api\V1\CustodyController;
+use App\Http\Controllers\Api\V1\CustodyApiController;
 use App\Http\Controllers\Api\V1\IncidentController;
-use App\Http\Controllers\Api\V1\ResultController;
+use App\Http\Controllers\Api\V1\ResultApiController;
 use App\Http\Controllers\Api\V1\SampleApiController;
 use App\Http\Controllers\Api\V1\StorageApiController;
 use App\Http\Controllers\Api\V1\SubsampleController;
@@ -26,12 +26,11 @@ Route::prefix('v1')->group(function () {
     Route::name('api.')->group(function () {
         Route::apiResource('analysis', AnalysisApiController::class);
         Route::prefix('custody')->group(function () {
-            Route::get('bySample/sampleType/{sample_type}/sampleId/{sample_id}', [CustodyController::class, 'custodiesBySample']);
-            Route::post('storeSample', [CustodyController::class, 'storeSample']);
-            Route::post('storeSubsample', [CustodyController::class, 'storeSubsample']);
+            Route::get('/sampleType/{sample_type}/sampleId/{sample_id}', [CustodyApiController::class, 'findBySampleId'])->name('custody.findBySampleId');
+            Route::post('{sampleIds}/store', [CustodyApiController::class, 'store'])->name('custody.store');
         });
         Route::apiResource('incident', IncidentController::class);
-        Route::apiResource('result', ResultController::class);
+        Route::apiResource('result', ResultApiController::class);
         Route::apiResource('sample', SampleApiController::class)->only('index', 'store', 'destroy');
         Route::get('sample/findByIds/{ids}', [SampleApiController::class, 'findByIds'])->name('sample.findByIds');
         Route::patch('sample/updateByIds', [SampleApiController::class, 'updateByIds'])->name('sample.updateByIds');

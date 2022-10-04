@@ -16,9 +16,11 @@
         <link rel="stylesheet" href="/css/select2.css" />
     </head>
     <body class="font-sans antialiased">
-        @include('components.navbar')
+        @if (!isset($hiddenNavbar))
+            @include('components.navbar')
+        @endif
 
-        <div style="max-width: 1000px; margin: auto; margin-top: 5px; padding: 5px">
+        <div style="max-width: 1140px; margin: auto; margin-top: 5px; padding: 5px">
             @include('utils.messages')
             @yield('content')
         </div>

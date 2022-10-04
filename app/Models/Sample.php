@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
@@ -49,6 +50,11 @@ class Sample extends Model
     public function tests(): MorphMany
     {
         return $this->morphMany(Test::class, 'sample');
+    }
+
+    public function results(): HasManyThrough
+    {
+        return $this->hasManyThrough(Result::class, Test::class);
     }
 
     public function subsamples(): HasMany

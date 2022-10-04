@@ -46,7 +46,7 @@
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                         <li><a class="dropdown-item" href="{{ route('user.index') }}">Users and Customers</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ route('analysis.index') }}">Analysis Type</a></li>
+                        <li><a class="dropdown-item" href="{{ route('analysis.index') }}">Analysis</a></li>
                         <li><a class="dropdown-item" href="{{ route('storage.index') }}">Storages</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">About / FAQ</a></li>

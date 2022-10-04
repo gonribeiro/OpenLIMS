@@ -31,7 +31,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                @include('components.textarea', ['name' => 'attributes', 'required' => true, 'value' => $analysi->attributes ?? old('attributes')])
+                @include('components.textarea', ['name' => 'attributes', 'required' => true, 'row' => 5, 'value' => $analysi->attributes ?? old('attributes')])
             </div>
         </div>
     </div>

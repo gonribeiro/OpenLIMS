@@ -6,7 +6,6 @@ use App\Http\Requests\SampleQuantityCreateDialogRequest;
 use App\Http\Requests\SampleRequest;
 use App\Http\Services\SampleService;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\View\View;
 use Illuminate\Support\Arr;

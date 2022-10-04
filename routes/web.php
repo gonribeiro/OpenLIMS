@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AnalysisController;
+use App\Http\Controllers\CustodyController;
+use App\Http\Controllers\ResultController;
 use App\Http\Controllers\SampleController;
 use App\Http\Controllers\StorageController;
 use App\Http\Controllers\UserController;
@@ -22,6 +24,10 @@ Route::get('/', function () {
 });
 
 Route::resource('analysis', AnalysisController::class)->except('show', 'destroy');
+Route::get('custody/{sampleIds}/create', [CustodyController::class, 'create'])->name('custody.create');
+Route::get('custody/{sample}/edit', [CustodyController::class, 'edit'])->name('custody.edit');
+Route::post('custody/{sampleIds}/store', [CustodyController::class, 'store'])->name('custody.store');
+Route::resource('result', ResultController::class)->only('index', 'store');
 Route::resource('storage', StorageController::class)->except('show', 'destroy');
 Route::resource('user', UserController::class)->except('show', 'destroy');
 Route::resource('sample', SampleController::class)->only('index', 'store');
@@ -31,4 +37,3 @@ Route::prefix('sample')->group(function () {
     Route::get('{ids}/edit', [SampleController::class, 'edit'])->name('sample.edit');
     Route::patch('updateByIds', [SampleController::class, 'updateByIds'])->name('sample.updateByIds');
 });
-

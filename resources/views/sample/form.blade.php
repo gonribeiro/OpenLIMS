@@ -13,72 +13,85 @@
 <div align="right">
     @include('components.buttonLink', ['name' => 'Back', 'url' => route('sample.index'), 'color' => 'link'])
 </div>
-<div class="card text-black bg-dark mb-3">
-    <div class="card-header text-white">Sample</div>
-    <div class="card-body bg-light overflow-auto">
-        <table class="table table-sm table-hover">
-            <tr>
-                <th><label>#</label></th>
-                @if (isset($samples))
-                    <th><label>Tests</label></th>
-                    <th><label>Internal_ID</label></th>
-                @endif
-                <th><label>External_ID*</label></th>
-                <th><label>Sample Type*</label></th>
+<font size="2">
+    <div class="card text-black bg-dark mb-3">
+        <div class="card-header text-white">Sample</div>
+        <div class="card-body bg-light overflow-auto">
+            <table class="table table-sm table-hover">
+                <tr>
+                    <th><label>#</label></th>
+                    @if (isset($samples))
+                        <th><label>Tests/Result</label></th>
+                        <th><label>Internal_ID</label></th>
+                    @endif
+                    <th><label>External_ID*</label></th>
+                    <th><label>Sample Type*</label></th>
+                    @if (!isset($samples))
+                        <th><label>Analysis/Tests</label></th>
+                    @endif
+                    <th><label>Customer*</label></th>
+                    <th><label>Received*</label></th>
+                    <th><label>Received by*</label></th>
+                    <th><label><i class="fa-solid fa-box-archive"></i> Storage location</label></th>
+                    <th><label>Collected*</label></th>
+                    <th><label>Collected by*</label></th>
+                    <th><label>Volume/Mass*</label></th>
+                    <th><label>Measurement_Unit*</label></th>
+                    <th><label>Description</label></th>
+                    @if (isset($samples))
+                        <th><label>Discarded</label></th>
+                        <th><label>Discarded by</label></th>
+                        <th><label>Cancel</label></th>
+                    @endif
+                </tr>
                 @if (!isset($samples))
-                    <th><label>Analysis/Tests</label></th>
-                @endif
-                <th><label>Customer*</label></th>
-                <th><label>Received*</label></th>
-                <th><label>Received by*</label></th>
-                @if (!isset($samples))
-                    <th><label>Storage</label></th>
-                @endif
-                <th><label>Collected*</label></th>
-                <th><label>Collected by*</label></th>
-                <th><label>Volume/Mass*</label></th>
-                <th><label>Measurement_Unit*</label></th>
-                <th><label>Description</label></th>
-                @if (isset($samples))
-                    <th><label>Discarded</label></th>
-                    <th><label>Discarded by</label></th>
-                    <th><label>Cancel</label></th>
-                @endif
-            </tr>
-            @if (!isset($samples))
-                @for ($i = 0; $i < $quantity; $i++)
-                    @include('sample.components.sampleInput')
-                @endfor
-            @else
-                @foreach ($samples as $i => $sample)
-                <input type="hidden" name="samples[{{ $i }}][id]" value="{{ $sample->id }}">
-                    @include('sample.components.sampleInput')
-                    <tr class="collapse" id="collapseTest{{ $i }}">
-                        <td colspan="4">
-                            @include('components.selectAjax', [
-                                'label' => 'Add analysis/tests',
-                                'multiple' => true,
-                                'arrayName' => 'samples',
-                                'arrayIndex' => $i,
-                                'name' => 'tests',
-                            ])
-                        </td>
-                        <td colspan="13"></td>
-                    </tr>
-                    @foreach ($sample->tests as $test)
+                    @for ($i = 0; $i < $quantity; $i++)
+                        @include('sample.components.sampleInput')
+                    @endfor
+                @else
+                    @foreach ($samples as $i => $sample)
+                    <input type="hidden" name="samples[{{ $i }}][id]" value="{{ $sample->id }}">
+                        @include('sample.components.sampleInput')
                         <tr class="collapse" id="collapseTest{{ $i }}">
-                            @include('sample.components.testInput')
+                            <td colspan="4">
+                                {{-- @include('components.selectAjax', [
+                                    'label' => 'Add analysis/tests',
+                                    'multiple' => true,
+                                    'arrayName' => 'samples',
+                                    'arrayIndex' => $i,
+                                    'name' => 'tests',
+                                ]) --}}
+                            </td>
+                            <td colspan="13"></td>
                         </tr>
+                        @foreach ($sample->tests as $test)
+                            <tr class="collapse" id="collapseTest{{ $i }}">
+                                @include('sample.components.testInput')
+                            </tr>
+                        @endforeach
                     @endforeach
-                @endforeach
-            @endif
-        </table>
+                @endif
+            </table>
+        </div>
     </div>
-</div>
+</font>
 
 @include('components.buttonSubmit', ['name' => 'Save'])
 
 </form>
+
+<div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="cleanIframe()"></button>
+            </div>
+            <div class="modal-body">
+                <iframe class="iframeModal" src="" scrolling="auto" width="100%" height="430px"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="/js/resourceDestroy.js"></script>
 
@@ -87,7 +100,7 @@
     $(document).ready(function() {
         $('.select2, .unit, .sample_type').select2({});
 
-        $('.tests').select2({
+        $('.analysis_id').select2({
             ajax: {
                 url: {!! json_encode(route('api.analysis.index')) !!},
                 dataType: 'json',
@@ -171,6 +184,16 @@
             }
         });
     });
+
+    function loadModal(route) {
+        $('.iframeModal').attr('src', route);
+
+        $('#myModal').modal('show');
+    }
+
+    function cleanIframe() {
+        $('.iframeModal').attr('src', '');
+    }
 </script>
 
 @endsection

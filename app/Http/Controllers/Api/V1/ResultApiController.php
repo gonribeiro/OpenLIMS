@@ -7,7 +7,7 @@ use App\Models\Result;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class ResultController extends Controller
+class ResultApiController extends Controller
 {
     public function index(): Response
     {

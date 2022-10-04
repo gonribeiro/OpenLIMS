@@ -2,15 +2,13 @@
 
 namespace App\Http\Requests;
 
-use App\Enums\SampleType;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 
-class AnalysisRequest extends FormRequest
+class CustodyRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -30,26 +28,14 @@ class AnalysisRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => [
-                Rule::requiredIf(!$this->restore),
-                'string',
-                Rule::unique('analyses', 'name')->ignore($this->analysi),
-            ],
-            'sample_type' => [
-                Rule::requiredIf(!$this->restore),
-                Rule::in(SampleType::getValues())
-            ],
-            'description' => 'string|nullable',
-            'attributes' => [
-                Rule::requiredIf(!$this->restore),
-                'json',
-            ],
+            'storage_id' => 'required|int',
+            'reason' => 'required|string',
         ];
     }
 
     public function failedValidation(Validator $validator)
     {
-        if (!Request::routeIs('analysis.*')) {
+        if (!Request::routeIs('custody.*')) {
             throw new HttpResponseException(response()->json([
                 'success' => false,
                 'message' => 'Validation errors',
