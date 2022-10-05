@@ -1,38 +1,30 @@
 @extends('app')
 @section('content')
 
-<form action="{{ route('custody.store', $samples->implode('id', ',')) }}" method="post">
+@php $hiddenNavbar = true @endphp
+
+<form action="{{ route('test.store', $sample) }}" method="post">
 @method('POST')
 @csrf
 
 <div class="alert alert-info" role="alert">
-    <i class="fa-solid fa-circle-info"></i> No update will occur for items where the new storage location is the same as the current storage location.
-</div>
-<div align="right">
-    @include('components.buttonLink', ['name' => 'Back', 'url' => route('sample.index'), 'color' => 'link'])
+    <i class="fa-solid fa-circle-info"></i> If you change the storage location, refresh the page to view your changes in the sample edit page.
 </div>
 <div class="card text-black bg-dark mb-3">
-    <div class="card-header text-white"><i class="fa-solid fa-box-archive"></i> Storage Location</div>
+    <div class="card-header text-white"><i class="fa-solid fa-box-archive"></i> Tests And Results</div>
     <div class="card-body bg-light">
-        @include('custody.form')
+        @include('test.form')
         <br />
         <table class="table table-hover table-sm">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Internal ID</th>
-                    <th>Customer</th>
-                    <th>Actual Storage Location At</th>
+                    <th>Tests</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($samples->reverse() as $sample)
-                    <tr>
-                        <td>{{ $sample->id }}</td>
-                        <td>{{ $sample->internalId ?? '-' }}</td>
-                        <td>{{ $sample->customer->name }}</td>
-                        <td>{{ $sample->lastCustody?->storage->name }}</td>
-                    </tr>
+                @foreach ($sample->tests->reverse() as $test)
+                    @include('test.components.testInput')
                 @endforeach
             </tbody>
         </table>
@@ -41,11 +33,13 @@
 
 </form>
 
+<script src="/js/resourceDestroy.js"></script>
+
 <script>
     $(document).ready(function() {
-        $('.storage_id').select2({
+        $('.analysis_id').select2({
             ajax: {
-                url: {!! json_encode(route('api.storage.index')) !!},
+                url: {!! json_encode(route('api.analysis.index')) !!},
                 dataType: 'json',
                 delay: 250,
                 processResults: function (response, search) {

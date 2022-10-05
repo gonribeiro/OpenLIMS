@@ -7,7 +7,7 @@ use App\Http\Controllers\Api\V1\ResultApiController;
 use App\Http\Controllers\Api\V1\SampleApiController;
 use App\Http\Controllers\Api\V1\StorageApiController;
 use App\Http\Controllers\Api\V1\SubsampleController;
-use App\Http\Controllers\Api\V1\TestController;
+use App\Http\Controllers\Api\V1\TestApiController;
 use App\Http\Controllers\Api\V1\UserApiController;
 use Illuminate\Support\Facades\Route;
 
@@ -36,7 +36,11 @@ Route::prefix('v1')->group(function () {
         Route::patch('sample/updateByIds', [SampleApiController::class, 'updateByIds'])->name('sample.updateByIds');
         Route::apiResource('storage', StorageApiController::class);
         Route::apiResource('subsample', SubsampleController::class);
-        Route::apiResource('test', TestController::class)->only('index', 'update', 'destroy');
+        Route::apiResource('test', TestApiController::class)->only('destroy');
+        Route::prefix('test')->group(function () {
+            Route::get('/sampleType/{sample_type}/sampleId/{sample_id}', [TestApiController::class, 'findBySampleId'])->name('test.findBySampleId');
+            Route::post('{sampleIds}/store', [TestApiController::class, 'store'])->name('test.store');
+        });
         Route::apiResource('user', UserApiController::class);
     });
 });

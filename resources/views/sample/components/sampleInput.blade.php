@@ -4,34 +4,14 @@
     </td>
     @if (isset($sample))
         <td class="text-center">
-            <div class="input-group">
-                <button
-                    type="button"
-                    class="btn btn-dark btn-sm"
-                    data-bs-toggle="collapse"
-                    href="#collapseTest{{ $i }}"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="collapseTest{{ $i }}"
-                >
-                    <span
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="top"
-                        title="Add or cancel tests"
-                    >
-                        <i class="fa-solid fa-pen-to-square"></i> {{ $sample->tests?->count() }}
-                    </span>
-                </button>
-                <span
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Results available"
-                >
-                    <span class="input-group-text btn-sm" id="basic-addon2"><i class="fa-solid fa-microscope">
-                        </i>&nbsp;{{ $sample->results?->count() }}
-                    </span>
-                </span>
-            </div>
+            <button
+                type="button"
+                class="input-group-text btn-sm"
+                onclick="loadModal(`{{ route('test.edit', $sample) }}`)"
+            >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
+                {{ $sample->tests?->count() }}
+            </button>
         </td>
         <td>
             @include('components.input', [
@@ -127,12 +107,11 @@
             ])
         @else
             <button
-                type="link"
+                type="button"
                 class="input-group-text btn-sm"
-                id="basic-addon2"
                 onclick="loadModal(`{{ route('custody.edit', $sample) }}`)"
             >
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp;{{ $sample->lastCustody?->storage?->name ?? 'Not storage' }}
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp;{{ $sample->lastCustody?->storage?->name ?? 'Not storage' }}
             </button>
         @endif
     </td>

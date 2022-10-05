@@ -21,7 +21,7 @@
                 <tr>
                     <th><label>#</label></th>
                     @if (isset($samples))
-                        <th><label>Tests/Result</label></th>
+                        <th><label><i class="fa-solid fa-microscope"></i> Tests</label></th>
                         <th><label>Internal_ID</label></th>
                     @endif
                     <th><label>External_ID*</label></th>
@@ -50,25 +50,8 @@
                     @endfor
                 @else
                     @foreach ($samples as $i => $sample)
-                    <input type="hidden" name="samples[{{ $i }}][id]" value="{{ $sample->id }}">
+                        <input type="hidden" name="samples[{{ $i }}][id]" value="{{ $sample->id }}">
                         @include('sample.components.sampleInput')
-                        <tr class="collapse" id="collapseTest{{ $i }}">
-                            <td colspan="4">
-                                {{-- @include('components.selectAjax', [
-                                    'label' => 'Add analysis/tests',
-                                    'multiple' => true,
-                                    'arrayName' => 'samples',
-                                    'arrayIndex' => $i,
-                                    'name' => 'tests',
-                                ]) --}}
-                            </td>
-                            <td colspan="13"></td>
-                        </tr>
-                        @foreach ($sample->tests as $test)
-                            <tr class="collapse" id="collapseTest{{ $i }}">
-                                @include('sample.components.testInput')
-                            </tr>
-                        @endforeach
                     @endforeach
                 @endif
             </table>
@@ -96,69 +79,12 @@
 <script src="/js/resourceDestroy.js"></script>
 
 <script>
-    // select2
     $(document).ready(function() {
-        $('.select2, .unit, .sample_type').select2({});
-
-        $('.analysis_id').select2({
-            ajax: {
-                url: {!! json_encode(route('api.analysis.index')) !!},
-                dataType: 'json',
-                delay: 250,
-                processResults: function (response, search) {
-                    return {
-                        results: $.map(response, function (option) {
-                            if (search.term != undefined) {
-                                if (option.name.toLowerCase().includes(search.term.toLowerCase())) {
-                                    return {
-                                        id: option.id,
-                                        text: option.name
-                                    }
-                                }
-                            } else {
-                                return {
-                                    id: option.id,
-                                    text: option.name
-                                }
-                            }
-                        })
-                    };
-                },
-                cache: true
-            }
-        });
+        $('.unit, .sample_type').select2({});
 
         $('.customer_id, .received_by_id, .collected_by_id, .discarded_by_id').select2({
             ajax: {
                 url: {!! json_encode(route('api.user.index')) !!},
-                dataType: 'json',
-                delay: 250,
-                processResults: function (response, search) {
-                    return {
-                        results: $.map(response, function (option) {
-                            if (search.term != undefined) {
-                                if (option.name.toLowerCase().includes(search.term.toLowerCase())) {
-                                    return {
-                                        id: option.id,
-                                        text: option.name
-                                    }
-                                }
-                            } else {
-                                return {
-                                    id: option.id,
-                                    text: option.name
-                                }
-                            }
-                        })
-                    };
-                },
-                cache: true
-            }
-        });
-
-        $('.storage_id').select2({
-            ajax: {
-                url: {!! json_encode(route('api.storage.index')) !!},
                 dataType: 'json',
                 delay: 250,
                 processResults: function (response, search) {

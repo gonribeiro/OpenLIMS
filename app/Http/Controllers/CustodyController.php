@@ -19,11 +19,6 @@ class CustodyController extends Controller
         return view('custody.create', compact('samples'));
     }
 
-    public function edit(Sample $sample): View
-    {
-        return view('custody.edit', compact('sample'));
-    }
-
     public function store(CustodyRequest $request, string $sampleIds): RedirectResponse
     {
         try {
@@ -39,5 +34,10 @@ class CustodyController extends Controller
         }
 
         return redirect()->route('sample.index')->with('message', 'Saved!');
+    }
+
+    public function edit(Sample $sample): View
+    {
+        return view('custody.edit', compact('sample'));
     }
 }
