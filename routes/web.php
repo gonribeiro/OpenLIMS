@@ -3,6 +3,7 @@
 use App\Http\Controllers\AnalysisController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\CustodyController;
+use App\Http\Controllers\IncidentController;
 use App\Http\Controllers\ResultController;
 use App\Http\Controllers\SampleController;
 use App\Http\Controllers\StorageController;
@@ -28,7 +29,10 @@ Route::resource('analysis', AnalysisController::class)->except('show', 'destroy'
 Route::get('custody/{sampleIds}/create', [CustodyController::class, 'create'])->name('custody.create');
 Route::post('custody/{sampleIds}/store', [CustodyController::class, 'store'])->name('custody.store');
 Route::get('custody/{sample}/edit', [CustodyController::class, 'edit'])->name('custody.edit');
-Route::resource('result', ResultController::class)->only('index', 'store');
+Route::resource('incident', IncidentController::class)->only('index', 'edit', 'update');
+Route::get('incident/{sampleIds}/create', [IncidentController::class, 'create'])->name('incident.create');
+Route::post('incident/{sampleIds}/store', [IncidentController::class, 'store'])->name('incident.store');
+// Route::resource('result', ResultController::class)->only('index', 'store');
 Route::resource('storage', StorageController::class)->except('show', 'destroy');
 Route::resource('user', UserController::class)->except('show', 'destroy');
 Route::resource('sample', SampleController::class)->only('index', 'store');

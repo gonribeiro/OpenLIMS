@@ -3,7 +3,7 @@
     class="form-control"
     id="{{ $name }}"
     name="{{ $name }}"
-    rows="{{ $row ?? 3 }}"
+    rows="{{ $rows ?? 3 }}"
     @if(isset($required)) required @endif
     @if(isset($disabled)) disabled @endif
 >{{ $value ?? '' }}</textarea>

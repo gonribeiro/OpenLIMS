@@ -27,9 +27,7 @@
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                         <li><a class="dropdown-item" href="{{ route('sample.index') }}">Samples</a></li>
                         <li><a class="dropdown-item" href="#">Subsamples</a></li>
-                        <li><a class="dropdown-item" href="#">Tests</a></li>
-                        <li><a class="dropdown-item" href="#">Results</a></li>
-                        <li><a class="dropdown-item" href="#">Incidents / NC</a></li>
+                        <li><a class="dropdown-item" href="{{ route('incident.index') }}">Incidents</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">

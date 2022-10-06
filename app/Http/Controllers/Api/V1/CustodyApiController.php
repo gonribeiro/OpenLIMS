@@ -13,7 +13,7 @@ class CustodyApiController extends Controller
     public function store(CustodyRequest $request, string $sampleIds): Response
     {
         try {
-            CustodyService::store($request->all(), $sampleIds);
+            CustodyService::store($request, $sampleIds);
         } catch (\Throwable $th) {
             Log::error($th);
 

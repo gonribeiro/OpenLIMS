@@ -19,8 +19,7 @@ class IncidentFactory extends Factory
     {
         return [
             'nc' => rand(0, 1),
-            'incident' => fake()->text(),
-            'status' => Status::getRandomValue(),
+            'description' => fake()->text(),
         ];
     }
 }

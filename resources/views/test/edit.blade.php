@@ -11,7 +11,7 @@
     <i class="fa-solid fa-circle-info"></i> If you change the storage location, refresh the page to view your changes in the sample edit page.
 </div>
 <div class="card text-black bg-dark mb-3">
-    <div class="card-header text-white"><i class="fa-solid fa-box-archive"></i> Tests And Results</div>
+    <div class="card-header text-white"><i class="fa-solid fa-microscope"></i> Tests</div>
     <div class="card-body bg-light">
         @include('test.form')
         <br />

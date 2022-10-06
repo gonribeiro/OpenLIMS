@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Api\V1\AnalysisApiController;
 use App\Http\Controllers\Api\V1\CustodyApiController;
-use App\Http\Controllers\Api\V1\IncidentController;
+use App\Http\Controllers\Api\V1\IncidentApiController;
 use App\Http\Controllers\Api\V1\ResultApiController;
 use App\Http\Controllers\Api\V1\SampleApiController;
 use App\Http\Controllers\Api\V1\StorageApiController;
@@ -29,7 +29,8 @@ Route::prefix('v1')->group(function () {
             Route::get('/sampleType/{sample_type}/sampleId/{sample_id}', [CustodyApiController::class, 'findBySampleId'])->name('custody.findBySampleId');
             Route::post('{sampleIds}/store', [CustodyApiController::class, 'store'])->name('custody.store');
         });
-        Route::apiResource('incident', IncidentController::class);
+        Route::apiResource('incident', IncidentApiController::class)->except('store');
+        Route::post('incident/{sampleIds}/store', [IncidentApiController::class, 'store'])->name('incident.store');
         Route::apiResource('result', ResultApiController::class);
         Route::apiResource('sample', SampleApiController::class)->only('index', 'store', 'destroy');
         Route::get('sample/findByIds/{ids}', [SampleApiController::class, 'findByIds'])->name('sample.findByIds');

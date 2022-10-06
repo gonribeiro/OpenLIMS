@@ -111,7 +111,7 @@
                 class="input-group-text btn-sm"
                 onclick="loadModal(`{{ route('custody.edit', $sample) }}`)"
             >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp;{{ $sample->lastCustody?->storage?->name ?? 'Not storage' }}
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp;{{ $sample->lastCustody?->storage?->name ?? 'No storage' }}
             </button>
         @endif
     </td>

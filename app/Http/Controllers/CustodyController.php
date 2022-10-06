@@ -22,7 +22,7 @@ class CustodyController extends Controller
     public function store(CustodyRequest $request, string $sampleIds): RedirectResponse
     {
         try {
-            CustodyService::store($request->all(), $sampleIds);
+            CustodyService::store($request, $sampleIds);
         } catch (\Throwable $th) {
             Log::error($th);
 

@@ -3,7 +3,6 @@
 namespace App\Http\Livewire;
 
 use App\Models\Sample;
-use App\Models\User;
 use PowerComponents\LivewirePowerGrid\Traits\ActionButton;
 use PowerComponents\LivewirePowerGrid\{Button, Column, Exportable, Footer, Header, PowerGrid, PowerGridComponent, PowerGridEloquent};
 
@@ -50,23 +49,23 @@ final class SampleTable extends PowerGridComponent
                 dark:bg-gray-500 2xl:dark:placeholder-gray-300 dark:text-gray-200 dark:text-gray-300 mt-2')
                 ->emit('edit', []),
 
-            Button::add('createStorageLocation')
+            Button::add('newStorageLocation')
                 ->tooltip('New Storage Location')
                 ->caption(__('<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -50 550 600" class="h-6 w-5
                 text-slate-500 dark:text-slate-300"><path d="M32 32H480c17.7 0 32 14.3 32 32V96c0 17.7-14.3 32-32 32H32C14.3 128 0 113.7 0 96V64C0 46.3 14.3 32 32 32zm0 128H480V416c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V160zm128 80c0 8.8 7.2 16 16 16H336c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16z"/></svg>'))
                 ->class('cursor-pointer block bg-indigo-500 text-slate-700 border border-gray-300 rounded py-1.5 px-3
                 leading-tight focus:outline-none focus:bg-white focus:border-gray-600 dark:border-gray-500
                 dark:bg-gray-500 2xl:dark:placeholder-gray-300 dark:text-gray-200 dark:text-gray-300 mt-2')
-                ->emit('createStorageLocation', []),
+                ->emit('newStorageLocation', []),
 
-            Button::add('testResults')
+            Button::add('New Incident')
                 ->tooltip('Test Results')
                 ->caption(__('<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -50 550 600" class="h-6 w-5
-                text-slate-500 dark:text-slate-300"><path d="M168 32c0-17.7 14.3-32 32-32h16c17.7 0 32 14.3 32 32h8c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32h-8c0 17.7-14.3 32-32 32H200c-17.7 0-32-14.3-32-32h-8c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32l8 0zM32 448H320c70.7 0 128-57.3 128-128s-57.3-128-128-128V128c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 32c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>'))
+                text-slate-500 dark:text-slate-300"><path d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 9.8c0 39-23.7 74-59.9 88.4C71.6 154.5 32 213 32 278.2V352c0 17.7 14.3 32 32 32s32-14.3 32-32l0-73.8c0-10 1.6-19.8 4.5-29L261.1 497.4c9.6 14.8 29.4 19.1 44.3 9.5s19.1-29.4 9.5-44.3L222.6 320H224l80 0 38.4 51.2c10.6 14.1 30.7 17 44.8 6.4s17-30.7 6.4-44.8l-43.2-57.6C341.3 263.1 327.1 256 312 256l-71.5 0-56.8-80.2-.2-.3c44.7-29 72.5-79 72.5-133.6l0-9.8zM96 80c0-26.5-21.5-48-48-48S0 53.5 0 80s21.5 48 48 48s48-21.5 48-48zM464 286.1l58.6 53.9c4.8 4.4 11.9 5.5 17.8 2.6s9.5-9 9-15.5l-5.6-79.4 78.7-12.2c6.5-1 11.7-5.9 13.1-12.2s-1.1-13-6.5-16.7l-65.6-45.1L603 92.2c3.3-5.7 2.7-12.8-1.4-17.9s-10.9-7.2-17.2-5.3L508.3 92.1l-29.4-74C476.4 12 470.6 8 464 8s-12.4 4-14.9 10.1l-29.4 74L343.6 68.9c-6.3-1.9-13.1 .2-17.2 5.3s-4.6 12.2-1.4 17.9l39.5 69.1-65.6 45.1c-5.4 3.7-8 10.3-6.5 16.7c.1 .3 .1 .6 .2 .8l19.4 0c20.1 0 39.2 7.5 53.8 20.8l18.4 2.9L383 265.3l36.2 48.3c2.1 2.8 3.9 5.7 5.5 8.6L464 286.1z"/></svg>'))
                 ->class('cursor-pointer block bg-indigo-500 text-slate-700 border border-gray-300 rounded py-1.5 px-3
                 leading-tight focus:outline-none focus:bg-white focus:border-gray-600 dark:border-gray-500
                 dark:bg-gray-500 2xl:dark:placeholder-gray-300 dark:text-gray-200 dark:text-gray-300 mt-2')
-                ->emit('testResults', []),
+                ->emit('newIncident', []),
         ];
     }
 
@@ -74,7 +73,7 @@ final class SampleTable extends PowerGridComponent
     {
         return array_merge(
             parent::getListeners(),
-            ['edit', 'createStorageLocation', 'testResults']
+            ['edit', 'newStorageLocation', 'newIncident']
         );
     }
 
@@ -91,7 +90,7 @@ final class SampleTable extends PowerGridComponent
         redirect(route('sample.edit', $ids));
     }
 
-    public function createStorageLocation(): void
+    public function newStorageLocation(): void
     {
         if (count($this->checkboxValues) == 0) {
             $this->dispatchBrowserEvent('showAlert', ['message' => 'You must select at least one item!']);
@@ -104,18 +103,18 @@ final class SampleTable extends PowerGridComponent
         redirect(route('custody.create', $ids));
     }
 
-    // public function testResults(): void
-    // {
-    //     if (count($this->checkboxValues) == 0) {
-    //         $this->dispatchBrowserEvent('showAlert', ['message' => 'You must select at least one item!']);
+    public function newIncident(): void
+    {
+        if (count($this->checkboxValues) == 0) {
+            $this->dispatchBrowserEvent('showAlert', ['message' => 'You must select at least one item!']);
 
-    //         return;
-    //     }
+            return;
+        }
 
-    //     $ids = implode(',', $this->checkboxValues);
+        $ids = implode(',', $this->checkboxValues);
 
-    //     redirect(route('sample.edit', $ids));
-    // }
+        redirect(route('incident.create', $ids));
+    }
 
     public function datasource()
     {
