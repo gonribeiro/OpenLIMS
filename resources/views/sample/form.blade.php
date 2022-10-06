@@ -15,13 +15,13 @@
 </div>
 <font size="2">
     <div class="card text-black bg-dark mb-3">
-        <div class="card-header text-white">Sample</div>
+        <div class="card-header text-white"><i class="fa-solid fa-vial"></i>&nbsp; Sample</div>
         <div class="card-body bg-light overflow-auto">
             <table class="table table-sm table-hover">
                 <tr>
                     <th><label>#</label></th>
                     @if (isset($samples))
-                        <th><label><i class="fa-solid fa-microscope"></i> Tests</label></th>
+                        <th><label><i class="fa-solid fa-vial-circle-check"></i>&nbsp; Tests</label></th>
                         <th><label>Internal_ID</label></th>
                     @endif
                     <th><label>External_ID*</label></th>
@@ -82,9 +82,65 @@
     $(document).ready(function() {
         $('.unit, .sample_type').select2({});
 
+        $('.analysis_id').select2({
+            ajax: {
+                url: {!! json_encode(route('api.analysis.index')) !!},
+                dataType: 'json',
+                delay: 250,
+                processResults: function (response, search) {
+                    return {
+                        results: $.map(response, function (option) {
+                            if (search.term != undefined) {
+                                if (option.name.toLowerCase().includes(search.term.toLowerCase())) {
+                                    return {
+                                        id: option.id,
+                                        text: option.name
+                                    }
+                                }
+                            } else {
+                                return {
+                                    id: option.id,
+                                    text: option.name
+                                }
+                            }
+                        })
+                    };
+                },
+                cache: true
+            }
+        });
+
         $('.customer_id, .received_by_id, .collected_by_id, .discarded_by_id').select2({
             ajax: {
                 url: {!! json_encode(route('api.user.index')) !!},
+                dataType: 'json',
+                delay: 250,
+                processResults: function (response, search) {
+                    return {
+                        results: $.map(response, function (option) {
+                            if (search.term != undefined) {
+                                if (option.name.toLowerCase().includes(search.term.toLowerCase())) {
+                                    return {
+                                        id: option.id,
+                                        text: option.name
+                                    }
+                                }
+                            } else {
+                                return {
+                                    id: option.id,
+                                    text: option.name
+                                }
+                            }
+                        })
+                    };
+                },
+                cache: true
+            }
+        });
+
+        $('.storage_id').select2({
+            ajax: {
+                url: {!! json_encode(route('api.storage.index')) !!},
                 dataType: 'json',
                 delay: 250,
                 processResults: function (response, search) {

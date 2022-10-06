@@ -5,7 +5,7 @@
 @csrf
 
 <div class="card text-black bg-dark mb-3">
-    <div class="card-header text-white">Sample</div>
+    <div class="card-header text-white"><i class="fa-solid fa-vial"></i>&nbsp; Sample</div>
     <div class="card-body bg-light">
         <div class="row">
             <div class="col-md-12">

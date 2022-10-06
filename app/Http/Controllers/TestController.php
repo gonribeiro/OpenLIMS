@@ -21,15 +21,11 @@ class TestController extends Controller
             abort('403', 'Error!');
         }
 
-        if (count(explode(',', $sampleIds)) == 1) {
-            return redirect()->route('test.edit', $sampleIds)->with('message', 'Saved!');
-        }
-
-        return redirect()->route('sample.index')->with('message', 'Saved!');
+        return redirect()->route('test.edit', $sampleIds)->with('message', 'Saved!');
     }
 
     public function edit(Sample $sample): View
     {
-        return view('test.edit', compact('sample'));
+        return view('test.form', compact('sample'));
     }
 }

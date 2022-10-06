@@ -14,7 +14,7 @@
     @include('components.buttonLink', ['name' => 'Back', 'url' => route('storage.index'), 'color' => 'link'])
 </div>
 <div class="card text-black bg-dark mb-3">
-    <div class="card-header text-white">Storage</div>
+    <div class="card-header text-white"><i class="fa-solid fa-box-archive"></i>&nbsp; Storage</div>
     <div class="card-body bg-light">
         <div class="row">
             <div class="col-md-9">

@@ -42,6 +42,6 @@ class TestControllerTest extends TestCase
 
         $response = $this->get(route('test.edit', ['sample' => 1]));
 
-        $response->assertViewIs('test.edit');
+        $response->assertViewIs('test.form');
     }
 }

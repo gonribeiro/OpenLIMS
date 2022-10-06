@@ -14,7 +14,7 @@
     @include('components.buttonLink', ['name' => 'Back', 'url' => route('incident.index'), 'color' => 'link'])
 </div>
 <div class="card text-black bg-dark mb-3">
-    <div class="card-header text-white">Incident</div>
+    <div class="card-header text-white"><i class="fa-solid fa-person-falling-burst"></i>&nbsp; Incident</div>
     <div class="card-body bg-light">
         <div class="row">
             <div class="col-md-12">
