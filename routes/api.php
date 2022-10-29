@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\V1\StorageApiController;
 use App\Http\Controllers\Api\V1\SubsampleController;
 use App\Http\Controllers\Api\V1\TestApiController;
 use App\Http\Controllers\Api\V1\UserApiController;
+use App\Http\Controllers\Api\V1\Invokables\Enum;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function () {
     Route::name('api.')->group(function () {
+        Route::get('enum/{name}', Enum::class);
+
         Route::apiResource('analysis', AnalysisApiController::class);
         Route::prefix('custody')->group(function () {
             Route::get('sampleType/{sample_type}/sampleId/{sample_id}', [CustodyApiController::class, 'findBySampleId'])->name('custody.findBySampleId');

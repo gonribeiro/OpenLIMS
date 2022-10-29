@@ -72,7 +72,7 @@ DB_PASSWORD=
 ```
 composer install
 ```
-- Crie as tabelas do banco de dados (se desejar, semeia as tabelas com dados falsos para testes)
+- Crie as tabelas do banco de dados (se desejar, semeia as tabelas com dados falsos)
 ```
 php artisan migrate
 
@@ -84,4 +84,5 @@ php artisan serve
 ```
 
 - O projeto ficará disponível pelo endereço: http://localhost:8000/
-- Na pasta .github há o arquivo "OpenLIMS_Insomnia.json". Este arquivo contém todos os parâmetros e chamadas da API. Com ele poderá conhecer o funcionamento e testar o que está implementado até o momento (em breve o Swagger será implementado disponibilizando uma documentação adequada para o projeto).
+    - Na pasta .github há o arquivo "OpenLIMS_Insomnia.json". Este arquivo contém todos os parâmetros e chamadas da API. Com ele poderá conhecer o funcionamento e testar o que está implementado até o momento (em breve o Swagger será implementado disponibilizando uma documentação adequada para o projeto).
+    - Documentação API com Swagger em construção: http://localhost:8000/api/docs
