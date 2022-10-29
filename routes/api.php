@@ -35,7 +35,7 @@ Route::prefix('v1')->group(function () {
         Route::apiResource('incident', IncidentApiController::class)->except('store');
         Route::post('incident/{sampleIds}/store', [IncidentApiController::class, 'store'])->name('incident.store');
         Route::prefix('result')->group(function () {
-            Route::get('findResultsByTestIds/{testIds}', [ResultApiController::class, 'findResultsByTestIds'])->name('result.findResultsByTestIds');
+            Route::get('{testIds}/findResultsByTestIds', [ResultApiController::class, 'findResultsByTestIds'])->name('result.findResultsByTestIds');
             Route::post('storeOrUpdate', [ResultApiController::class, 'storeOrUpdate'])->name('result.storeOrUpdate');
         });
         Route::apiResource('sample', SampleApiController::class)->only('index', 'store', 'destroy');

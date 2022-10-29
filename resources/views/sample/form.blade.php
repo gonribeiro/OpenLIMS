@@ -25,11 +25,11 @@
                         <th><label>Internal_ID</label></th>
                     @endif
                     <th><label>External_ID*</label></th>
-                    <th><label>Sample Type*</label></th>
+                    <th><label><i class="fa-solid fa-vial"></i> Sample Type*</label></th>
                     @if (!isset($samples))
-                        <th><label>Analysis/Tests</label></th>
+                        <th><label><i class="fa-solid fa-microscope"></i> Analysis</label></th>
                     @endif
-                    <th><label>Customer*</label></th>
+                    <th><label><i class="fa-solid fa-user"></i> Customer*</label></th>
                     <th><label>Received*</label></th>
                     <th><label>Received by*</label></th>
                     <th><label><i class="fa-solid fa-box-archive"></i> Storage location</label></th>

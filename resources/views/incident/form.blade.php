@@ -11,7 +11,7 @@
 @csrf
 
 <div align="right">
-    @include('components.buttonLink', ['name' => 'Back', 'url' => route('incident.index'), 'color' => 'link'])
+    @include('components.buttonLink', ['name' => 'Back', 'url' => redirect()->back()->getTargetUrl(), 'color' => 'link'])
 </div>
 <div class="card text-black bg-dark mb-3">
     <div class="card-header text-white"><i class="fa-solid fa-person-falling-burst"></i>&nbsp; Incident</div>

@@ -27,7 +27,7 @@ class ResultControllerTest extends TestCase
     {
         Sample::factory()->forCustomer()->forCollectedBy()->forReceivedBy()->create();
 
-        Test::factory(['sample_id' => 1, 'sample_type' => 'Sample'])->forAnalysis(([
+        $test = Test::factory(['sample_id' => 1, 'sample_type' => 'Sample'])->forAnalysis(([
             'attributes' => '
                 {
                     "0": {
@@ -51,7 +51,7 @@ class ResultControllerTest extends TestCase
                 }
             ']))->create();
 
-        $this->post(route('result.storeOrUpdate', [
+        $response = $this->post(route('result.storeOrUpdate', [
             'results' => [
                 ['test_id' => '1', 'Test 1' => 'Update 1', 'Test 2' => 'Update 2']
             ]
@@ -61,6 +61,8 @@ class ResultControllerTest extends TestCase
         $this->assertDatabaseHas('results', ['value' => 'Update 2', 'name' => 'Test 2', 'config' => '{"type":"text","required":"true","min":0.1,"max":255}']);
 
         $this->assertDatabaseCount('results', 2);
+
+        $response->assertRedirect(session()->previousUrl());
     }
 
     public function testShouldntBeAbleToCreateResultsWhenAttributeNameRequestAndAttributeNameInAnalysisDoesntMatch()
@@ -91,7 +93,7 @@ class ResultControllerTest extends TestCase
                 }
             ']))->create();
 
-        $this->post(route('result.storeOrUpdate', [
+        $response = $this->post(route('result.storeOrUpdate', [
             'results' => [
                 [
                     'test_id' => '1',
@@ -102,6 +104,8 @@ class ResultControllerTest extends TestCase
         ]));
 
         $this->assertDatabaseCount('results', 0);
+
+        $response->assertStatus(302);
     }
 
     public function testShouldBeUpdateResults()
@@ -110,7 +114,7 @@ class ResultControllerTest extends TestCase
 
         Test::factory(['sample_id' => 1, 'sample_type' => 'Sample'])->forAnalysis()->hasResults(2)->create();
 
-        $this->post(route('result.storeOrUpdate', [
+        $response = $this->post(route('result.storeOrUpdate', [
             'results' => [
                 ['result_id' => '1', 'Test 1' => 'Update One'],
                 ['result_id' => '2', 'Test 2' => 'Update Two']
@@ -121,5 +125,7 @@ class ResultControllerTest extends TestCase
         $this->assertDatabaseHas('results', ['value' => 'Update Two']);
 
         $this->assertDatabaseCount('results', 2);
+
+        $response->assertRedirect(session()->previousUrl());
     }
 }

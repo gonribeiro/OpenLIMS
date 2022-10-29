@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api\V1\Invokables;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Log;
 
 class Enum extends Controller
 {
@@ -31,7 +32,10 @@ class Enum extends Controller
                 break;
 
             default:
-                return response('Enum name error', 409);
+                Log::error('Enum not found: ' . $name);
+
+                return response('Enum not found', 404);
+
                 break;
         }
     }

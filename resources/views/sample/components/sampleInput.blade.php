@@ -6,7 +6,7 @@
         <td class="text-center">
             <button
                 type="button"
-                class="input-group-text btn-sm"
+                class="input-group-text btn-dark btn-sm"
                 onclick="loadModal(`{{ route('test.edit', $sample) }}`)"
             >
                 <i class="fa-solid fa-flask-vial"></i>&nbsp;
@@ -108,7 +108,7 @@
         @else
             <button
                 type="button"
-                class="input-group-text btn-sm"
+                class="input-group-text btn-dark btn-sm"
                 onclick="loadModal(`{{ route('custody.edit', $sample) }}`)"
             >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp;{{ $sample->lastCustody?->storage?->name ?? 'No storage' }}
