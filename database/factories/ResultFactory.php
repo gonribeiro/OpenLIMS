@@ -20,8 +20,9 @@ class ResultFactory extends Factory
     {
         return [
             'test_id' => Test::find(rand(1, count(Test::all()))),
-            'status' => Status::getRandomValue(),
-            'attributes' => '{}',
+            'config' => fake()->randomElement(['{"type":"text"}', '{"type":"number"}', '{"type":"date"}', '{"type":"time"}']),
+            'name' => fake()->randomElement(['val1', 'val2', 'val3', 'val4']),
+            'value' => fake()->randomElement(['test', '1', '2022-01-01', '10:00']),
         ];
     }
 }

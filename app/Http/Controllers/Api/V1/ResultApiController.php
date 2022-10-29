@@ -3,48 +3,29 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
-use App\Models\Result;
-use Illuminate\Http\Request;
+use App\Http\Requests\ResultRequest;
+use App\Http\Services\ResultService;
+use App\Http\Services\TestService;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Log;
 
 class ResultApiController extends Controller
 {
-    public function index(): Response
+    public function findResultsByTestIds(string $testIds): Response
     {
-        return response(Result::all());
+        return response(TestService::findByIds($testIds));
     }
 
-    public function store(Request $request): Response
+    public function storeOrUpdate(ResultRequest $request)
     {
-        $result = Result::create($request->all());
+        try {
+            ResultService::storeOrUpdate($request);
+        } catch (\Throwable $th) {
+            Log::error($th);
 
-        return response($result, 201);
-    }
-
-    public function show(Result $result): Response
-    {
-        return response($result);
-    }
-
-    public function update(Request $request, int $id): Response
-    {
-        if ($request->restore) {
-            $result = Result::withTrashed()->where('id', $id)->first();
-
-            $result->restore();
-        } else {
-            $result = Result::find($id);
-
-            $result->update($request->all());
+            return response($th, 409);
         }
 
-        return response($result, 204);
-    }
-
-    public function destroy(Result $result): Response
-    {
-        $result->delete();
-
-        return response('Successfully deleted', 204);
+        return response('Saved!', 204);
     }
 }

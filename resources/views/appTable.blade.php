@@ -33,6 +33,12 @@
             </font>
         </div>
 
+        <script> // PowerGrid Alert
+            window.addEventListener('showAlert', event => {
+                alert(event.detail.message);
+            })
+        </script>
+
         @livewireScripts
         @powerGridScripts
     </body>

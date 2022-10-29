@@ -15,7 +15,7 @@ class Test extends Model
 
     protected $guarded = [''];
 
-    protected $with = ['analysis'];
+    protected $with = ['analysis', 'results'];
 
     public function sample(): MorphTo // sample or subsample
     {

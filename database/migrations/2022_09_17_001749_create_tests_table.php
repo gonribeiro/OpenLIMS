@@ -18,7 +18,6 @@ return new class extends Migration
             $table->id();
             $table->morphs('sample');
             $table->foreignId('analysis_id');
-            $table->enum('status', Status::getValues())->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

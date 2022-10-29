@@ -9,7 +9,7 @@
                 class="input-group-text btn-sm"
                 onclick="loadModal(`{{ route('test.edit', $sample) }}`)"
             >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
+                <i class="fa-solid fa-flask-vial"></i>&nbsp;
                 {{ $sample->tests?->count() }}
             </button>
         </td>

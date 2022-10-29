@@ -1,0 +1,116 @@
+swagger: '2.0'
+info:
+  description: Open LIMS
+  version: 1.0.0
+  title: Open LIMS API's
+basePath: /api/
+tags:
+  - name: Sample
+    description: Manage Sample
+
+paths:
+  /v1/sample:
+    get:
+      tags:
+        - Sample
+      summary: Get All
+      description: 'Get All'
+      operationId: getAllSample
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: successful operation
+        '400':
+          description: Bad request
+    post:
+      tags:
+        - Sample
+      summary: Create One or Many Sample
+      description: 'Create One or Many Sample'
+      operationId: createOneOrManySample
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: samples
+          type: array
+          required: true
+          items:
+            type: string
+          example: {
+            "samples":
+              [
+                {
+                  "sample_type": "Urine",
+                  "internalId": "29-6976",
+                  "externalId": "99-2206",
+                  "customer_id": 92,
+                  "value_unit": "1.00",
+                  "status": "In Hold",
+                  "unit": "µL",
+                  "collected_date": "1988-06-05 16:39:49",
+                  "collected_by_id": 71,
+                  "received_date": "2021-02-09 11:01:41",
+                  "received_by_id": 80,
+                  "description": null,
+                  "discarded_date": null,
+                  "discarded_by_id": null
+              },
+              {
+                "sample_type": "Blood",
+                "internalId": "29-6976",
+                "externalId": "99-2206",
+                "customer_id": 92,
+                "value_unit": "1.00",
+                "status": "In Hold",
+                "unit": "µL",
+                "collected_date": "1988-06-05 16:39:49",
+                "collected_by_id": 71,
+                "received_date": "2021-02-09 11:01:41",
+                "received_by_id": 80,
+                "description": null,
+                "discarded_date": null,
+                "discarded_by_id": null
+              }
+            ]
+          }
+      responses:
+        '200':
+          description: successful operation
+        '400':
+          description: Bad request
+      security:
+        - api_key: []
+  /v1/sample/findByIds/{ids}:
+    get:
+      tags:
+        - Sample
+      summary: Find Many By Ids
+      description: 'Find Many By Ids'
+      operationId: findSampleByIds
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: ids
+          type: string
+          value: 1,2,3
+          required: true
+      responses:
+        '200':
+          description: successful operation
+        '400':
+          description: Bad request
+
+securityDefinitions:
+  api_key:
+    type: apiKey
+    name: Authorization
+    in: header

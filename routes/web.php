@@ -24,23 +24,36 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('user.index');
 });
+Route::get('/api/docs', function () {
+    return view('swagger.index');
+});
 
 Route::resource('analysis', AnalysisController::class)->except('show', 'destroy');
-Route::get('custody/{sampleIds}/create', [CustodyController::class, 'create'])->name('custody.create');
-Route::post('custody/{sampleIds}/store', [CustodyController::class, 'store'])->name('custody.store');
-Route::get('custody/{sample}/edit', [CustodyController::class, 'edit'])->name('custody.edit');
+Route::prefix('custody')->group(function () {
+    Route::get('{sampleIds}/create', [CustodyController::class, 'create'])->name('custody.create');
+    Route::post('{sampleIds}/store', [CustodyController::class, 'store'])->name('custody.store');
+    Route::get('{sample}/edit', [CustodyController::class, 'edit'])->name('custody.edit');
+});
 Route::resource('incident', IncidentController::class)->only('index', 'edit', 'update');
-Route::get('incident/{sampleIds}/create', [IncidentController::class, 'create'])->name('incident.create');
-Route::post('incident/{sampleIds}/store', [IncidentController::class, 'store'])->name('incident.store');
-// Route::resource('result', ResultController::class)->only('index', 'store');
-Route::resource('storage', StorageController::class)->except('show', 'destroy');
-Route::resource('user', UserController::class)->except('show', 'destroy');
+Route::prefix('incident')->group(function () {
+    Route::get('{sampleIds}/create', [IncidentController::class, 'create'])->name('incident.create');
+    Route::post('{sampleIds}/store', [IncidentController::class, 'store'])->name('incident.store');
+});
+Route::prefix('result')->group(function () {
+    Route::get('{testIds}/findResultsByTestIds', [ResultController::class, 'findResultsByTestIds'])->name('result.findResultsByTestIds');
+    Route::post('storeOrUpdate', [ResultController::class, 'storeOrUpdate'])->name('result.storeOrUpdate');
+});
 Route::resource('sample', SampleController::class)->only('index', 'store');
 Route::prefix('sample')->group(function () {
     Route::get('quantityCreateDialog', [SampleController::class, 'quantityCreateDialog'])->name('sample.quantityCreateDialog');
-    Route::get('create', [SampleController::class, 'create'])->name('sample.create');
+Route::get('create', [SampleController::class, 'create'])->name('sample.create');
     Route::get('{ids}/edit', [SampleController::class, 'edit'])->name('sample.edit');
     Route::patch('updateByIds', [SampleController::class, 'updateByIds'])->name('sample.updateByIds');
 });
-Route::post('test/{sampleIds}/store', [TestController::class, 'store'])->name('test.store');
-Route::get('test/{sample}/edit', [TestController::class, 'edit'])->name('test.edit');
+Route::resource('storage', StorageController::class)->except('show', 'destroy');
+Route::resource('test', TestController::class)->only('index', 'destroy');
+Route::prefix('test')->group(function () {
+    Route::post('{sampleIds}/store', [TestController::class, 'store'])->name('test.store');
+    Route::get('{sample}/edit', [TestController::class, 'edit'])->name('test.edit');
+});
+Route::resource('user', UserController::class)->except('show', 'destroy');

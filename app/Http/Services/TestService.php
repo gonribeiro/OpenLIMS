@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\DB;
 
 class TestService
 {
+    public static function findByIds(string $ids)
+    {
+        return Test::whereIn('id', explode(',', $ids))->get();
+    }
+
     public static function store(array $request, string $sampleIds): void
     {
         DB::transaction(function () use ($request, $sampleIds) {

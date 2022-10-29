@@ -26,20 +26,25 @@ Route::prefix('v1')->group(function () {
     Route::name('api.')->group(function () {
         Route::apiResource('analysis', AnalysisApiController::class);
         Route::prefix('custody')->group(function () {
-            Route::get('/sampleType/{sample_type}/sampleId/{sample_id}', [CustodyApiController::class, 'findBySampleId'])->name('custody.findBySampleId');
+            Route::get('sampleType/{sample_type}/sampleId/{sample_id}', [CustodyApiController::class, 'findBySampleId'])->name('custody.findBySampleId');
             Route::post('{sampleIds}/store', [CustodyApiController::class, 'store'])->name('custody.store');
         });
         Route::apiResource('incident', IncidentApiController::class)->except('store');
         Route::post('incident/{sampleIds}/store', [IncidentApiController::class, 'store'])->name('incident.store');
-        Route::apiResource('result', ResultApiController::class);
+        Route::prefix('result')->group(function () {
+            Route::get('findResultsByTestIds/{testIds}', [ResultApiController::class, 'findResultsByTestIds'])->name('result.findResultsByTestIds');
+            Route::post('storeOrUpdate', [ResultApiController::class, 'storeOrUpdate'])->name('result.storeOrUpdate');
+        });
         Route::apiResource('sample', SampleApiController::class)->only('index', 'store', 'destroy');
-        Route::get('sample/findByIds/{ids}', [SampleApiController::class, 'findByIds'])->name('sample.findByIds');
-        Route::patch('sample/updateByIds', [SampleApiController::class, 'updateByIds'])->name('sample.updateByIds');
+        Route::prefix('sample')->group(function () {
+            Route::get('findByIds/{ids}', [SampleApiController::class, 'findByIds'])->name('sample.findByIds');
+            Route::patch('updateByIds', [SampleApiController::class, 'updateByIds'])->name('sample.updateByIds');
+        });
         Route::apiResource('storage', StorageApiController::class);
         Route::apiResource('subsample', SubsampleController::class);
         Route::apiResource('test', TestApiController::class)->only('destroy');
         Route::prefix('test')->group(function () {
-            Route::get('/sampleType/{sample_type}/sampleId/{sample_id}', [TestApiController::class, 'findBySampleId'])->name('test.findBySampleId');
+            Route::get('sampleType/{sample_type}/sampleId/{sample_id}', [TestApiController::class, 'findBySampleId'])->name('test.findBySampleId');
             Route::post('{sampleIds}/store', [TestApiController::class, 'store'])->name('test.store');
         });
         Route::apiResource('user', UserApiController::class);

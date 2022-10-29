@@ -31,6 +31,7 @@ class SampleRequest extends FormRequest
     public function rules()
     {
         return [
+            'samples' => 'required|array',
             'samples.*.externalId' => [
                 Rule::requiredIf('samples.*.restore' == 'restore'),
                 'string',

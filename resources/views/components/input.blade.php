@@ -1,7 +1,8 @@
 @if(!isset($hiddenLabel)) <label for="{{ $name }}">{{ $label ?? \Str::ucfirst($name) }}@if(isset($required))* @endif</label> @endif
 <input
-    class="form-control form-control-sm"
+    class="form-control form-control-sm {{ $class ?? '' }}"
     type="{{ $type ?? 'text' }}"
+    style="min-width: 150px"
     @if(isset($arrayName)) name="{{ $arrayName }}[{{ $arrayIndex }}][{{ $name }}]" @else name="{{ $name }}" @endif
     value="{{ $value ?? '' }}"
 

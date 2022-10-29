@@ -21,7 +21,7 @@
                 <tr>
                     <th><label>#</label></th>
                     @if (isset($samples))
-                        <th><label><i class="fa-solid fa-vial-circle-check"></i>&nbsp; Tests</label></th>
+                        <th><label><i class="fa-solid fa-flask-vial"></i> Tests</label></th>
                         <th><label>Internal_ID</label></th>
                     @endif
                     <th><label>External_ID*</label></th>
