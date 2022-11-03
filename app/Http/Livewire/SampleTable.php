@@ -4,7 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Models\Sample;
 use PowerComponents\LivewirePowerGrid\Traits\ActionButton;
-use PowerComponents\LivewirePowerGrid\{Button, Column, Exportable, Footer, Header, PowerGrid, PowerGridComponent, PowerGridEloquent};
+use PowerComponents\LivewirePowerGrid\{Button, Column, Detail, Exportable, Footer, Header, PowerGrid, PowerGridComponent, PowerGridEloquent};
 
 final class SampleTable extends PowerGridComponent
 {
@@ -23,7 +23,7 @@ final class SampleTable extends PowerGridComponent
                 ->type(Exportable::TYPE_XLS, Exportable::TYPE_CSV),
             Footer::make()
                 ->showPerPage(intval(env('POWER_GRID_PER_PAGE')), explode(',', env('POWER_GRID_PER_PAGE_VALUES')))
-                ->showRecordCount()
+                ->showRecordCount(),
         ];
     }
 
@@ -179,26 +179,32 @@ final class SampleTable extends PowerGridComponent
                 ->makeInputText(),
 
             Column::make('COLLECTED', 'collected_date')
+                ->hidden()
                 ->searchable()
                 ->makeInputText(),
 
             Column::make('COLLECTED BY', 'collected_by_id')
+                ->hidden()
                 ->searchable()
                 ->makeInputText(),
 
             Column::make('RECEIVED', 'received_date')
+                ->hidden()
                 ->searchable()
                 ->makeInputText(),
 
             Column::make('RECEIVED BY', 'received_by_id')
+                ->hidden()
                 ->searchable()
                 ->makeInputText(),
 
             Column::make('DISCARDED', 'discarded_date')
+                ->hidden()
                 ->searchable()
                 ->makeInputText(),
 
             Column::make('DISCARDED BY', 'discarded_by_id')
+                ->hidden()
                 ->searchable()
                 ->makeInputText(),
         ];

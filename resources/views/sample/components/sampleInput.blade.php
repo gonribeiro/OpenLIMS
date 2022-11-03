@@ -9,7 +9,7 @@
                 class="input-group-text btn-dark btn-sm"
                 onclick="loadModal(`{{ route('test.edit', $sample) }}`)"
             >
-                <i class="fa-solid fa-flask-vial"></i>&nbsp;
+                <i class="fa-solid fa-pen-to-square"></i>&nbsp;
                 {{ $sample->tests?->count() }}
             </button>
         </td>
@@ -111,7 +111,8 @@
                 class="input-group-text btn-dark btn-sm"
                 onclick="loadModal(`{{ route('custody.edit', $sample) }}`)"
             >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp;{{ $sample->lastCustody?->storage?->name ?? 'No storage' }}
+                <i class="fa-solid fa-pen-to-square"></i> &nbsp;
+                {{ $sample->lastCustody?->storage?->name ?? 'No storage' }}
             </button>
         @endif
     </td>
