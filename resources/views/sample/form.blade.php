@@ -22,6 +22,7 @@
                     <th><label>#</label></th>
                     @if (isset($samples))
                         <th><label><i class="fa-solid fa-flask-vial"></i> Tests</label></th>
+                        <th><label>Results</label></th>
                         <th><label>Internal ID</label></th>
                     @endif
                     <th><label>External ID*</label></th>
@@ -36,12 +37,12 @@
                     <th><label>Collected*</label></th>
                     <th><label>Collected by*</label></th>
                     <th><label>Volume/Mass*</label></th>
-                    <th><label>Measurement_Unit*</label></th>
+                    <th><label>Unit*</label></th>
                     <th><label>Description</label></th>
                     @if (isset($samples))
                         <th><label>Discarded</label></th>
                         <th><label>Discarded by</label></th>
-                        <th><label>Cancel</label></th>
+                        <th><label>Action</label></th>
                     @endif
                 </tr>
                 @if (!isset($samples))

@@ -8,7 +8,7 @@
 @csrf
 
 <div class="card text-black bg-dark mb-3">
-    <div class="card-header text-white"><i class="fa-solid fa-vial-circle-check"></i>&nbsp; Tests</div>
+    <div class="card-header text-white"><i class="fa-solid fa-flask-vial"></i>&nbsp; Tests</div>
     <div class="card-body bg-light">
         <div class="row">
             <div class="col-md-11">
@@ -28,7 +28,7 @@
         <table class="table table-hover table-sm">
             <thead>
                 <tr>
-                    <th>Tests</th>
+                    <th></th>
                     <th></th>
                 </tr>
             </thead>

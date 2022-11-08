@@ -36,6 +36,16 @@ class SampleService
         return Sample::whereIn('id', explode(',', $ids))->get();
     }
 
+    public static function findByIdsWhereHasTests(string $ids): Collection
+    {
+        return Sample::whereIn('id', explode(',', $ids))->whereHas('tests')->get();
+    }
+
+    public static function findByIdsWhereDoesntHaveTests(string $ids): Collection
+    {
+        return Sample::whereIn('id', explode(',', $ids))->whereDoesntHave('tests')->get();
+    }
+
     public static function updateByIds(Request $request): void
     {
         DB::transaction(function () use ($request) {

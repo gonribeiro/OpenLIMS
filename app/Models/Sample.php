@@ -32,6 +32,11 @@ class Sample extends Model
         return $this->belongsTo(SampleType::class);
     }
 
+    public function sample(): BelongsTo
+    {
+        return $this->belongsTo(Sample::class);
+    }
+
     public function collectedBy(): BelongsTo
     {
         return $this->belongsTo(User::class, 'collected_by_id');
@@ -50,6 +55,11 @@ class Sample extends Model
     public function tests(): MorphMany
     {
         return $this->morphMany(Test::class, 'sample');
+    }
+
+    public function testsWithResults(): MorphMany
+    {
+        return $this->morphMany(Test::class, 'sample')->whereHas('results');
     }
 
     public function results(): HasManyThrough

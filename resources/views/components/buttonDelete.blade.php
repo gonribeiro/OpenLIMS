@@ -1,6 +1,6 @@
 <div class="btn-group btn-group-sm" role="group">
     <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        Delete
+        {{ $name ?? 'Delete' }}
     </button>
     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
         <li>
@@ -9,7 +9,7 @@
                 href="#"
                 onclick='deleteRecord(`{{ $urlDestroy }}`, `{{ $urlRedirect }}`)'
             >
-                Confirm Delete
+                Confirm {{ $name ?? 'Delete' }}
             </a>
         </li>
     </ul>

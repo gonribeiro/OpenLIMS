@@ -40,7 +40,7 @@ Route::prefix('incident')->group(function () {
     Route::post('{sampleIds}/store', [IncidentController::class, 'store'])->name('incident.store');
 });
 Route::prefix('result')->group(function () {
-    Route::get('{testIds}/findResultsByTestIds', [ResultController::class, 'findResultsByTestIds'])->name('result.findResultsByTestIds');
+    Route::get('{sampleIds}/findResultsBySampleIds', [ResultController::class, 'findResultsBySampleIds'])->name('result.findResultsBySampleIds');
     Route::post('storeOrUpdate', [ResultController::class, 'storeOrUpdate'])->name('result.storeOrUpdate');
 });
 Route::resource('sample', SampleController::class)->only('index', 'store');

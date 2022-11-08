@@ -27,7 +27,6 @@ class SampleFactory extends Factory
             'value_unit' => rand(1, 10),
             'sample_type' => SampleType::getRandomValue(),
             'unit' => UnitMeasurement::getRandomValue(),
-            'status' => Status::getRandomValue(),
             'collected_date' => fake()->dateTime(),
             'collected_by_id' => User::find(rand(1, count(User::all()))),
             'received_date' => fake()->dateTime(),

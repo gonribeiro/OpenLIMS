@@ -27,7 +27,6 @@
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                         <li><a class="dropdown-item" href="{{ route('sample.index') }}"><i class="fa-solid fa-vial"></i> &nbsp; Samples</a></li>
                         <li><a class="dropdown-item" href="#"><i class="fa-solid fa-vials"></i> &nbsp; Subsamples</a></li>
-                        <li><a class="dropdown-item" href="{{ route('test.index') }}"><i class="fa-solid fa-flask-vial"></i> &nbsp; Tests</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="{{ route('incident.index') }}"><i class="fa-solid fa-person-falling-burst"></i> &nbsp; Incidents</a></li>
                     </ul>

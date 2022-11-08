@@ -4,17 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ResultRequest;
 use App\Http\Services\ResultService;
-use App\Http\Services\TestService;
+use App\Http\Services\SampleService;
 use Illuminate\Support\Facades\Log;
 use Illuminate\View\View;
 
 class ResultController extends Controller
 {
-    public function findResultsByTestIds(string $testIds): View
+    public function findResultsBySampleIds(string $sampleIds): View
     {
-        $tests = TestService::findByIds($testIds);
+        $samplesWithTests = SampleService::findByIdsWhereHasTests($sampleIds);
 
-        return view('result.form', compact('tests'));
+        $samplesWithoutTests = SampleService::findByIdsWhereDoesntHaveTests($sampleIds);
+
+        return view('result.form', compact('samplesWithTests', 'samplesWithoutTests'));
     }
 
     public function storeOrUpdate(ResultRequest $request)

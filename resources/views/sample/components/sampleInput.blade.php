@@ -13,6 +13,16 @@
                 {{ $sample->tests?->count() }}
             </button>
         </td>
+        <td class="text-center">
+            <button
+                type="button"
+                class="input-group-text btn-dark btn-sm"
+                onclick="window.open(`{{ route('result.findResultsBySampleIds', $sample), '_blank' }}`)"
+            >
+                <i class="fa-solid fa-square-up-right"></i>&nbsp;
+                {{ $sample->testsWithResults->count() }}
+            </button>
+        </td>
         <td>
             @include('components.input', [
                 'name' => 'internalId',
@@ -193,6 +203,7 @@
         </td>
         <td> 
             @include('components.buttonDelete', [
+                'name' => 'Cancel',
                 'urlDestroy' => route('api.sample.destroy', $sample),
                 'urlRedirect' => route('sample.edit', $samples->implode('id', ','))
             ])
