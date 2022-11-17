@@ -22,17 +22,16 @@ return new class extends Migration
             $table->enum('sample_type', SampleType::getValues())->nullable();
             $table->string('internalId')->nullable();
             $table->string('externalId')->nullable();
-            $table->foreignId('customer_id')->nullable();
+            $table->foreignId('customer_id');
             $table->decimal('value_unit');
             $table->enum('unit', UnitMeasurement::getValues());
-            $table->dateTime('collected_date')->nullable();
-            $table->foreignId('collected_by_id')->nullable();
-            $table->dateTime('received_date')->nullable();
-            $table->foreignId('received_by_id')->nullable();
+            $table->dateTime('collected_date');
+            $table->foreignId('collected_by_id');
+            $table->dateTime('received_date');
+            $table->foreignId('received_by_id');
             $table->text('description')->nullable();
             $table->dateTime('discarded_date')->nullable();
             $table->foreignId('discarded_by_id')->nullable();
-            $table->text('reason')->nullable();
             $table->timestamps();
             $table->softDeletes();
 

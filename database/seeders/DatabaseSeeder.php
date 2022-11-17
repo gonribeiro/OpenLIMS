@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(100)->create();
         \App\Models\Sample::factory(200)->create();
-        \App\Models\Analysis::factory(20)->create();
         \App\Models\Subsample::factory(400)->create();
+        \App\Models\Analysis::factory(20)->create();
         \App\Models\Test::factory(400)->create();
         \App\Models\Incident::factory(50)->create();
         \App\Models\Incidentable::factory(50)->create();
@@ -28,9 +28,6 @@ class DatabaseSeeder extends Seeder
         \App\Models\Custody::factory(300)->create();
         \App\Models\Result::factory(200)->create();
 
-        for ($i=0; $i < 400; $i++) {
-            \App\Models\Sample::factory()->create(['sample_id' => Sample::find(rand(1, count(Sample::all())))]);
-        }
         \App\Models\Analysis::factory()->create(['name' => 'Test', 'attributes' => '
             {
                 "0": {

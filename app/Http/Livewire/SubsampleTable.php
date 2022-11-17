@@ -3,16 +3,17 @@
 namespace App\Http\Livewire;
 
 use App\Models\Sample;
+use App\Models\Subsample;
 use PowerComponents\LivewirePowerGrid\Traits\ActionButton;
 use PowerComponents\LivewirePowerGrid\{Button, Column, Exportable, Footer, Header, PowerGrid, PowerGridComponent, PowerGridEloquent};
 
-final class SampleTable extends PowerGridComponent
+final class SubsampleTable extends PowerGridComponent
 {
     use ActionButton;
 
     public function setUp(): array
     {
-        // $this->persist(['columns', 'filters']);
+        $this->persist(['columns', 'filters']);
 
         $this->showCheckBox();
 
@@ -30,16 +31,6 @@ final class SampleTable extends PowerGridComponent
     public function header(): array
     {
         return [
-            Button::add('create')
-                ->tooltip('New Sample')
-                ->caption(__('<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -50 550 600" class="h-6 w-5
-                text-slate-500 dark:text-slate-300"><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 368C269.3 368 280 357.3 280 344V280H344C357.3 280 368 269.3 368 256C368 242.7 357.3 232 344 232H280V168C280 154.7 269.3 144 256 144C242.7 144 232 154.7 232 168V232H168C154.7 232 144 242.7 144 256C144 269.3 154.7 280 168 280H232V344C232 357.3 242.7 368 256 368z"/></svg>'))
-                ->class('cursor-pointer block bg-indigo-500 text-slate-700 border border-gray-300 rounded py-1.5 px-3
-                leading-tight focus:outline-none focus:bg-white focus:border-gray-600 dark:border-gray-500
-                dark:bg-gray-500 2xl:dark:placeholder-gray-300 dark:text-gray-200 dark:text-gray-300 mt-2')
-                ->target('_self')
-                ->route('sample.quantityCreateDialog', []),
-
             Button::add('edit')
                 ->tooltip('Edit Samples')
                 ->caption(__('<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -50 550 600" class="h-6 w-5
@@ -140,12 +131,16 @@ final class SampleTable extends PowerGridComponent
 
     public function datasource()
     {
-        return Sample::query()->orderBy('id', 'desc');
+        return Subsample::query()->orderBy('id', 'desc');
     }
 
     public function relationSearch(): array
     {
-        return [];
+        return [
+            'customer' => [
+                'name'
+            ]
+        ];
     }
 
     public function addColumns(): PowerGridEloquent
@@ -158,19 +153,7 @@ final class SampleTable extends PowerGridComponent
         return [
             Column::make('ID', 'id'),
 
-            Column::make('SAMPLE TYPE', 'sample_type')
-                ->searchable()
-                ->makeInputText(),
-
             Column::make('INTERNAL ID', 'internalId')
-                ->searchable()
-                ->makeInputText(),
-
-            Column::make('EXTERNAL ID', 'externalId')
-                ->searchable()
-                ->makeInputText(),
-
-            Column::make('CUSTOMER', 'customer_id')
                 ->searchable()
                 ->makeInputText(),
 
@@ -182,7 +165,7 @@ final class SampleTable extends PowerGridComponent
                 ->searchable()
                 ->makeInputText(),
 
-            Column::make('STORAGE AT', '')
+            Column::make('STORAGE AT', 'storage')
                 ->searchable()
                 ->makeInputText(),
 

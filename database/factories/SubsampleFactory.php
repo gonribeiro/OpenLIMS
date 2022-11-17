@@ -2,10 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Enums\Status;
 use App\Enums\UnitMeasurement;
 use App\Models\Sample;
-use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -22,11 +20,9 @@ class SubsampleFactory extends Factory
     {
         return [
             'sample_id' => Sample::find(rand(1, count(Sample::all()))),
+            'internalId' => fake()->numerify('##-####'),
             'value_unit' => rand(1, 10),
             'unit' => UnitMeasurement::getRandomValue(),
-            'status' => Status::getRandomValue(),
-            'received_date' => fake()->dateTime(),
-            'received_by_id' => User::find(rand(1, count(User::all()))),
         ];
     }
 }

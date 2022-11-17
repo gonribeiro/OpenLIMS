@@ -6,7 +6,7 @@
 @csrf
 
 <div align="right">
-    @include('components.buttonLink', ['name' => 'Back', 'url' => route('test.index'), 'color' => 'link'])
+    @include('components.buttonLink', ['name' => 'Back', 'url' => route('sample.index'), 'color' => 'link'])
 </div>
 <div class="card text-black bg-dark mb-3">
     <div class="card-header text-white"><i class="fa-solid fa-flask-vial"></i>&nbsp; Tests and Result</div>
@@ -80,7 +80,7 @@
                                         'name' => $result->name,
                                         'type' => json_decode($result->config)->type,
                                         'class' => $test->id,
-                                        'required' => json_decode($result->config)->required,
+                                        {{-- 'required' => json_decode($result->config)->required, --}}
                                         'arrayName' => 'results',
                                         'arrayIndex' => $result->id,
                                         'value' => $result->value,

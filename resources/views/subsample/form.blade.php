@@ -2,16 +2,16 @@
 @section('content2')
 
 @if (isset($samples))
-    <form action="{{ route('sample.updateByIds') }}" method="post">
+    <form action="{{ route('subsample.updateByIds') }}" method="post">
     @method('PATCH')
 @else
-    <form action="{{ route('sample.store') }}" method="post">
+    <form action="{{ route('subsample.store') }}" method="post">
     @method('POST')
 @endif
 @csrf
 
 <div align="right">
-    @include('components.buttonLink', ['name' => 'Back', 'url' => route('sample.index'), 'color' => 'link'])
+    @include('components.buttonLink', ['name' => 'Back', 'url' => route('subsample.index'), 'color' => 'link'])
 </div>
 <font size="2">
     <div class="card text-black bg-dark mb-3">
@@ -47,12 +47,12 @@
                 </tr>
                 @if (!isset($samples))
                     @for ($i = 0; $i < $quantity; $i++)
-                        @include('sample.components.sampleInput')
+                        @include('subsample.components.sampleInput')
                     @endfor
                 @else
-                    @foreach ($samples as $i => $sample)
-                        <input type="hidden" name="samples[{{ $i }}][id]" value="{{ $sample->id }}">
-                        @include('sample.components.sampleInput')
+                    @foreach ($samples as $i => $subsample)
+                        <input type="hidden" name="samples[{{ $i }}][id]" value="{{ $subsample->id }}">
+                        @include('subsample.components.sampleInput')
                     @endforeach
                 @endif
             </table>

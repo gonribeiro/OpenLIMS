@@ -18,13 +18,11 @@ return new class extends Migration
         Schema::create('subsamples', function (Blueprint $table) {
             $table->id();
             $table->foreignId('sample_id');
-            $table->foreignId('order_id')->nullable();
+            $table->string('internalId')->nullable();
             $table->decimal('value_unit');
-            $table->enum('status', Status::getValues())->nullable();
             $table->enum('unit', UnitMeasurement::getValues());
-            $table->dateTime('received_date');
-            $table->foreignId('received_by_id');
             $table->text('description')->nullable();
+            $table->text('reason')->nullable();
             $table->dateTime('discarded_date')->nullable();
             $table->foreignId('discarded_by_id')->nullable();
             $table->timestamps();
